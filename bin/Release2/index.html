@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Combat Manager</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type='text/css'>
+			html {
+				font-family: Arial, Sans-Serif;
+			}
+			body {
+				margin: 0px;
+				padding: 0px;
+				background-color: black;
+			}
+			TABLE.inittable {
+				border-width: 1px;
+				border-spacing: 1px;
+				border-style: outset;
+				border-color: gray;
+				border-collapse: separate;
+				background-color: white;
+				margin-top: 30px;
+				width: 95%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			TABLE.effecttable {
+				width: 100%;
+				height: 100%;
+			}
+			th.header {
+				font-size: large;
+				background-color: #9fa48c;
+				color: white;
+				border: 1px inset gray;
+			}
+			DIV.initwindow {
+				text-align: center;
+			}
+			DIV.mbwrap {
+				width: 100%;
+				max-width: 570px;
+			}
+			DIV.ggdark {width: 100%; padding-left:5px; padding-right:5px; padding-top:2px; padding-bottom:2px; background-color: #374b27; min-height: 14px;}
+			DIV.mbheadleft {float: left;  align: left; color: #ffffff; font-size: 13px;}
+			DIV.mbheadright {float: right; align: right; color: #ffffff; font-size: 13px;}
+			DIV.mbsubleft {float: left; align: left; color: #ffffff;}
+			DIV.mbsubright {float: right; align: right; color: #ffffff;}
+			DIV.gglt {width: 100%; padding-left:5px; padding-right:5px; padding-top:1px; padding-bottom:1px; background-color: #e1e6c4; min-height: 14px;}
+			DIV.ggmed {width: 100%; padding-left:5px; padding-right:5px; padding-top:1px; padding-bottom:1px; background-color: #9fa48c; min-height: 14px; }
+			DIV.ggtype {width: 100%; padding-left:5px; padding-right:5px; padding-top:1px; padding-bottom:1px; background-color: #727c55; min-height: 14px; }
+			DIV.ggindent {padding-left:20px;} TD.indlt {padding-left: 4px; padding-right: 4px; font-size: 9.5pt; background-color: #e1e6c4;}
+			td {
+				border: 1px inset gray;
+			}
+			td.round, td.init {
+				font-size: x-large;
+			}
+			td.init {
+				font-size: x-large;
+				font-weight: bold;
+			}
+			td.name {
+				font-size: x-large;
+				font-family: DnDLolth, fantasy;
+				font-weight: bold;
+			}
+			td.effectdetail {
+				padding: 5px;
+				color: white;
+				min-height: 20px;
+				min-width: 60px;
+				font-family: Mentor Sans Std, Sans-Serif;
+			}
+			td.effects {
+				font-size: large;
+			}
+		</style>
+		<script type="text/javascript">
+		//<![CDATA[
+			function Ajax() {
+				if (window.XMLHttpRequest) { // for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp=new XMLHttpRequest();
+				}
+				else { // for IE6, IE5
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.onreadystatechange = function() {
+					if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+						document.getElementById('ReloadThis').innerHTML=xmlhttp.responseText;
+						setTimeout("Ajax();", 100); //Can be set to whatever timeout
+					}
+				}
+				// Send the request asynchronously.
+				xmlhttp.open("GET","content",true);
+				xmlhttp.send();
+			}
+		//]]>
+		</script>
+	</head>
+	<body onload="Ajax();">
+		<div class="initwindow" id="ReloadThis">Please wait.  Loading Initiative List...</div>
+	</body>
+</html>

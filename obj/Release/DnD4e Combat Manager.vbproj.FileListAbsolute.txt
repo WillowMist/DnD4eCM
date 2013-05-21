@@ -1,0 +1,324 @@
+C:\Downloads\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe.config
+C:\Downloads\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe
+C:\Downloads\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.pdb
+C:\Downloads\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.xml
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\ResolveAssemblyReference.cache
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.Resources.resources
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.exe
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.xml
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.pdb
+C:\Downloads\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe.manifest
+C:\Downloads\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.application
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.TrustInfo.xml
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.exe.manifest
+C:\Downloads\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.application
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe.config
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.xml
+M:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe.config
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.exe
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.xml
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe.config
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.6.1\obj\Release\ResolveAssemblyReference.cache
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.Resources.resources
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+F:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+M:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.exe
+M:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.pdb
+M:\DnD4eCM Source v1.6.1\bin\Release\DnD4e Combat Manager.xml
+M:\DnD4eCM Source v1.6.1\obj\Release\ResolveAssemblyReference.cache
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.Resources.resources
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+M:\DnD4eCM Source v1.6.1\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+M:\DnD4eCM Source v1.7.0\bin\Release\DnD4e Combat Manager.exe.config
+M:\DnD4eCM Source v1.7.0\bin\Release\DnD4e Combat Manager.exe
+M:\DnD4eCM Source v1.7.0\bin\Release\DnD4e Combat Manager.pdb
+M:\DnD4eCM Source v1.7.0\bin\Release\DnD4e Combat Manager.xml
+M:\DnD4eCM Source v1.7.0\obj\Release\ResolveAssemblyReference.cache
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e_Combat_Manager.Resources.resources
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e Combat Manager.exe
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e Combat Manager.xml
+M:\DnD4eCM Source v1.7.0\obj\Release\DnD4e Combat Manager.pdb
+G:\DnD4eCM Source v1.7.0\bin\Release\DnD4e Combat Manager.exe.config
+G:\DnD4eCM Source v1.7.0\obj\Release\DnD4e Combat Manager.exe
+G:\DnD4eCM Source v1.7.0\obj\Release\DnD4e Combat Manager.xml
+G:\DnD4eCM Source v1.7.0\obj\Release\DnD4e Combat Manager.pdb
+M:\DnD4eCM Source v1.7.1\bin\Release\DnD4e Combat Manager.exe.config
+M:\DnD4eCM Source v1.7.1\bin\Release\DnD4e Combat Manager.exe
+M:\DnD4eCM Source v1.7.1\bin\Release\DnD4e Combat Manager.pdb
+M:\DnD4eCM Source v1.7.1\bin\Release\DnD4e Combat Manager.xml
+M:\DnD4eCM Source v1.7.1\obj\Release\ResolveAssemblyReference.cache
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e_Combat_Manager.Resources.resources
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e Combat Manager.exe
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e Combat Manager.xml
+M:\DnD4eCM Source v1.7.1\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.2\bin\Release\DnD4e Combat Manager.exe.config
+F:\DnD4eCM Source v1.7.2\bin\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.2\bin\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.2\bin\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.2\obj\Release\ResolveAssemblyReference.cache
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e_Combat_Manager.Resources.resources
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.2\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.3\bin\Release\DnD4e Combat Manager.exe.config
+F:\DnD4eCM Source v1.7.3\bin\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.3\bin\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.3\bin\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.3\obj\Release\ResolveAssemblyReference.cache
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.Resources.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.3\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.4\bin\Release\DnD4e Combat Manager.exe.config
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.4\bin\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.4\bin\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.4\bin\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.4\obj\Release\ResolveAssemblyReference.cache
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.Resources.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+F:\DnD4eCM Source v1.7.4\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+F:\DnD4eCM Source v1.7.5\bin\Release\DnD4e Combat Manager.exe.config
+F:\DnD4eCM Source v1.7.5\bin\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.5\bin\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.5\bin\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.5\obj\Release\ResolveAssemblyReference.cache
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.Resources.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.5\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.7.6\bin\Release\DnD4e Combat Manager.exe.config
+F:\DnD4eCM Source v1.7.6\obj\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.7.6\obj\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.7.6\obj\Release\DnD4e Combat Manager.pdb
+H:\DnD4eCM Source v1.8.0\bin\Release\DnD4e Combat Manager.exe.config
+H:\DnD4eCM Source v1.8.0\bin\Release\DnD4e Combat Manager.exe
+H:\DnD4eCM Source v1.8.0\bin\Release\DnD4e Combat Manager.pdb
+H:\DnD4eCM Source v1.8.0\bin\Release\DnD4e Combat Manager.xml
+H:\DnD4eCM Source v1.8.0\obj\Release\ResolveAssemblyReference.cache
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.Config.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.Resources.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e Combat Manager.exe
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e Combat Manager.xml
+H:\DnD4eCM Source v1.8.0\obj\Release\DnD4e Combat Manager.pdb
+H:\DnD4eCM Source v1.8.1\bin\Release\DnD4e Combat Manager.exe.config
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e Combat Manager.exe
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e Combat Manager.xml
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e Combat Manager.pdb
+F:\DnD4eCM Source v1.8.1\bin\Release\DnD4e Combat Manager.exe.config
+F:\DnD4eCM Source v1.8.1\obj\Release\DnD4e Combat Manager.exe
+F:\DnD4eCM Source v1.8.1\obj\Release\DnD4e Combat Manager.xml
+F:\DnD4eCM Source v1.8.1\obj\Release\DnD4e Combat Manager.pdb
+H:\DnD4eCM Source v1.8.1\bin\Release\DnD4e Combat Manager.exe
+H:\DnD4eCM Source v1.8.1\bin\Release\DnD4e Combat Manager.pdb
+H:\DnD4eCM Source v1.8.1\bin\Release\DnD4e Combat Manager.xml
+H:\DnD4eCM Source v1.8.1\obj\Release\ResolveAssemblyReference.cache
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.Config.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.Resources.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+H:\DnD4eCM Source v1.8.1\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+H:\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.exe.config
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.exe
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.xml
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.pdb
+H:\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.exe
+H:\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.pdb
+H:\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.xml
+H:\DnD4eCM Source v1.8.2\obj\Release\ResolveAssemblyReference.cache
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.Config.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.Resources.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+H:\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.exe.config
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\bin\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.Config.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.Resources.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.2\obj\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.exe.config
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.Config.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.Resources.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.dll
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.dll
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.pdb
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.xml
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.pdb
+C:\Documents and Settings\Jason.OFFICE\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.xml
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.exe.config
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.dll
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.dll
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.pdb
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.xml
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.pdb
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.xml
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.Config.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.exe.config
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.pdb
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.dll
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.dll
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.pdb
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eMonster.xml
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.pdb
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\bin\Release\4eShared.xml
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.Config.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.Resources.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.exe
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.xml
+C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.pdb

@@ -1,0 +1,2684 @@
+﻿<D20Character game-system="D&amp;D4E" Version="0.07a" legality="rules-legal">
+   <!--
+      Dungeons and Dragons Insider: Character Builder character save file
+   -->
+
+
+   <!--
+      This section provides computed data for applications
+      without access to the rules engine and rules data.
+   -->
+   <CharacterSheet>
+
+
+      <Details>
+         <name> Thoradin </name>
+         <Level> 1 </Level>
+         <Player>  </Player>
+         <Height>  </Height>
+         <Weight>  </Weight>
+         <Gender>  </Gender>
+         <Age>  </Age>
+         <Alignment>  </Alignment>
+         <Company>  </Company>
+         <Portrait>  </Portrait>
+         <Experience> 999 </Experience>
+         <CarriedMoney> 100 gp </CarriedMoney>
+         <StoredMoney> 0 gp </StoredMoney>
+         <Traits>  </Traits>
+         <Appearance>  </Appearance>
+         <Companions>  </Companions>
+         <Notes>  </Notes>
+      </Details>
+
+      <!--
+         Base ability scores (see stats of same name for final adjusted score)
+      -->
+      <AbilityScores legality="rules-legal">
+         <Strength score="10" />
+         <Constitution score="15" />
+         <Dexterity score="10" />
+         <Intelligence score="17" />
+         <Wisdom score="13" />
+         <Charisma score="8" />
+      </AbilityScores>
+
+
+      <!--
+         Final computed stat values - the various numbers
+         on the character sheet are here along with behind the scenes
+         values to build them.
+      -->
+      <StatBlock>
+         <Stat name="Strength" value="10">
+            <alias name="Strength" />
+            <alias name="str" />
+            <statadd value="10" />
+         </Stat>
+
+         <Stat name="Constitution" value="17">
+            <alias name="Constitution" />
+            <alias name="con" />
+            <statadd value="15" />
+            <statadd Level="1" value="2" charelem="12992218" />
+         </Stat>
+
+         <Stat name="Dexterity" value="10">
+            <alias name="Dexterity" />
+            <alias name="dex" />
+            <statadd value="10" />
+         </Stat>
+
+         <Stat name="Intelligence" value="17">
+            <alias name="Intelligence" />
+            <alias name="int" />
+            <statadd value="17" />
+         </Stat>
+
+         <Stat name="Wisdom" value="15">
+            <alias name="Wisdom" />
+            <alias name="wis" />
+            <statadd value="13" />
+            <statadd Level="1" value="2" charelem="128e85d0" />
+         </Stat>
+
+         <Stat name="Charisma" value="8">
+            <alias name="Charisma" />
+            <alias name="cha" />
+            <statadd value="8" />
+         </Stat>
+
+         <Stat name="Strength modifier" value="0">
+            <alias name="Strength modifier" />
+            <statadd Level="1" value="1" statlink="Strength" abilmod="true" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Dexterity modifier" value="0">
+            <alias name="Dexterity modifier" />
+            <statadd Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Constitution modifier" value="3">
+            <alias name="Constitution modifier" />
+            <statadd Level="1" value="1" statlink="Constitution" abilmod="true" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Intelligence modifier" value="3">
+            <alias name="Intelligence modifier" />
+            <statadd Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Wisdom modifier" value="2">
+            <alias name="Wisdom modifier" />
+            <statadd Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Charisma modifier" value="-1">
+            <alias name="Charisma modifier" />
+            <statadd Level="1" value="1" statlink="Charisma" abilmod="true" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="AC" value="15">
+            <alias name="AC" />
+            <alias name="Armor Class" />
+            <statadd Level="1" value="10" charelem="12932c50" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12932c50" />
+            <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Dexterity" abilmod="true" charelem="12932c50" />
+            <statadd type="Ability" Level="1" not-wearing="armor:heavy" value="1" statlink="Intelligence" abilmod="true" charelem="12932c50" />
+            <statadd type="Defensive" Level="1" wearing="DEFENSIVE:" value="1" charelem="12932c50" />
+            <statadd type="Armor" value="2" charelem="12976ed0" />
+         </Stat>
+
+         <Stat name="Fortitude Defense" value="14">
+            <alias name="Fortitude Defense" />
+            <alias name="Fortitude" />
+            <statadd Level="1" value="10" charelem="12932c50" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12932c50" />
+            <statadd type="Ability" Level="1" value="1" statlink="Strength" abilmod="true" charelem="12932c50" />
+            <statadd type="Ability" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="12932c50" />
+            <statadd type="Class" Level="1" value="1" statlink="Fortitude Defense Class Bonus" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Reflex Defense" value="13">
+            <alias name="Reflex Defense" />
+            <alias name="Reflex" />
+            <statadd Level="1" value="10" charelem="12932c50" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12932c50" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="12932c50" />
+            <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="12932c50" />
+            <statadd type="Class" Level="1" value="1" statlink="Reflex Defense Class Bonus" charelem="12932c50" />
+            <statadd requires="!Armor Proficiency (Leather)" value="-2" charelem="12976ed0" />
+         </Stat>
+
+         <Stat name="Will Defense" value="13">
+            <alias name="Will Defense" />
+            <alias name="Will" />
+            <statadd Level="1" value="10" charelem="12932c50" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12932c50" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="12932c50" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="12932c50" />
+            <statadd type="Class" Level="1" value="1" statlink="Will Defense Class Bonus" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Death Saves Count" value="3">
+            <alias name="Death Saves Count" />
+            <statadd Level="1" value="3" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Level" value="1">
+            <alias name="Level" />
+            <statadd Level="1" value="1" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Hit Points" value="29">
+            <alias name="Hit Points" />
+            <statadd type="Level 1" Level="1" value="1" statlink="Constitution" charelem="12932c50" />
+            <statadd Level="1" value="1" statlink="_LEVEL-ONE-HPS" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="_LEVEL-ONE-HPS" value="12">
+            <alias name="_LEVEL-ONE-HPS" />
+            <statadd Level="1" value="12" charelem="128f2b48" />
+         </Stat>
+
+         <Stat name="Healing Surges" value="9">
+            <alias name="Healing Surges" />
+            <statadd type="Level 1" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="12932c50" />
+            <statadd Level="1" value="6" charelem="128f2b48" />
+         </Stat>
+
+         <Stat name="HALF-LEVEL" value="0">
+            <alias name="HALF-LEVEL" />
+         </Stat>
+
+         <Stat name="Fortitude Defense Class Bonus" value="1">
+            <alias name="Fortitude Defense Class Bonus" />
+            <statadd Level="1" value="1" charelem="128f2b48" />
+         </Stat>
+
+         <Stat name="Reflex Defense Class Bonus" value="0">
+            <alias name="Reflex Defense Class Bonus" />
+         </Stat>
+
+         <Stat name="Will Defense Class Bonus" value="1">
+            <alias name="Will Defense Class Bonus" />
+            <statadd Level="1" value="1" charelem="128f2b48" />
+         </Stat>
+
+         <Stat name="Initiative" value="0">
+            <alias name="Initiative" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12932c50" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="12932c50" />
+            <statadd Level="1" value="1" statlink="Initiative Misc" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Initiative Misc" value="0">
+            <alias name="Initiative Misc" />
+         </Stat>
+
+         <Stat name="Ring Slots" value="2">
+            <alias name="Ring Slots" />
+            <statadd Level="1" value="2" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="_BaseActionPoints" value="1">
+            <alias name="_BaseActionPoints" />
+            <statadd Level="1" value="1" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Acrobatics" value="0">
+            <alias name="Acrobatics" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Acrobatics Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Acrobatics Misc" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Armor Penalty" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Acrobatics Trained" value="0">
+            <alias name="Acrobatics Trained" />
+         </Stat>
+
+         <Stat name="Acrobatics Misc" value="0">
+            <alias name="Acrobatics Misc" />
+         </Stat>
+
+         <Stat name="Armor Penalty" value="0">
+            <alias name="Armor Penalty" />
+         </Stat>
+
+         <Stat name="Arcana" value="8">
+            <alias name="Arcana" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Arcana Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Arcana Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Arcana Trained" value="5">
+            <alias name="Arcana Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="12944a58" />
+         </Stat>
+
+         <Stat name="Arcana Misc" value="0">
+            <alias name="Arcana Misc" />
+         </Stat>
+
+         <Stat name="Bluff" value="-1">
+            <alias name="Bluff" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Bluff Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Bluff Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Bluff Trained" value="0">
+            <alias name="Bluff Trained" />
+         </Stat>
+
+         <Stat name="Bluff Misc" value="0">
+            <alias name="Bluff Misc" />
+         </Stat>
+
+         <Stat name="Diplomacy" value="4">
+            <alias name="Diplomacy" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Diplomacy Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Diplomacy Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Diplomacy Trained" value="5">
+            <alias name="Diplomacy Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="126349e8" />
+         </Stat>
+
+         <Stat name="Diplomacy Misc" value="0">
+            <alias name="Diplomacy Misc" />
+         </Stat>
+
+         <Stat name="Dungeoneering" value="9">
+            <alias name="Dungeoneering" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Dungeoneering Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Dungeoneering Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Dungeoneering Trained" value="5">
+            <alias name="Dungeoneering Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="12980c18" />
+         </Stat>
+
+         <Stat name="Dungeoneering Misc" value="2">
+            <alias name="Dungeoneering Misc" />
+            <statadd type="Racial" Level="1" value="2" charelem="12968958" />
+         </Stat>
+
+         <Stat name="Endurance" value="5">
+            <alias name="Endurance" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Endurance Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Endurance Misc" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Armor Penalty" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Endurance Trained" value="0">
+            <alias name="Endurance Trained" />
+         </Stat>
+
+         <Stat name="Endurance Misc" value="2">
+            <alias name="Endurance Misc" />
+            <statadd type="Racial" Level="1" value="2" charelem="128e3e30" />
+         </Stat>
+
+         <Stat name="Heal" value="2">
+            <alias name="Heal" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Heal Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Heal Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Heal Trained" value="0">
+            <alias name="Heal Trained" />
+         </Stat>
+
+         <Stat name="Heal Misc" value="0">
+            <alias name="Heal Misc" />
+         </Stat>
+
+         <Stat name="History" value="8">
+            <alias name="History" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="History Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="History Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="History Trained" value="5">
+            <alias name="History Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="128a7b50" />
+         </Stat>
+
+         <Stat name="History Misc" value="0">
+            <alias name="History Misc" />
+         </Stat>
+
+         <Stat name="Insight" value="2">
+            <alias name="Insight" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Insight Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Insight Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Insight Trained" value="0">
+            <alias name="Insight Trained" />
+         </Stat>
+
+         <Stat name="Insight Misc" value="0">
+            <alias name="Insight Misc" />
+         </Stat>
+
+         <Stat name="Intimidate" value="-1">
+            <alias name="Intimidate" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Intimidate Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Intimidate Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Intimidate Trained" value="0">
+            <alias name="Intimidate Trained" />
+         </Stat>
+
+         <Stat name="Intimidate Misc" value="0">
+            <alias name="Intimidate Misc" />
+         </Stat>
+
+         <Stat name="Nature" value="2">
+            <alias name="Nature" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Nature Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Nature Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Nature Trained" value="0">
+            <alias name="Nature Trained" />
+         </Stat>
+
+         <Stat name="Nature Misc" value="0">
+            <alias name="Nature Misc" />
+         </Stat>
+
+         <Stat name="Perception" value="9">
+            <alias name="Perception" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Perception Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Perception Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Perception Trained" value="5">
+            <alias name="Perception Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="1294ca90" />
+         </Stat>
+
+         <Stat name="Perception Misc" value="2">
+            <alias name="Perception Misc" />
+            <statadd Level="1" value="2" charelem="1289db78" />
+         </Stat>
+
+         <Stat name="Religion" value="3">
+            <alias name="Religion" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Religion Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Religion Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Religion Trained" value="0">
+            <alias name="Religion Trained" />
+         </Stat>
+
+         <Stat name="Religion Misc" value="0">
+            <alias name="Religion Misc" />
+         </Stat>
+
+         <Stat name="Stealth" value="0">
+            <alias name="Stealth" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Stealth Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Stealth Misc" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Armor Penalty" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Stealth Trained" value="0">
+            <alias name="Stealth Trained" />
+         </Stat>
+
+         <Stat name="Stealth Misc" value="0">
+            <alias name="Stealth Misc" />
+         </Stat>
+
+         <Stat name="Streetwise" value="-1">
+            <alias name="Streetwise" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Streetwise Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Streetwise Misc" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Streetwise Trained" value="0">
+            <alias name="Streetwise Trained" />
+         </Stat>
+
+         <Stat name="Streetwise Misc" value="0">
+            <alias name="Streetwise Misc" />
+         </Stat>
+
+         <Stat name="Thievery" value="0">
+            <alias name="Thievery" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Thievery Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Thievery Misc" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Armor Penalty" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Thievery Trained" value="0">
+            <alias name="Thievery Trained" />
+         </Stat>
+
+         <Stat name="Thievery Misc" value="0">
+            <alias name="Thievery Misc" />
+         </Stat>
+
+         <Stat name="Athletics" value="0">
+            <alias name="Athletics" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="12955530" />
+            <statadd type="Ability" Level="1" value="1" statlink="Strength" abilmod="true" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Athletics Trained" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Athletics Misc" charelem="12955530" />
+            <statadd Level="1" value="1" statlink="Armor Penalty" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Athletics Trained" value="0">
+            <alias name="Athletics Trained" />
+         </Stat>
+
+         <Stat name="Athletics Misc" value="0">
+            <alias name="Athletics Misc" />
+         </Stat>
+
+         <Stat name="Passive Perception" value="19">
+            <alias name="Passive Perception" />
+            <statadd Level="1" value="1" statlink="Perception" charelem="12955530" />
+            <statadd Level="1" value="10" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Passive Insight" value="12">
+            <alias name="Passive Insight" />
+            <statadd Level="1" value="1" statlink="Insight" charelem="12955530" />
+            <statadd Level="1" value="10" charelem="12955530" />
+         </Stat>
+
+         <Stat name="Saving Throws" value="0">
+            <alias name="Saving Throws" />
+            <statadd type="Racial" Level="1" conditional="against poison" value="5" charelem="12933ec0" />
+         </Stat>
+
+         <Stat name="Speed" value="5">
+            <alias name="Speed" />
+            <statadd type="Armor" Level="1" value="0" charelem="1296a168" />
+            <statadd Level="1" value="5" charelem="1288d248" />
+         </Stat>
+
+         <Stat name="Average Height" value="0">
+            <alias name="Average Height" />
+            <statadd String="4&apos; 3&quot;-4&apos; 9&quot;" Level="1" value="0" />
+         </Stat>
+
+         <Stat name="Average Weight" value="0">
+            <alias name="Average Weight" />
+            <statadd String="160-220 lb." Level="1" value="0" />
+         </Stat>
+
+         <Stat name="Size" value="0">
+            <alias name="Size" />
+            <statadd String="Medium" Level="1" value="0" />
+         </Stat>
+
+         <Stat name="FREEBEE:ID_FMP_GEAR_31" value="1">
+            <alias name="FREEBEE:ID_FMP_GEAR_31" />
+            <statadd Level="1" value="1" charelem="128aa610" />
+         </Stat>
+
+         <Stat name="FREEBEE:ID_FMP_RITUAL_1" value="1">
+            <alias name="FREEBEE:ID_FMP_RITUAL_1" />
+            <statadd Level="1" value="1" charelem="128aa610" />
+         </Stat>
+
+         <Stat name="FREEBEE:ID_FMP_RITUAL_7" value="1">
+            <alias name="FREEBEE:ID_FMP_RITUAL_7" />
+            <statadd Level="1" value="1" charelem="128aa610" />
+         </Stat>
+
+         <Stat name="FREEBEE:ID_FMP_RITUAL_9" value="1">
+            <alias name="FREEBEE:ID_FMP_RITUAL_9" />
+            <statadd Level="1" value="1" charelem="128aa610" />
+         </Stat>
+
+         <Stat name="FREEBEE:ID_FMP_RITUAL_51" value="1">
+            <alias name="FREEBEE:ID_FMP_RITUAL_51" />
+            <statadd Level="1" value="1" charelem="128aa610" />
+         </Stat>
+
+         <Stat name="Free Rituals" value="0">
+            <alias name="Free Rituals" />
+            <statadd String="* As an artificer you have been given the Brew Potion, Disenchant Magic Item, Enchant Magic Item, and Make Whole rituals." Level="1" value="0" />
+         </Stat>
+
+         <Stat name="_CLASSNAME" value="0">
+            <alias name="_CLASSNAME" />
+            <statadd String="ID_FMP_CLASS_125" Level="1" value="0" />
+         </Stat>
+
+         <Stat name="_PER-LEVEL-HPS" value="5">
+            <alias name="_PER-LEVEL-HPS" />
+            <statadd Level="1" value="5" charelem="128f2b48" />
+         </Stat>
+
+         <Stat name="axe group:damage" value="2">
+            <alias name="axe group:damage" />
+            <statadd type="Feat" Level="1" value="2" charelem="12953ec8" />
+         </Stat>
+
+         <Stat name="hammer group:damage" value="2">
+            <alias name="hammer group:damage" />
+            <statadd type="Feat" Level="1" value="2" charelem="12953ec8" />
+         </Stat>
+
+         <Stat name="XP Needed" value="1000">
+            <alias name="XP Needed" />
+            <statadd Level="1" value="1000" charelem="12932c50" />
+         </Stat>
+
+         <Stat name="Weight" value="21">
+            <alias name="Weight" />
+            <statadd value="21" />
+         </Stat>
+
+         <Stat name="attack rolls" value="0">
+            <alias name="attack rolls" />
+            <statadd requires="!Armor Proficiency (Leather)" value="-2" charelem="12976ed0" />
+         </Stat>
+
+      </StatBlock>
+
+      <!--
+         The list of all rules elements the character has, after taking into
+         account retraining, multiclass power swapping, etc.
+      -->
+      <RulesElementTally>
+         <RulesElement name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" charelem="12932c50" legality="rules-legal" />
+         <RulesElement name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" charelem="128fc698" legality="rules-legal" />
+         <RulesElement name="SkillRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_SKILLRULES" charelem="12955530" legality="rules-legal" />
+         <RulesElement name="Acrobatics" type="Skill" internal-id="ID_FMP_SKILL_1" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=1" charelem="128887a0" legality="rules-legal" />
+         <RulesElement name="Arcana" type="Skill" internal-id="ID_FMP_SKILL_2" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=2" charelem="129615f0" legality="rules-legal" />
+         <RulesElement name="Bluff" type="Skill" internal-id="ID_FMP_SKILL_3" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=3" charelem="128e6ef0" legality="rules-legal" />
+         <RulesElement name="Diplomacy" type="Skill" internal-id="ID_FMP_SKILL_6" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=6" charelem="1294ce40" legality="rules-legal" />
+         <RulesElement name="Dungeoneering" type="Skill" internal-id="ID_FMP_SKILL_7" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=7" charelem="1297a438" legality="rules-legal" />
+         <RulesElement name="Endurance" type="Skill" internal-id="ID_FMP_SKILL_8" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=8" charelem="1292e110" legality="rules-legal" />
+         <RulesElement name="Heal" type="Skill" internal-id="ID_FMP_SKILL_9" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=9" charelem="12875518" legality="rules-legal" />
+         <RulesElement name="History" type="Skill" internal-id="ID_FMP_SKILL_11" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=11" charelem="1295d368" legality="rules-legal" />
+         <RulesElement name="Insight" type="Skill" internal-id="ID_FMP_SKILL_13" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=13" charelem="12912fa0" legality="rules-legal" />
+         <RulesElement name="Intimidate" type="Skill" internal-id="ID_FMP_SKILL_14" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=14" charelem="1293f718" legality="rules-legal" />
+         <RulesElement name="Nature" type="Skill" internal-id="ID_FMP_SKILL_16" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=16" charelem="1294fe78" legality="rules-legal" />
+         <RulesElement name="Perception" type="Skill" internal-id="ID_FMP_SKILL_17" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=17" charelem="12957190" legality="rules-legal" />
+         <RulesElement name="Religion" type="Skill" internal-id="ID_FMP_SKILL_18" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=18" charelem="127f25b8" legality="rules-legal" />
+         <RulesElement name="Stealth" type="Skill" internal-id="ID_FMP_SKILL_20" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=20" charelem="127c8540" legality="rules-legal" />
+         <RulesElement name="Streetwise" type="Skill" internal-id="ID_FMP_SKILL_21" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=21" charelem="12823268" legality="rules-legal" />
+         <RulesElement name="Thievery" type="Skill" internal-id="ID_FMP_SKILL_23" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=23" charelem="12913988" legality="rules-legal" />
+         <RulesElement name="Athletics" type="Skill" internal-id="ID_FMP_SKILL_27" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=27" charelem="12919930" legality="rules-legal" />
+         <RulesElement name="Heroic" type="Tier" internal-id="ID_INTERNAL_TIER_HEROIC" charelem="12939580" legality="rules-legal" />
+         <RulesElement name="Melee Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" charelem="12639e20" legality="rules-legal" />
+         <RulesElement name="Ranged Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK" charelem="1294bb28" legality="rules-legal" />
+         <RulesElement name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" charelem="1295f3f0" legality="rules-legal" />
+         <RulesElement name="Male" type="Gender" internal-id="ID_INTERNAL_GENDER_MALE" charelem="12951db0" legality="rules-legal" />
+         <RulesElement name="Unaligned" type="Alignment" internal-id="ID_FMP_ALIGNMENT_1" charelem="1293fd20" legality="rules-legal" />
+         <RulesElement name="Expansion1" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION1" charelem="12931408" legality="rules-legal" />
+         <RulesElement name="Refused Admittance" type="Background" internal-id="ID_FMP_BACKGROUND_175" charelem="129630c8" legality="rules-legal" />
+         <RulesElement name="Perception" type="Background Association" internal-id="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" charelem="12963140" legality="rules-legal" />
+         <RulesElement name="Background Benefit" type="Internal" internal-id="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" charelem="129815d8" legality="rules-legal" />
+         <RulesElement name="+2 to Perception" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_PERCEPTION" charelem="1289db78" legality="rules-legal" />
+         <RulesElement name="Expansion2" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION2" charelem="12951928" legality="rules-legal" />
+         <RulesElement name="Expansion3" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION3" charelem="12981058" legality="rules-legal" />
+         <RulesElement name="Expansion4" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION4" charelem="12916d48" legality="rules-legal" />
+         <RulesElement name="Expansion5" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION5" charelem="1294c768" legality="rules-legal" />
+         <RulesElement name="Dwarf" type="Race" internal-id="ID_FMP_RACE_2" url="http://www.wizards.com/dndinsider/compendium/race.aspx?id=2" charelem="1288d248" legality="rules-legal" />
+         <RulesElement name="Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_DWARF" charelem="12931e88" legality="rules-legal" />
+         <RulesElement name="Medium" type="Size" internal-id="ID_INTERNAL_SIZE_MEDIUM" charelem="129921a0" legality="rules-legal" />
+         <RulesElement name="Low-light" type="Vision" internal-id="ID_INTERNAL_VISION_LOW-LIGHT" charelem="12968100" legality="rules-legal" />
+         <RulesElement name="Dwarven Weapon Proficiency" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_9" charelem="12934580" legality="rules-legal" >
+            <specific name="Short Description"> Proficient with hammers. </specific>
+         </RulesElement>
+         <RulesElement name="Weapon Proficiency (Throwing hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)" charelem="12968380" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Warhammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)" charelem="128b6fe8" legality="rules-legal" />
+         <RulesElement name="Cast-Iron Stomach" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_10" charelem="12933ec0" legality="rules-legal" >
+            <specific name="Short Description"> +5 bonus to saving throws against poison. </specific>
+         </RulesElement>
+         <RulesElement name="Encumbered Speed" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_11" charelem="1296a168" legality="rules-legal" >
+            <specific name="Short Description"> Armor or heavy load doesn&apos;t reduce your speed. (Other effects still can.) </specific>
+         </RulesElement>
+         <RulesElement name="Dwarven Resilience" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_12" charelem="127d6500" legality="rules-legal" >
+            <specific name="Short Description"> Second wind is minor action. </specific>
+         </RulesElement>
+         <RulesElement name="Stand Your Ground" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_632" charelem="1296a2a0" legality="rules-legal" >
+            <specific name="Short Description"> Can move 1 less when forced to move. Immediate saving throw to avoid being knocked prone. </specific>
+         </RulesElement>
+         <RulesElement name="Constitution" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" charelem="12992218" legality="rules-legal" />
+         <RulesElement name="Wisdom" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" charelem="128e85d0" legality="rules-legal" />
+         <RulesElement name="Common" type="Language" internal-id="ID_FMP_LANGUAGE_1" charelem="1292be00" legality="rules-legal" />
+         <RulesElement name="Dwarven" type="Language" internal-id="ID_FMP_LANGUAGE_3" charelem="12968060" legality="rules-legal" />
+         <RulesElement name="Dungeoneering Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" charelem="12968958" legality="rules-legal" />
+         <RulesElement name="Endurance Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" charelem="128e3e30" legality="rules-legal" />
+         <RulesElement name="Artificer" type="Class" internal-id="ID_FMP_CLASS_125" url="http://www.wizards.com/dndinsider/compendium/class.aspx?id=125" charelem="128f2b48" legality="rules-legal" />
+         <RulesElement name="Artificer" type="Grants" internal-id="ID_INTERNAL_GRANTS_ARTIFICER" charelem="128aa610" legality="rules-legal" />
+         <RulesElement name="Leader" type="Role" internal-id="ID_FMP_ROLE_2" charelem="128bf770" legality="rules-legal" />
+         <RulesElement name="Arcane" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_2" charelem="1292e438" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency (Cloth)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" charelem="1289ae00" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency (Leather)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" charelem="128bda20" legality="rules-legal" />
+         <RulesElement name="Simple Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" charelem="129299f8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Club)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)" charelem="12942d28" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Dagger)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" charelem="12881f98" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Javelin)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)" charelem="12998478" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)" charelem="128eff50" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Sickle)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)" charelem="128e1440" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Spear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" charelem="128eacb8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Greatclub)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)" charelem="127d82a0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Morningstar)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)" charelem="129349f8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Quarterstaff)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" charelem="1297aed8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Scythe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" charelem="1263bd18" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Spiked gauntlet)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)" charelem="12920b28" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Claw Fighter Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)" charelem="127ff9a8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Climbing Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)" charelem="12976d30" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Rod of Seven Parts (Weapon))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))" charelem="128ab748" legality="rules-legal" />
+         <RulesElement name="Simple Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" charelem="1292dd18" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Hand Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)" charelem="12893608" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Sling)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)" charelem="1297f258" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)" charelem="12917c98" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Repeating crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)" charelem="12881350" legality="rules-legal" />
+         <RulesElement name="Arcane Empowerment" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1573" charelem="129752f8" legality="rules-legal" >
+            <specific name="Short Description"> Empower magic items once per day plus once per milestone. </specific>
+         </RulesElement>
+         <RulesElement name="Impart Energy" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1574" charelem="128f7348" legality="rules-legal" >
+            <specific name="Short Description"> Recharge a daily magic item. An item can&apos;t be recharged twice in a day. </specific>
+         </RulesElement>
+         <RulesElement name="Augment Energy" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1575" charelem="128e8450" legality="rules-legal" >
+            <specific name="Short Description"> A weapon gains a +2 bonus as a free action once. An item can&apos;t be infused twice. </specific>
+         </RulesElement>
+         <RulesElement name="Arcane Rejuvenation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1576" charelem="12834110" legality="rules-legal" >
+            <specific name="Short Description"> When an ally uses a daily magic items they gain 1/2 level + int mod temp HPs. </specific>
+         </RulesElement>
+         <RulesElement name="Healing Infusion" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_862" charelem="12968658" legality="rules-legal" >
+            <specific name="Short Description"> Access related powers 2/encounter (3/encounter at level 16+) </specific>
+         </RulesElement>
+         <RulesElement name="Healing Infusion: Curative Admixture" type="Power" internal-id="ID_FMP_POWER_4128" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4128" charelem="128b8a30" legality="rules-legal" />
+         <RulesElement name="Healing Infusion: Resistive Formula" type="Power" internal-id="ID_FMP_POWER_7635" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=7635" charelem="128eac58" legality="rules-legal" />
+         <RulesElement name="Ritual Casting" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_683" charelem="1291f288" legality="rules-legal" >
+            <specific name="Short Description"> Gain Ritual Caster as a bonus feat. </specific>
+         </RulesElement>
+         <RulesElement name="Ritual Caster" type="Feat" internal-id="ID_FMP_FEAT_159" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=159" charelem="12884ca0" legality="rules-legal" >
+            <specific name="Short Description"> Master and perform rituals </specific>
+         </RulesElement>
+         <RulesElement name="Arcana" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ARCANA" charelem="12944a58" legality="rules-legal" />
+         <RulesElement name="Aggravating Force" type="Power" internal-id="ID_FMP_POWER_4131" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4131" charelem="12917790" legality="rules-legal" />
+         <RulesElement name="Magic Weapon" type="Power" internal-id="ID_FMP_POWER_5207" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=5207" charelem="1295c280" legality="rules-legal" />
+         <RulesElement name="Battlesmith Artificer" type="Build" internal-id="ID_FMP_BUILD_53" charelem="12957990" legality="rules-legal" />
+         <RulesElement name="Battlesmith Artificer" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_BATTLESMITH_ARTIFICER" charelem="128ea980" legality="rules-legal" />
+         <RulesElement name="Perception" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_PERCEPTION" charelem="1294ca90" legality="rules-legal" />
+         <RulesElement name="History" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HISTORY" charelem="128a7b50" legality="rules-legal" />
+         <RulesElement name="Dungeoneering" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING" charelem="12980c18" legality="rules-legal" />
+         <RulesElement name="Diplomacy" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DIPLOMACY" charelem="126349e8" legality="rules-legal" />
+         <RulesElement name="Dwarven Weapon Training" type="Feat" internal-id="ID_FMP_FEAT_69" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=69" charelem="12953ec8" legality="rules-legal" >
+            <specific name="Short Description"> +2 damage and proficiency with axes and hammers </specific>
+         </RulesElement>
+         <RulesElement name="Weapon Group (Axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)" charelem="128b1ae0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Battleaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)" charelem="129440c0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Handaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)" charelem="1294e098" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Greataxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)" charelem="128cff10" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Halberd)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)" charelem="128cffb0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Khopesh)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)" charelem="128d0050" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Waraxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARAXE)" charelem="1292b788" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Execution axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(EXECUTION_AXE)" charelem="12915a78" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Double axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_AXE)" charelem="1293cb78" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Urgrosh)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(URGROSH)" charelem="12857350" legality="rules-legal" />
+         <RulesElement name="Weapon Group (Hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HAMMER)" charelem="128573c8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Maul)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)" charelem="12969f18" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Craghammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CRAGHAMMER)" charelem="12968518" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Mordenkrad)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORDENKRAD)" charelem="129396b8" legality="rules-legal" />
+         <RulesElement name="Burning Weapons" type="Power" internal-id="ID_FMP_POWER_7637" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=7637" charelem="12641e08" legality="rules-legal" />
+         <RulesElement name="Life-Tapping Darts" type="Power" internal-id="ID_FMP_POWER_4134" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4134" charelem="12938cd8" legality="rules-legal" />
+      </RulesElementTally>
+
+
+      <!--
+         The tally of the character's loot
+      -->
+      <LootTally>
+         <loot count="1" equip-count="1" ShowPowerCard="1" >
+            <RulesElement name="Warhammer" type="Weapon" internal-id="ID_FMP_WEAPON_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=3" charelem="12950720" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="1" ShowPowerCard="1" >
+            <RulesElement name="Leather Armor" type="Armor" internal-id="ID_FMP_ARMOR_2" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2&amp;ftype=2" charelem="12976ed0" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+         <loot count="1" equip-count="0" ShowPowerCard="1" >
+            <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="1295da68" legality="rules-legal" >
+            </RulesElement>
+         </loot>
+      </LootTally>
+
+      <!--
+         The fields for your powers. Each power is then followed
+         by the stats with that power paired with each legal weapon.
+         The weapons are listed in priority as the builder sees it.
+         Particularly, the first weapon listed is the default.
+      -->
+      <PowerStats>
+         <Power name="Melee Basic Attack">
+            <specific name="Power Usage"> At-Will </specific>
+            <specific name="Action Type"> Standard action </specific>
+            <Weapon name="Warhammer">
+               <RulesElement name="Warhammer" type="Weapon" internal-id="ID_FMP_WEAPON_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=3" charelem="12950720" legality="rules-legal" />
+               <AttackBonus> 2 </AttackBonus>
+               <Damage> 1d10+2 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +0 Strength modifier.
++0 half your level.
++2 proficiency bonus.
+
+               </HitComponents>
+               <DamageComponents> +0 Strength modifier.
++2 Feat bonus - Dwarven Weapon Training
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Unarmed">
+               <AttackBonus> 0 </AttackBonus>
+               <Damage> 1d4 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +0 Strength modifier.
++0 half your level.
+
+               </HitComponents>
+               <DamageComponents> +0 Strength modifier.
+
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+         <Power name="Ranged Basic Attack">
+            <specific name="Power Usage"> At-Will </specific>
+            <specific name="Action Type"> Standard action </specific>
+            <Weapon name="Unarmed">
+               <AttackBonus> 0 </AttackBonus>
+               <Damage> 1d4 </Damage>
+               <AttackStat> Dexterity </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +0 Dexterity modifier.
++0 half your level.
+
+               </HitComponents>
+               <DamageComponents> +0 Dexterity modifier.
+
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+         <Power name="Healing Infusion: Curative Admixture">
+            <specific name="Power Usage"> Encounter (Special) </specific>
+            <specific name="Action Type"> Minor Action </specific>
+            <Weapon name="Unarmed">
+               <AttackBonus> 0 </AttackBonus>
+               <Damage>  </Damage>
+               <AttackStat> Unknown </AttackStat>
+               <Defense> Unknown </Defense>
+               <HitComponents> +0 half your level.
+
+               </HitComponents>
+               <DamageComponents> 
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+         <Power name="Healing Infusion: Resistive Formula">
+            <specific name="Power Usage"> Encounter (Special) </specific>
+            <specific name="Action Type"> Minor Action </specific>
+         </Power>
+
+         <Power name="Aggravating Force">
+            <specific name="Power Usage"> At-Will </specific>
+            <specific name="Action Type"> Standard action </specific>
+            <Weapon name="Warhammer">
+               <RulesElement name="Warhammer" type="Weapon" internal-id="ID_FMP_WEAPON_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=3" charelem="12950720" legality="rules-legal" />
+               <AttackBonus> 5 </AttackBonus>
+               <Damage> 1d10+5 </Damage>
+               <DamageType> Force </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +3 Intelligence modifier.
++0 half your level.
++2 proficiency bonus.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
++2 Feat bonus - Dwarven Weapon Training
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Unarmed">
+               <AttackBonus> 3 </AttackBonus>
+               <Damage> 1d4+3 </Damage>
+               <DamageType> Force </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +3 Intelligence modifier.
++0 half your level.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
+
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+         <Power name="Magic Weapon">
+            <specific name="Power Usage"> At-Will </specific>
+            <specific name="Action Type"> Standard action </specific>
+            <Weapon name="Warhammer">
+               <RulesElement name="Warhammer" type="Weapon" internal-id="ID_FMP_WEAPON_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=3" charelem="12950720" legality="rules-legal" />
+               <AttackBonus> 6 </AttackBonus>
+               <Damage> 1d10+5 </Damage>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +1 power modifier.
++3 Intelligence modifier.
++0 half your level.
++2 proficiency bonus.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
++2 Feat bonus - Dwarven Weapon Training
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Unarmed">
+               <AttackBonus> 4 </AttackBonus>
+               <Damage> 1d4+3 </Damage>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +1 power modifier.
++3 Intelligence modifier.
++0 half your level.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
+
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+         <Power name="Burning Weapons">
+            <specific name="Power Usage"> Encounter </specific>
+            <specific name="Action Type"> Standard action </specific>
+            <Weapon name="Warhammer">
+               <RulesElement name="Warhammer" type="Weapon" internal-id="ID_FMP_WEAPON_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=3" charelem="12950720" legality="rules-legal" />
+               <AttackBonus> 5 </AttackBonus>
+               <Damage> 1d10+5 </Damage>
+               <DamageType> Fire </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +3 Intelligence modifier.
++0 half your level.
++2 proficiency bonus.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
++2 Feat bonus - Dwarven Weapon Training
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Unarmed">
+               <AttackBonus> 3 </AttackBonus>
+               <Damage> 1d4+3 </Damage>
+               <DamageType> Fire </DamageType>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +3 Intelligence modifier.
++0 half your level.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
+
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+         <Power name="Life-Tapping Darts">
+            <specific name="Power Usage"> Daily </specific>
+            <specific name="Action Type"> Standard action </specific>
+            <Weapon name="Implement, Wand">
+               <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="1295da68" legality="rules-legal" />
+               <AttackBonus> 3 </AttackBonus>
+               <Damage> 2d10+3 </Damage>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> Reflex </Defense>
+               <HitComponents> +3 Intelligence modifier.
++0 half your level.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
+
+               </DamageComponents>
+            </Weapon>
+            <Weapon name="Unarmed">
+               <AttackBonus> 3 </AttackBonus>
+               <Damage> 2d10+3 </Damage>
+               <AttackStat> Intelligence </AttackStat>
+               <Defense> Reflex </Defense>
+               <HitComponents> +3 Intelligence modifier.
++0 half your level.
+
+               </HitComponents>
+               <DamageComponents> +3 Intelligence modifier.
+
+               </DamageComponents>
+            </Weapon>
+         </Power>
+
+      </PowerStats>
+
+
+      <!--
+         The character's companions
+      -->
+      <Companions>
+      </Companions>
+
+
+      <!--
+         The character's journal entries
+      -->
+      <Journal>
+      </Journal>
+
+   </CharacterSheet>
+
+
+         <D20CampaignSetting name="Rules">
+            <!--
+               Dungeons and Dragons Insider: Character Builder campaign save file
+            -->
+            <Restricted>
+                     <ID_FMP_POWER_9553 />
+            <ID_FMP_POWER_9552 />
+            <ID_FMP_MAGIC_ITEM_7036 />
+            <ID_FMP_MAGIC_ITEM_1193 />
+            <ID_FMP_MAGIC_ITEM_7038 />
+            <ID_FMP_MAGIC_ITEM_7060 />
+            <ID_FMP_MAGIC_ITEM_7053 />
+            <ID_FMP_MAGIC_ITEM_7015 />
+            <ID_FMP_MAGIC_ITEM_8078 />
+            <ID_FMP_MAGIC_ITEM_8079 />
+            <ID_FMP_MAGIC_ITEM_8080 />
+            <ID_FMP_MAGIC_ITEM_8081 />
+            <ID_FMP_MAGIC_ITEM_8086 />
+            <ID_FMP_MAGIC_ITEM_8087 />
+            <ID_FMP_MAGIC_ITEM_8088 />
+            <ID_FMP_MAGIC_ITEM_8089 />
+            <ID_FMP_MAGIC_ITEM_8090 />
+            <ID_FMP_ITEM_SET_38 />
+            <ID_FMP_POWER_9554 />
+            <ID_FMP_MAGIC_ITEM_8091 />
+            <ID_FMP_RITUAL_283 />
+            <ID_FMP_MAGIC_ITEM_8082 />
+            <ID_FMP_MAGIC_ITEM_8083 />
+            <ID_FMP_MAGIC_ITEM_8084 />
+            <ID_FMP_MAGIC_ITEM_8085 />
+            <ID_FMP_RACE_18 />
+            <ID_FMP_RACE_44 />
+            <ID_FMP_MAGIC_ITEM_4879 />
+            <ID_FMP_MAGIC_ITEM_4880 />
+            <ID_FMP_MAGIC_ITEM_4881 />
+            <ID_FMP_MAGIC_ITEM_4882 />
+            <ID_FMP_MAGIC_ITEM_4883 />
+            <ID_FMP_MAGIC_ITEM_4884 />
+            <ID_FMP_MAGIC_ITEM_4334 />
+            <ID_FMP_MAGIC_ITEM_4333 />
+            <ID_FMP_MAGIC_ITEM_4329 />
+            <ID_FMP_MAGIC_ITEM_4330 />
+            <ID_FMP_MAGIC_ITEM_4331 />
+            <ID_FMP_MAGIC_ITEM_4332 />
+            <ID_FMP_MAGIC_ITEM_4325 />
+            <ID_FMP_MAGIC_ITEM_4326 />
+            <ID_FMP_MAGIC_ITEM_4327 />
+            <ID_FMP_MAGIC_ITEM_4328 />
+            <ID_FMP_MAGIC_ITEM_4307 />
+            <ID_FMP_MAGIC_ITEM_4308 />
+            <ID_FMP_MAGIC_ITEM_4309 />
+            <ID_FMP_MAGIC_ITEM_4315 />
+            <ID_FMP_MAGIC_ITEM_4316 />
+            <ID_FMP_MAGIC_ITEM_4317 />
+            <ID_FMP_MAGIC_ITEM_4318 />
+            <ID_FMP_MAGIC_ITEM_4320 />
+            <ID_FMP_MAGIC_ITEM_4306 />
+            <ID_FMP_RITUAL_165 />
+            <ID_FMP_MAGIC_ITEM_4310 />
+            <ID_FMP_MAGIC_ITEM_4311 />
+            <ID_FMP_MAGIC_ITEM_4312 />
+            <ID_FMP_MAGIC_ITEM_4313 />
+            <ID_FMP_MAGIC_ITEM_4314 />
+            <ID_FMP_MAGIC_ITEM_4319 />
+            <ID_FMP_RACE_41 />
+            <ID_FMP_RACE_42 />
+            <ID_FMP_RACE_43 />
+            <ID_FMP_RACE_22 />
+            <ID_FMP_RACE_17 />
+            <ID_FMP_RACE_10 />
+            <ID_FMP_RACE_38 />
+            <ID_FMP_MAGIC_ITEM_4339 />
+            <ID_FMP_MAGIC_ITEM_8100 />
+            <ID_FMP_MAGIC_ITEM_8098 />
+            <ID_FMP_MAGIC_ITEM_8099 />
+            <ID_FMP_MAGIC_ITEM_4598 />
+            <ID_FMP_MAGIC_ITEM_4878 />
+            <ID_FMP_PSEUDO_CLASS_216 />
+            <ID_FMP_LANGUAGE_34 />
+            <ID_FMP_LANGUAGE_28 />
+            <ID_FMP_LANGUAGE_29 />
+            <ID_FMP_LANGUAGE_30 />
+            <ID_FMP_LANGUAGE_31 />
+            <ID_FMP_LANGUAGE_32 />
+            <ID_FMP_LANGUAGE_33 />
+            <ID_FMP_MAGIC_ITEM_1241 />
+            <ID_FMP_MAGIC_ITEM_1242 />
+            <ID_FMP_MAGIC_ITEM_1243 />
+            <ID_FMP_MAGIC_ITEM_1244 />
+            <ID_FMP_MAGIC_ITEM_1245 />
+            <ID_FMP_DEITY_52 />
+            <ID_FMP_DEITY_47 />
+            <ID_FMP_DEITY_14 />
+            <ID_FMP_DEITY_30 />
+            <ID_FMP_DEITY_53 />
+            <ID_FMP_DEITY_137 />
+            <ID_FMP_DEITY_31 />
+            <ID_FMP_DEITY_95 />
+            <ID_FMP_DEITY_54 />
+            <ID_FMP_DEITY_136 />
+            <ID_FMP_DEITY_55 />
+            <ID_FMP_DEITY_138 />
+            <ID_FMP_DEITY_56 />
+            <ID_FMP_DEITY_48 />
+            <ID_FMP_DEITY_89 />
+            <ID_FMP_DEITY_92 />
+            <ID_FMP_DEITY_32 />
+            <ID_FMP_DEITY_33 />
+            <ID_FMP_DEITY_57 />
+            <ID_FMP_DEITY_58 />
+            <ID_FMP_DEITY_17 />
+            <ID_FMP_DEITY_59 />
+            <ID_FMP_DEITY_18 />
+            <ID_FMP_DEITY_60 />
+            <ID_FMP_DEITY_61 />
+            <ID_FMP_DEITY_90 />
+            <ID_FMP_DEITY_62 />
+            <ID_FMP_DEITY_63 />
+            <ID_FMP_DEITY_64 />
+            <ID_FMP_DEITY_65 />
+            <ID_FMP_DEITY_66 />
+            <ID_FMP_DEITY_34 />
+            <ID_FMP_DEITY_19 />
+            <ID_FMP_DEITY_94 />
+            <ID_FMP_DEITY_35 />
+            <ID_FMP_DEITY_49 />
+            <ID_FMP_DEITY_139 />
+            <ID_FMP_DEITY_67 />
+            <ID_FMP_DEITY_68 />
+            <ID_FMP_DEITY_36 />
+            <ID_FMP_DEITY_50 />
+            <ID_FMP_DEITY_69 />
+            <ID_FMP_DEITY_21 />
+            <ID_FMP_DEITY_51 />
+            <ID_FMP_DEITY_70 />
+            <ID_FMP_DEITY_93 />
+            <ID_FMP_DEITY_71 />
+            <ID_FMP_DEITY_140 />
+            <ID_FMP_DEITY_37 />
+            <ID_FMP_DEITY_38 />
+            <ID_FMP_DEITY_72 />
+            <ID_FMP_DEITY_73 />
+            <ID_FMP_DEITY_91 />
+            <ID_FMP_DEITY_74 />
+            <ID_FMP_DEITY_96 />
+            <ID_FMP_DEITY_39 />
+            <ID_FMP_DEITY_75 />
+            <ID_FMP_DEITY_76 />
+            <ID_FMP_DEITY_23 />
+            <ID_FMP_DEITY_24 />
+            <ID_FMP_DEITY_25 />
+            <ID_FMP_DEITY_78 />
+            <ID_FMP_DEITY_79 />
+            <ID_FMP_DEITY_40 />
+            <ID_FMP_DEITY_80 />
+            <ID_FMP_DEITY_81 />
+            <ID_FMP_DEITY_82 />
+            <ID_FMP_DEITY_26 />
+            <ID_FMP_DEITY_83 />
+            <ID_FMP_DEITY_41 />
+            <ID_FMP_DEITY_27 />
+            <ID_FMP_DEITY_42 />
+            <ID_FMP_DEITY_28 />
+            <ID_FMP_DEITY_84 />
+            <ID_FMP_DEITY_77 />
+            <ID_FMP_DEITY_141 />
+            <ID_FMP_DEITY_29 />
+            <ID_FMP_DEITY_13 />
+            <ID_FMP_DEITY_44 />
+            <ID_FMP_DEITY_85 />
+            <ID_FMP_DEITY_86 />
+            <ID_FMP_DEITY_87 />
+            <ID_FMP_DEITY_88 />
+            <ID_FMP_DEITY_45 />
+            <ID_FMP_MAGIC_ITEM_1233 />
+            <ID_FMP_RITUAL_73 />
+            <ID_FMP_RITUAL_74 />
+            <ID_FMP_MAGIC_ITEM_1234 />
+            <ID_FMP_MAGIC_ITEM_1235 />
+            <ID_FMP_MAGIC_ITEM_1236 />
+            <ID_FMP_MAGIC_ITEM_1237 />
+            <ID_FMP_MAGIC_ITEM_1238 />
+            <ID_FMP_MAGIC_ITEM_1239 />
+            <ID_FMP_MAGIC_ITEM_1240 />
+            <ID_FMP_MAGIC_ITEM_1231 />
+            <ID_FMP_MAGIC_ITEM_1232 />
+            <ID_FMP_MAGIC_ITEM_5298 />
+            <ID_FMP_MAGIC_ITEM_5294 />
+            <ID_FMP_MAGIC_ITEM_5296 />
+            <ID_FMP_MAGIC_ITEM_5300 />
+            <ID_FMP_MAGIC_ITEM_5305 />
+            <ID_FMP_MAGIC_ITEM_5301 />
+            <ID_FMP_MAGIC_ITEM_5303 />
+            <ID_FMP_MAGIC_ITEM_5311 />
+            <ID_FMP_MAGIC_ITEM_5307 />
+            <ID_FMP_MAGIC_ITEM_5309 />
+            <ID_FMP_MAGIC_ITEM_5317 />
+            <ID_FMP_MAGIC_ITEM_5313 />
+            <ID_FMP_MAGIC_ITEM_5315 />
+            <ID_FMP_MAGIC_ITEM_5322 />
+            <ID_FMP_MAGIC_ITEM_5318 />
+            <ID_FMP_MAGIC_ITEM_5320 />
+            <ID_FMP_MAGIC_ITEM_5327 />
+            <ID_FMP_MAGIC_ITEM_5323 />
+            <ID_FMP_MAGIC_ITEM_5325 />
+            <ID_FMP_MAGIC_ITEM_5333 />
+            <ID_FMP_MAGIC_ITEM_5329 />
+            <ID_FMP_MAGIC_ITEM_5331 />
+            <ID_FMP_MAGIC_ITEM_5339 />
+            <ID_FMP_MAGIC_ITEM_5335 />
+            <ID_FMP_MAGIC_ITEM_5337 />
+            <ID_FMP_MAGIC_ITEM_5345 />
+            <ID_FMP_MAGIC_ITEM_5341 />
+            <ID_FMP_MAGIC_ITEM_5343 />
+            <ID_FMP_DEITY_107 />
+            <ID_FMP_DEITY_108 />
+            <ID_FMP_DEITY_109 />
+            <ID_FMP_DEITY_110 />
+            <ID_FMP_DEITY_134 />
+            <ID_FMP_DEITY_111 />
+            <ID_FMP_DEITY_112 />
+            <ID_FMP_DEITY_132 />
+            <ID_FMP_DEITY_113 />
+            <ID_FMP_DEITY_114 />
+            <ID_FMP_DEITY_115 />
+            <ID_FMP_DEITY_128 />
+            <ID_FMP_DEITY_124 />
+            <ID_FMP_DEITY_118 />
+            <ID_FMP_DEITY_119 />
+            <ID_FMP_DEITY_120 />
+            <ID_FMP_DEITY_121 />
+            <ID_FMP_DEITY_129 />
+            <ID_FMP_DEITY_122 />
+            <ID_FMP_DEITY_127 />
+            <ID_FMP_DEITY_125 />
+            <ID_FMP_DEITY_130 />
+            <ID_FMP_DEITY_116 />
+            <ID_FMP_DEITY_131 />
+            <ID_FMP_RACE_46 />
+            <ID_FMP_MAGIC_ITEM_8104 />
+            <ID_FMP_MAGIC_ITEM_8102 />
+            <ID_FMP_MAGIC_ITEM_8103 />
+            <ID_FMP_MAGIC_ITEM_5383 />
+            <ID_FMP_MAGIC_ITEM_5382 />
+            <ID_FMP_MAGIC_ITEM_5381 />
+            <ID_FMP_MAGIC_ITEM_5006 />
+            <ID_FMP_MAGIC_ITEM_5007 />
+            <ID_FMP_MAGIC_ITEM_5008 />
+            <ID_FMP_MAGIC_ITEM_5000 />
+            <ID_FMP_MAGIC_ITEM_5001 />
+            <ID_FMP_MAGIC_ITEM_5002 />
+            <ID_FMP_MAGIC_ITEM_5003 />
+            <ID_FMP_MAGIC_ITEM_5004 />
+            <ID_FMP_MAGIC_ITEM_5012 />
+            <ID_FMP_MAGIC_ITEM_5009 />
+            <ID_FMP_MAGIC_ITEM_5010 />
+            <ID_FMP_MAGIC_ITEM_5011 />
+            <ID_FMP_MAGIC_ITEM_4999 />
+            <ID_FMP_MAGIC_ITEM_5005 />
+            <ID_FMP_MAGIC_ITEM_7969 />
+            <ID_FMP_MAGIC_ITEM_7970 />
+            <ID_FMP_MAGIC_ITEM_7972 />
+            <ID_FMP_MAGIC_ITEM_7974 />
+            <ID_FMP_MAGIC_ITEM_7973 />
+            <ID_FMP_MAGIC_ITEM_7975 />
+            <ID_FMP_MAGIC_ITEM_8095 />
+            <ID_FMP_MAGIC_ITEM_8094 />
+            <ID_FMP_MAGIC_ITEM_7978 />
+            <ID_FMP_MAGIC_ITEM_8097 />
+            <ID_FMP_MAGIC_ITEM_8096 />
+            <ID_FMP_MAGIC_ITEM_8093 />
+            <ID_FMP_MAGIC_ITEM_8092 />
+            <ID_FMP_MAGIC_ITEM_7977 />
+            <ID_FMP_MAGIC_ITEM_7971 />
+            <ID_FMP_MAGIC_ITEM_7981 />
+            <ID_FMP_MAGIC_ITEM_7982 />
+            <ID_FMP_MAGIC_ITEM_7983 />
+            <ID_FMP_MAGIC_ITEM_7984 />
+            <ID_FMP_MAGIC_ITEM_7979 />
+            <ID_FMP_MAGIC_ITEM_7980 />
+            <ID_FMP_MAGIC_ITEM_7997 />
+            <ID_FMP_MAGIC_ITEM_7998 />
+            <ID_FMP_MAGIC_ITEM_7999 />
+            <ID_FMP_MAGIC_ITEM_8000 />
+            <ID_FMP_MAGIC_ITEM_7985 />
+            <ID_FMP_MAGIC_ITEM_7996 />
+            <ID_FMP_MAGIC_ITEM_8003 />
+            <ID_FMP_MAGIC_ITEM_8004 />
+            <ID_FMP_MAGIC_ITEM_8005 />
+            <ID_FMP_MAGIC_ITEM_8006 />
+            <ID_FMP_MAGIC_ITEM_8001 />
+            <ID_FMP_MAGIC_ITEM_8002 />
+            <ID_FMP_MAGIC_ITEM_8009 />
+            <ID_FMP_MAGIC_ITEM_8010 />
+            <ID_FMP_MAGIC_ITEM_8011 />
+            <ID_FMP_MAGIC_ITEM_8012 />
+            <ID_FMP_MAGIC_ITEM_8007 />
+            <ID_FMP_MAGIC_ITEM_8008 />
+            <ID_FMP_MAGIC_ITEM_8015 />
+            <ID_FMP_MAGIC_ITEM_8016 />
+            <ID_FMP_MAGIC_ITEM_8017 />
+            <ID_FMP_MAGIC_ITEM_8018 />
+            <ID_FMP_MAGIC_ITEM_8013 />
+            <ID_FMP_MAGIC_ITEM_8014 />
+            <ID_FMP_MAGIC_ITEM_8021 />
+            <ID_FMP_MAGIC_ITEM_8022 />
+            <ID_FMP_MAGIC_ITEM_8023 />
+            <ID_FMP_MAGIC_ITEM_8024 />
+            <ID_FMP_MAGIC_ITEM_8019 />
+            <ID_FMP_MAGIC_ITEM_8020 />
+            <ID_FMP_MAGIC_ITEM_8027 />
+            <ID_FMP_MAGIC_ITEM_8028 />
+            <ID_FMP_MAGIC_ITEM_8029 />
+            <ID_FMP_MAGIC_ITEM_8030 />
+            <ID_FMP_MAGIC_ITEM_8025 />
+            <ID_FMP_MAGIC_ITEM_8026 />
+            <ID_FMP_MAGIC_ITEM_8033 />
+            <ID_FMP_MAGIC_ITEM_8034 />
+            <ID_FMP_MAGIC_ITEM_8035 />
+            <ID_FMP_MAGIC_ITEM_8036 />
+            <ID_FMP_MAGIC_ITEM_8031 />
+            <ID_FMP_MAGIC_ITEM_8032 />
+            <ID_FMP_MAGIC_ITEM_8039 />
+            <ID_FMP_MAGIC_ITEM_8040 />
+            <ID_FMP_MAGIC_ITEM_8041 />
+            <ID_FMP_MAGIC_ITEM_8042 />
+            <ID_FMP_MAGIC_ITEM_8037 />
+            <ID_FMP_MAGIC_ITEM_8038 />
+            <ID_FMP_MAGIC_ITEM_8051 />
+            <ID_FMP_MAGIC_ITEM_8052 />
+            <ID_FMP_MAGIC_ITEM_8053 />
+            <ID_FMP_MAGIC_ITEM_8054 />
+            <ID_FMP_MAGIC_ITEM_8049 />
+            <ID_FMP_MAGIC_ITEM_8050 />
+            <ID_FMP_MAGIC_ITEM_8045 />
+            <ID_FMP_MAGIC_ITEM_8046 />
+            <ID_FMP_MAGIC_ITEM_8047 />
+            <ID_FMP_MAGIC_ITEM_8048 />
+            <ID_FMP_MAGIC_ITEM_8043 />
+            <ID_FMP_MAGIC_ITEM_8044 />
+            <ID_FMP_MAGIC_ITEM_8070 />
+            <ID_FMP_MAGIC_ITEM_8069 />
+            <ID_FMP_MAGIC_ITEM_8067 />
+            <ID_FMP_MAGIC_ITEM_8068 />
+            <ID_FMP_MAGIC_ITEM_8059 />
+            <ID_FMP_MAGIC_ITEM_8055 />
+            <ID_FMP_MAGIC_ITEM_8058 />
+            <ID_FMP_MAGIC_ITEM_8056 />
+            <ID_FMP_MAGIC_ITEM_8057 />
+            <ID_FMP_MAGIC_ITEM_8060 />
+            <ID_FMP_MAGIC_ITEM_8061 />
+            <ID_FMP_MAGIC_ITEM_8062 />
+            <ID_FMP_MAGIC_ITEM_8063 />
+            <ID_FMP_MAGIC_ITEM_8064 />
+            <ID_FMP_MAGIC_ITEM_8065 />
+            <ID_FMP_MAGIC_ITEM_8066 />
+            <ID_INTERNAL_WEAPON_ROD_OF_SEVEN_PARTS_(WEAPON) />
+            <ID_INTERNAL_WEAPON_LARGE_ROD_OF_SEVEN_PARTS_(WEAPON) />
+            <ID_FMP_MAGIC_ITEM_1283 />
+            <ID_FMP_MAGIC_ITEM_1284 />
+            <ID_FMP_MAGIC_ITEM_1285 />
+            <ID_FMP_MAGIC_ITEM_1286 />
+            <ID_FMP_DEITY_15 />
+            <ID_FMP_DEITY_16 />
+            <ID_FMP_DEITY_20 />
+            <ID_FMP_DEITY_22 />
+            <ID_FMP_DEITY_100 />
+            <ID_FMP_DEITY_43 />
+            <ID_FMP_DEITY_99 />
+            <ID_FMP_DEITY_98 />
+            <ID_FMP_DEITY_46 />
+            <ID_FMP_MAGIC_ITEM_8101 />
+            <ID_FMP_MAGIC_ITEM_5038 />
+            <ID_FMP_RITUAL_271 />
+            <ID_FMP_RITUAL_236 />
+            <ID_FMP_MAGIC_ITEM_5037 />
+            <ID_FMP_MAGIC_ITEM_4869 />
+            <ID_FMP_MAGIC_ITEM_4867 />
+            <ID_FMP_MAGIC_ITEM_4866 />
+            <ID_FMP_MAGIC_ITEM_4868 />
+            <ID_FMP_RITUAL_179 />
+            <ID_FMP_MAGIC_ITEM_4536 />
+            <ID_FMP_MAGIC_ITEM_4537 />
+            <ID_FMP_MAGIC_ITEM_4538 />
+            <ID_FMP_MAGIC_ITEM_4539 />
+            <ID_FMP_MAGIC_ITEM_4540 />
+            <ID_FMP_MAGIC_ITEM_4541 />
+            <ID_FMP_MAGIC_ITEM_4542 />
+            <ID_FMP_MAGIC_ITEM_4543 />
+            <ID_FMP_MAGIC_ITEM_4532 />
+            <ID_FMP_MAGIC_ITEM_4533 />
+            <ID_FMP_MAGIC_ITEM_4534 />
+            <ID_FMP_MAGIC_ITEM_4535 />
+            <ID_FMP_MAGIC_ITEM_4530 />
+            <ID_FMP_MAGIC_ITEM_4531 />
+            <ID_FMP_MAGIC_ITEM_4243 />
+            <ID_FMP_MAGIC_ITEM_4865 />
+            <ID_FMP_MAGIC_ITEM_4340 />
+            <ID_FMP_MAGIC_ITEM_4391 />
+            <ID_FMP_MAGIC_ITEM_1246 />
+            <ID_FMP_MAGIC_ITEM_1247 />
+            <ID_FMP_MAGIC_ITEM_1248 />
+            <ID_FMP_MAGIC_ITEM_1249 />
+            <ID_FMP_MAGIC_ITEM_1250 />
+            <ID_FMP_MAGIC_ITEM_1251 />
+            <ID_FMP_MAGIC_ITEM_1252 />
+            <ID_FMP_MAGIC_ITEM_1253 />
+            <ID_FMP_MAGIC_ITEM_4322 />
+            <ID_FMP_MAGIC_ITEM_4321 />
+            <ID_FMP_MAGIC_ITEM_4323 />
+            <ID_FMP_MAGIC_ITEM_4324 />
+            <ID_FMP_RITUAL_159 />
+            <ID_FMP_RITUAL_166 />
+            <ID_FMP_RITUAL_160 />
+            <ID_FMP_RITUAL_161 />
+            <ID_FMP_RITUAL_162 />
+            <ID_FMP_RITUAL_296 />
+            <ID_FMP_RITUAL_163 />
+            <ID_FMP_RITUAL_164 />
+            <ID_FMP_MAGIC_ITEM_8315 />
+            <ID_FMP_MAGIC_ITEM_8316 />
+            <ID_FMP_MAGIC_ITEM_8317 />
+            <ID_FMP_MAGIC_ITEM_8318 />
+            <ID_FMP_MAGIC_ITEM_8210 />
+            <ID_FMP_MAGIC_ITEM_8314 />
+            <ID_FMP_MAGIC_ITEM_8211 />
+            <ID_FMP_POWER_10118 />
+            <ID_FMP_MAGIC_ITEM_8202 />
+            <ID_FMP_MAGIC_ITEM_8203 />
+            <ID_FMP_MAGIC_ITEM_8204 />
+            <ID_FMP_MAGIC_ITEM_8205 />
+            <ID_FMP_MAGIC_ITEM_8206 />
+            <ID_FMP_MAGIC_ITEM_8207 />
+            <ID_FMP_MAGIC_ITEM_8105 />
+            <ID_FMP_MAGIC_ITEM_8106 />
+            <ID_FMP_POWER_10326 />
+            <ID_FMP_POWER_10327 />
+            <ID_FMP_MAGIC_ITEM_7230 />
+            <ID_FMP_MAGIC_ITEM_7233 />
+            <ID_FMP_MAGIC_ITEM_7234 />
+            <ID_FMP_MAGIC_ITEM_7235 />
+            <ID_FMP_MAGIC_ITEM_7236 />
+            <ID_FMP_MAGIC_ITEM_7237 />
+            <ID_FMP_MAGIC_ITEM_7111 />
+            <ID_FMP_MAGIC_ITEM_7168 />
+            <ID_FMP_MAGIC_ITEM_7224 />
+            <ID_FMP_MAGIC_ITEM_7200 />
+            <ID_FMP_MAGIC_ITEM_7228 />
+            <ID_FMP_RITUAL_284 />
+            <ID_FMP_MAGIC_ITEM_7222 />
+            <ID_FMP_MAGIC_ITEM_7196 />
+            <ID_FMP_MAGIC_ITEM_7178 />
+            <ID_FMP_MAGIC_ITEM_7204 />
+            <ID_FMP_MAGIC_ITEM_7216 />
+            <ID_FMP_MAGIC_ITEM_7217 />
+            <ID_FMP_MAGIC_ITEM_7218 />
+            <ID_FMP_MAGIC_ITEM_7219 />
+            <ID_FMP_MAGIC_ITEM_7220 />
+            <ID_FMP_MAGIC_ITEM_7184 />
+            <ID_FMP_CLASS_529 />
+            <ID_FMP_CLASS_437 />
+            <ID_FMP_FEAT_1326 />
+            <ID_FMP_FEAT_1327 />
+            <ID_FMP_FEAT_1328 />
+            <ID_FMP_FEAT_1329 />
+            <ID_FMP_FEAT_1330 />
+            <ID_FMP_FEAT_1331 />
+            <ID_FMP_FEAT_1332 />
+            <ID_FMP_FEAT_1325 />
+            <ID_FMP_FEAT_1333 />
+            <ID_FMP_MAGIC_ITEM_4550 />
+            <ID_FMP_MAGIC_ITEM_4551 />
+            <ID_FMP_MAGIC_ITEM_4552 />
+            <ID_FMP_MAGIC_ITEM_4553 />
+            <ID_FMP_MAGIC_ITEM_4554 />
+            <ID_FMP_MAGIC_ITEM_4555 />
+            <ID_FMP_MAGIC_ITEM_4556 />
+            <ID_FMP_MAGIC_ITEM_4557 />
+            <ID_FMP_MAGIC_ITEM_4558 />
+            <ID_FMP_RITUAL_180 />
+            <ID_FMP_RITUAL_182 />
+            <ID_FMP_RITUAL_181 />
+            <ID_FMP_RITUAL_183 />
+            <ID_FMP_RITUAL_184 />
+            <ID_FMP_RITUAL_185 />
+            <ID_FMP_RITUAL_186 />
+            <ID_FMP_POWER_27 />
+            <ID_FMP_RACIAL_TRAIT_1524 />
+            <ID_FMP_RACIAL_TRAIT_1523 />
+            <ID_FMP_RACIAL_TRAIT_1525 />
+            <ID_FMP_RACIAL_TRAIT_1522 />
+            <ID_FMP_RACE_23 />
+            <ID_FMP_RACE_25 />
+            <ID_FMP_RACE_21 />
+            <ID_FMP_POWER_2476 />
+            <ID_FMP_POWER_1489 />
+            <ID_FMP_POWER_2478 />
+            <ID_FMP_POWER_2324 />
+            <ID_FMP_POWER_2479 />
+            <ID_FMP_POWER_2474 />
+            <ID_FMP_POWER_2481 />
+            <ID_FMP_RACIAL_TRAIT_715 />
+            <ID_FMP_RACIAL_TRAIT_427 />
+            <ID_FMP_RACIAL_TRAIT_424 />
+            <ID_FMP_RACIAL_TRAIT_714 />
+            <ID_FMP_RACIAL_TRAIT_394 />
+            <ID_FMP_RACIAL_TRAIT_716 />
+            <ID_FMP_RACIAL_TRAIT_392 />
+            <ID_FMP_RACIAL_TRAIT_694 />
+            <ID_FMP_RACIAL_TRAIT_418 />
+            <ID_FMP_RACIAL_TRAIT_416 />
+            <ID_FMP_RACIAL_TRAIT_711 />
+            <ID_FMP_RACIAL_TRAIT_717 />
+            <ID_FMP_RACIAL_TRAIT_718 />
+            <ID_FMP_RITUAL_72 />
+            <ID_FMP_RITUAL_71 />
+            <ID_FMP_MAGIC_ITEM_4395 />
+            <ID_FMP_MAGIC_ITEM_4396 />
+            <ID_FMP_MAGIC_ITEM_4397 />
+            <ID_FMP_MAGIC_ITEM_4398 />
+            <ID_FMP_MAGIC_ITEM_4399 />
+            <ID_FMP_MAGIC_ITEM_4400 />
+            <ID_FMP_MAGIC_ITEM_4401 />
+            <ID_FMP_MAGIC_ITEM_4402 />
+            <ID_FMP_MAGIC_ITEM_4403 />
+            <ID_FMP_MAGIC_ITEM_4404 />
+            <ID_FMP_MAGIC_ITEM_4405 />
+            <ID_FMP_MAGIC_ITEM_4406 />
+            <ID_FMP_MAGIC_ITEM_4407 />
+            <ID_FMP_MAGIC_ITEM_4408 />
+            <ID_FMP_MAGIC_ITEM_4473 />
+            <ID_FMP_MAGIC_ITEM_4472 />
+            <ID_FMP_CLASS_FEATURE_1076 />
+            <ID_FMP_CLASS_FEATURE_1069 />
+            <ID_FMP_CLASS_FEATURE_1077 />
+            <ID_FMP_CLASS_FEATURE_1068 />
+            <ID_FMP_CLASS_FEATURE_1081 />
+            <ID_FMP_CLASS_FEATURE_1078 />
+            <ID_FMP_CLASS_FEATURE_1071 />
+            <ID_FMP_CLASS_FEATURE_1079 />
+            <ID_FMP_CLASS_FEATURE_1067 />
+            <ID_FMP_CLASS_FEATURE_1074 />
+            <ID_FMP_CLASS_FEATURE_1072 />
+            <ID_FMP_CLASS_FEATURE_1088 />
+            <ID_FMP_CLASS_FEATURE_1085 />
+            <ID_FMP_CLASS_FEATURE_1080 />
+            <ID_FMP_CLASS_FEATURE_1084 />
+            <ID_FMP_CLASS_FEATURE_1073 />
+            <ID_FMP_CLASS_FEATURE_1082 />
+            <ID_FMP_CLASS_FEATURE_1089 />
+            <ID_FMP_CLASS_FEATURE_1070 />
+            <ID_FMP_CLASS_FEATURE_1087 />
+            <ID_FMP_CLASS_FEATURE_1086 />
+            <ID_FMP_CLASS_FEATURE_1090 />
+            <ID_FMP_CLASS_FEATURE_1083 />
+            <ID_FMP_CLASS_FEATURE_1091 />
+            <ID_FMP_FEAT_1059 />
+            <ID_FMP_MAGIC_ITEM_4474 />
+            <ID_FMP_MAGIC_ITEM_4475 />
+            <ID_FMP_MAGIC_ITEM_4476 />
+            <ID_FMP_MAGIC_ITEM_4477 />
+            <ID_FMP_MAGIC_ITEM_4478 />
+            <ID_FMP_MAGIC_ITEM_4435 />
+            <ID_FMP_MAGIC_ITEM_4436 />
+            <ID_FMP_MAGIC_ITEM_4437 />
+            <ID_FMP_MAGIC_ITEM_4438 />
+            <ID_FMP_MAGIC_ITEM_4439 />
+            <ID_FMP_MAGIC_ITEM_4440 />
+            <ID_FMP_MAGIC_ITEM_4479 />
+            <ID_FMP_MAGIC_ITEM_4480 />
+            <ID_FMP_MAGIC_ITEM_4481 />
+            <ID_FMP_MAGIC_ITEM_4482 />
+            <ID_FMP_MAGIC_ITEM_4483 />
+            <ID_FMP_MAGIC_ITEM_4484 />
+            <ID_FMP_MAGIC_ITEM_4485 />
+            <ID_FMP_MAGIC_ITEM_4486 />
+            <ID_FMP_MAGIC_ITEM_4441 />
+            <ID_FMP_MAGIC_ITEM_4442 />
+            <ID_FMP_MAGIC_ITEM_4443 />
+            <ID_FMP_MAGIC_ITEM_4444 />
+            <ID_FMP_MAGIC_ITEM_4445 />
+            <ID_FMP_MAGIC_ITEM_4446 />
+            <ID_FMP_MAGIC_ITEM_4447 />
+            <ID_FMP_MAGIC_ITEM_4448 />
+            <ID_FMP_MAGIC_ITEM_4449 />
+            <ID_FMP_MAGIC_ITEM_4450 />
+            <ID_FMP_PARAGON_PATH_218 />
+            <ID_FMP_PARAGON_PATH_219 />
+            <ID_FMP_PARAGON_PATH_220 />
+            <ID_FMP_PARAGON_PATH_221 />
+            <ID_FMP_PARAGON_PATH_222 />
+            <ID_FMP_PARAGON_PATH_223 />
+            <ID_FMP_PARAGON_PATH_224 />
+            <ID_FMP_PARAGON_PATH_225 />
+            <ID_FMP_POWER_5606 />
+            <ID_FMP_POWER_5644 />
+            <ID_FMP_POWER_5651 />
+            <ID_FMP_POWER_5650 />
+            <ID_FMP_POWER_5658 />
+            <ID_FMP_POWER_5655 />
+            <ID_FMP_POWER_5604 />
+            <ID_FMP_POWER_5602 />
+            <ID_FMP_POWER_5654 />
+            <ID_FMP_POWER_5603 />
+            <ID_FMP_POWER_5601 />
+            <ID_FMP_POWER_5600 />
+            <ID_FMP_POWER_5653 />
+            <ID_FMP_POWER_5652 />
+            <ID_FMP_POWER_5657 />
+            <ID_FMP_POWER_5599 />
+            <ID_FMP_POWER_5662 />
+            <ID_FMP_POWER_5656 />
+            <ID_FMP_POWER_5660 />
+            <ID_FMP_POWER_5661 />
+            <ID_FMP_POWER_5665 />
+            <ID_FMP_POWER_5666 />
+            <ID_FMP_POWER_5664 />
+            <ID_FMP_POWER_5605 />
+            <ID_FMP_POWER_5607 />
+            <ID_FMP_POWER_5608 />
+            <ID_FMP_POWER_5659 />
+            <ID_FMP_RACIAL_TRAIT_1065 />
+            <ID_FMP_RACIAL_TRAIT_1066 />
+            <ID_INTERNAL_RACIAL_TRAIT_RAZOR_STORM_CONSTITUTION />
+            <ID_INTERNAL_RACIAL_TRAIT_RAZOR_STORM_DEXTERITY />
+            <ID_INTERNAL_RACIAL_TRAIT_RAZOR_STORM_STRENGTH />
+            <ID_FMP_MAGIC_ITEM_4487 />
+            <ID_FMP_MAGIC_ITEM_4488 />
+            <ID_FMP_RITUAL_168 />
+            <ID_FMP_RITUAL_169 />
+            <ID_FMP_RITUAL_170 />
+            <ID_FMP_RITUAL_171 />
+            <ID_FMP_RITUAL_172 />
+            <ID_FMP_RITUAL_174 />
+            <ID_FMP_RITUAL_173 />
+            <ID_FMP_RITUAL_175 />
+            <ID_FMP_RITUAL_176 />
+            <ID_FMP_RITUAL_177 />
+            <ID_FMP_RITUAL_178 />
+            <ID_FMP_MAGIC_ITEM_4393 />
+            <ID_FMP_MAGIC_ITEM_4451 />
+            <ID_FMP_MAGIC_ITEM_4452 />
+            <ID_FMP_MAGIC_ITEM_4453 />
+            <ID_FMP_MAGIC_ITEM_4454 />
+            <ID_FMP_MAGIC_ITEM_4455 />
+            <ID_FMP_MAGIC_ITEM_4456 />
+            <ID_FMP_MAGIC_ITEM_4457 />
+            <ID_FMP_MAGIC_ITEM_4458 />
+            <ID_FMP_MAGIC_ITEM_4459 />
+            <ID_FMP_MAGIC_ITEM_4460 />
+            <ID_FMP_MAGIC_ITEM_4461 />
+            <ID_FMP_MAGIC_ITEM_4462 />
+            <ID_FMP_MAGIC_ITEM_4463 />
+            <ID_FMP_MAGIC_ITEM_4464 />
+            <ID_FMP_MAGIC_ITEM_4465 />
+            <ID_FMP_MAGIC_ITEM_4466 />
+            <ID_FMP_MAGIC_ITEM_4467 />
+            <ID_FMP_MAGIC_ITEM_4468 />
+            <ID_FMP_MAGIC_ITEM_4469 />
+            <ID_FMP_MAGIC_ITEM_4470 />
+            <ID_FMP_MAGIC_ITEM_4471 />
+            <ID_FMP_MAGIC_ITEM_4489 />
+            <ID_FMP_MAGIC_ITEM_4409 />
+            <ID_FMP_MAGIC_ITEM_4410 />
+            <ID_FMP_MAGIC_ITEM_4411 />
+            <ID_FMP_MAGIC_ITEM_4412 />
+            <ID_FMP_MAGIC_ITEM_4413 />
+            <ID_FMP_MAGIC_ITEM_4414 />
+            <ID_FMP_MAGIC_ITEM_4415 />
+            <ID_FMP_MAGIC_ITEM_4416 />
+            <ID_FMP_MAGIC_ITEM_4417 />
+            <ID_FMP_MAGIC_ITEM_4418 />
+            <ID_FMP_MAGIC_ITEM_4419 />
+            <ID_FMP_MAGIC_ITEM_4420 />
+            <ID_FMP_MAGIC_ITEM_4421 />
+            <ID_FMP_MAGIC_ITEM_4422 />
+            <ID_FMP_MAGIC_ITEM_4423 />
+            <ID_FMP_MAGIC_ITEM_4432 />
+            <ID_FMP_MAGIC_ITEM_4433 />
+            <ID_FMP_MAGIC_ITEM_4434 />
+            <ID_FMP_MAGIC_ITEM_4424 />
+            <ID_FMP_MAGIC_ITEM_4425 />
+            <ID_FMP_MAGIC_ITEM_4426 />
+            <ID_FMP_MAGIC_ITEM_4427 />
+            <ID_FMP_MAGIC_ITEM_4394 />
+            <ID_FMP_MAGIC_ITEM_4428 />
+            <ID_FMP_MAGIC_ITEM_4429 />
+            <ID_FMP_MAGIC_ITEM_4430 />
+            <ID_FMP_MAGIC_ITEM_4431 />
+            <ID_FMP_MAGIC_ITEM_4490 />
+            <ID_FMP_MAGIC_ITEM_4495 />
+            <ID_FMP_MAGIC_ITEM_4491 />
+            <ID_FMP_MAGIC_ITEM_4492 />
+            <ID_FMP_MAGIC_ITEM_4493 />
+            <ID_FMP_MAGIC_ITEM_4494 />
+            <ID_FMP_BACKGROUND_2 />
+            <ID_FMP_BACKGROUND_3 />
+            <ID_FMP_BACKGROUND_4 />
+            <ID_FMP_BACKGROUND_5 />
+            <ID_FMP_BACKGROUND_6 />
+            <ID_FMP_BACKGROUND_7 />
+            <ID_FMP_BACKGROUND_28 />
+            <ID_FMP_BACKGROUND_8 />
+            <ID_FMP_BACKGROUND_9 />
+            <ID_FMP_BACKGROUND_10 />
+            <ID_FMP_BACKGROUND_11 />
+            <ID_FMP_BACKGROUND_12 />
+            <ID_FMP_BACKGROUND_13 />
+            <ID_FMP_BACKGROUND_14 />
+            <ID_FMP_BACKGROUND_15 />
+            <ID_FMP_BACKGROUND_16 />
+            <ID_FMP_BACKGROUND_17 />
+            <ID_FMP_BACKGROUND_18 />
+            <ID_FMP_BACKGROUND_19 />
+            <ID_FMP_BACKGROUND_20 />
+            <ID_FMP_BACKGROUND_21 />
+            <ID_FMP_BACKGROUND_22 />
+            <ID_FMP_BACKGROUND_23 />
+            <ID_FMP_BACKGROUND_24 />
+            <ID_FMP_BACKGROUND_25 />
+            <ID_FMP_BACKGROUND_26 />
+            <ID_FMP_BACKGROUND_27 />
+            <ID_FMP_BACKGROUND_1 />
+            <ID_FMP_RACE_19 />
+            <ID_FMP_RACIAL_TRAIT_712 />
+            <ID_FMP_RACIAL_TRAIT_713 />
+            <ID_FMP_RACIAL_TRAIT_413 />
+            <ID_FMP_RACE_24 />
+            <ID_FMP_RACIAL_TRAIT_411 />
+            <ID_FMP_RACIAL_TRAIT_412 />
+            <ID_FMP_RACIAL_TRAIT_1092 />
+            <ID_FMP_BACKGROUND_70 />
+            <ID_FMP_BACKGROUND_75 />
+            <ID_FMP_BACKGROUND_66 />
+            <ID_FMP_BACKGROUND_54 />
+            <ID_FMP_BACKGROUND_71 />
+            <ID_FMP_BACKGROUND_35 />
+            <ID_FMP_BACKGROUND_67 />
+            <ID_FMP_BACKGROUND_48 />
+            <ID_FMP_BACKGROUND_45 />
+            <ID_FMP_BACKGROUND_61 />
+            <ID_FMP_BACKGROUND_52 />
+            <ID_FMP_BACKGROUND_43 />
+            <ID_FMP_BACKGROUND_38 />
+            <ID_FMP_BACKGROUND_41 />
+            <ID_FMP_BACKGROUND_40 />
+            <ID_FMP_BACKGROUND_59 />
+            <ID_FMP_BACKGROUND_57 />
+            <ID_FMP_BACKGROUND_65 />
+            <ID_FMP_BACKGROUND_49 />
+            <ID_FMP_BACKGROUND_58 />
+            <ID_FMP_BACKGROUND_77 />
+            <ID_FMP_BACKGROUND_63 />
+            <ID_FMP_BACKGROUND_37 />
+            <ID_FMP_BACKGROUND_42 />
+            <ID_FMP_BACKGROUND_76 />
+            <ID_FMP_BACKGROUND_64 />
+            <ID_FMP_BACKGROUND_73 />
+            <ID_FMP_BACKGROUND_50 />
+            <ID_FMP_BACKGROUND_74 />
+            <ID_FMP_BACKGROUND_69 />
+            <ID_FMP_BACKGROUND_68 />
+            <ID_FMP_BACKGROUND_60 />
+            <ID_FMP_BACKGROUND_56 />
+            <ID_FMP_BACKGROUND_31 />
+            <ID_FMP_BACKGROUND_47 />
+            <ID_FMP_BACKGROUND_51 />
+            <ID_FMP_BACKGROUND_30 />
+            <ID_FMP_BACKGROUND_36 />
+            <ID_FMP_BACKGROUND_33 />
+            <ID_FMP_BACKGROUND_39 />
+            <ID_FMP_BACKGROUND_46 />
+            <ID_FMP_BACKGROUND_62 />
+            <ID_FMP_BACKGROUND_55 />
+            <ID_FMP_BACKGROUND_72 />
+            <ID_FMP_BACKGROUND_29 />
+            <ID_FMP_BACKGROUND_44 />
+            <ID_FMP_BACKGROUND_34 />
+            <ID_FMP_BACKGROUND_53 />
+            <ID_FMP_FEAT_2044 />
+            <ID_FMP_FEAT_2043 />
+            <ID_FMP_FEAT_2042 />
+            <ID_FMP_FEAT_2041 />
+            <ID_FMP_FEAT_2040 />
+            <ID_FMP_FEAT_2023 />
+            <ID_FMP_FEAT_2039 />
+            <ID_FMP_FEAT_2038 />
+            <ID_FMP_FEAT_2049 />
+            <ID_FMP_FEAT_2037 />
+            <ID_FMP_FEAT_2035 />
+            <ID_FMP_FEAT_1347 />
+            <ID_FMP_FEAT_1270 />
+            <ID_FMP_FEAT_1271 />
+            <ID_FMP_FEAT_1272 />
+            <ID_FMP_FEAT_1273 />
+            <ID_FMP_FEAT_1274 />
+            <ID_FMP_FEAT_1275 />
+            <ID_FMP_FEAT_1367 />
+            <ID_FMP_FEAT_1368 />
+            <ID_FMP_FEAT_1369 />
+            <ID_FMP_FEAT_1387 />
+            <ID_FMP_FEAT_1388 />
+            <ID_FMP_FEAT_1389 />
+            <ID_FMP_FEAT_1390 />
+            <ID_FMP_FEAT_1391 />
+            <ID_FMP_FEAT_1392 />
+            <ID_FMP_FEAT_1393 />
+            <ID_FMP_FEAT_1394 />
+            <ID_FMP_FEAT_1395 />
+            <ID_FMP_FEAT_1396 />
+            <ID_FMP_FEAT_1397 />
+            <ID_FMP_FEAT_1398 />
+            <ID_FMP_FEAT_1399 />
+            <ID_FMP_FEAT_1400 />
+            <ID_FMP_POWER_917 />
+            <ID_FMP_POWER_1758 />
+            <ID_FMP_POWER_3830 />
+            <ID_FMP_POWER_1711 />
+            <ID_FMP_BACKGROUND_283 />
+            <ID_FMP_BACKGROUND_280 />
+            <ID_FMP_BACKGROUND_271 />
+            <ID_FMP_BACKGROUND_284 />
+            <ID_FMP_BACKGROUND_273 />
+            <ID_FMP_BACKGROUND_285 />
+            <ID_FMP_BACKGROUND_279 />
+            <ID_FMP_BACKGROUND_274 />
+            <ID_FMP_BACKGROUND_286 />
+            <ID_FMP_BACKGROUND_287 />
+            <ID_FMP_BACKGROUND_288 />
+            <ID_FMP_BACKGROUND_282 />
+            <ID_FMP_BACKGROUND_278 />
+            <ID_FMP_BACKGROUND_289 />
+            <ID_FMP_BACKGROUND_272 />
+            <ID_FMP_BACKGROUND_290 />
+            <ID_FMP_BACKGROUND_277 />
+            <ID_FMP_BACKGROUND_275 />
+            <ID_FMP_BACKGROUND_276 />
+            <ID_FMP_BACKGROUND_291 />
+            <ID_FMP_BACKGROUND_251 />
+            <ID_FMP_BACKGROUND_252 />
+            <ID_FMP_BACKGROUND_234 />
+            <ID_FMP_BACKGROUND_233 />
+            <ID_FMP_BACKGROUND_214 />
+            <ID_FMP_BACKGROUND_235 />
+            <ID_FMP_BACKGROUND_195 />
+            <ID_FMP_BACKGROUND_196 />
+            <ID_FMP_BACKGROUND_197 />
+            <ID_FMP_BACKGROUND_217 />
+            <ID_FMP_BACKGROUND_232 />
+            <ID_FMP_BACKGROUND_227 />
+            <ID_FMP_BACKGROUND_260 />
+            <ID_FMP_BACKGROUND_263 />
+            <ID_FMP_BACKGROUND_240 />
+            <ID_FMP_BACKGROUND_241 />
+            <ID_FMP_BACKGROUND_199 />
+            <ID_FMP_BACKGROUND_198 />
+            <ID_FMP_BACKGROUND_257 />
+            <ID_FMP_BACKGROUND_228 />
+            <ID_FMP_BACKGROUND_242 />
+            <ID_FMP_BACKGROUND_243 />
+            <ID_FMP_BACKGROUND_261 />
+            <ID_FMP_BACKGROUND_206 />
+            <ID_FMP_BACKGROUND_202 />
+            <ID_FMP_BACKGROUND_201 />
+            <ID_FMP_BACKGROUND_208 />
+            <ID_FMP_BACKGROUND_262 />
+            <ID_FMP_BACKGROUND_207 />
+            <ID_FMP_BACKGROUND_205 />
+            <ID_FMP_BACKGROUND_204 />
+            <ID_FMP_BACKGROUND_237 />
+            <ID_FMP_BACKGROUND_254 />
+            <ID_FMP_BACKGROUND_209 />
+            <ID_FMP_BACKGROUND_244 />
+            <ID_FMP_BACKGROUND_224 />
+            <ID_FMP_BACKGROUND_210 />
+            <ID_FMP_BACKGROUND_212 />
+            <ID_FMP_BACKGROUND_211 />
+            <ID_FMP_BACKGROUND_200 />
+            <ID_FMP_BACKGROUND_266 />
+            <ID_FMP_BACKGROUND_258 />
+            <ID_FMP_BACKGROUND_238 />
+            <ID_FMP_BACKGROUND_245 />
+            <ID_FMP_BACKGROUND_264 />
+            <ID_FMP_BACKGROUND_215 />
+            <ID_FMP_BACKGROUND_216 />
+            <ID_FMP_BACKGROUND_219 />
+            <ID_FMP_BACKGROUND_220 />
+            <ID_FMP_BACKGROUND_246 />
+            <ID_FMP_BACKGROUND_259 />
+            <ID_FMP_BACKGROUND_255 />
+            <ID_FMP_BACKGROUND_218 />
+            <ID_FMP_BACKGROUND_247 />
+            <ID_FMP_BACKGROUND_236 />
+            <ID_FMP_BACKGROUND_248 />
+            <ID_FMP_BACKGROUND_221 />
+            <ID_FMP_BACKGROUND_225 />
+            <ID_FMP_BACKGROUND_223 />
+            <ID_FMP_BACKGROUND_253 />
+            <ID_FMP_BACKGROUND_213 />
+            <ID_FMP_BACKGROUND_239 />
+            <ID_FMP_BACKGROUND_226 />
+            <ID_FMP_BACKGROUND_267 />
+            <ID_FMP_BACKGROUND_231 />
+            <ID_FMP_BACKGROUND_230 />
+            <ID_FMP_BACKGROUND_229 />
+            <ID_FMP_BACKGROUND_249 />
+            <ID_FMP_BACKGROUND_265 />
+            <ID_FMP_BACKGROUND_203 />
+            <ID_FMP_BACKGROUND_222 />
+            <ID_FMP_BACKGROUND_256 />
+            <ID_FMP_BACKGROUND_250 />
+            <ID_FMP_COMPANION_54 />
+            <ID_FMP_LANGUAGE_37 />
+            <ID_FMP_LANGUAGE_38 />
+            <ID_FMP_LANGUAGE_40 />
+            <ID_FMP_RITUAL_237 />
+            <ID_FMP_RITUAL_238 />
+            <ID_FMP_RITUAL_254 />
+            <ID_FMP_RITUAL_255 />
+            <ID_FMP_RITUAL_239 />
+            <ID_FMP_RITUAL_240 />
+            <ID_FMP_RITUAL_256 />
+            <ID_FMP_RITUAL_257 />
+            <ID_FMP_RITUAL_258 />
+            <ID_FMP_RITUAL_259 />
+            <ID_FMP_RITUAL_260 />
+            <ID_FMP_RITUAL_261 />
+            <ID_FMP_RITUAL_241 />
+            <ID_FMP_RITUAL_242 />
+            <ID_FMP_RITUAL_243 />
+            <ID_FMP_RITUAL_262 />
+            <ID_FMP_RITUAL_244 />
+            <ID_FMP_RITUAL_245 />
+            <ID_FMP_RITUAL_263 />
+            <ID_FMP_RITUAL_246 />
+            <ID_FMP_RITUAL_247 />
+            <ID_FMP_RITUAL_248 />
+            <ID_FMP_RITUAL_264 />
+            <ID_FMP_RITUAL_265 />
+            <ID_FMP_RITUAL_266 />
+            <ID_FMP_RITUAL_267 />
+            <ID_FMP_RITUAL_249 />
+            <ID_FMP_RITUAL_268 />
+            <ID_FMP_RITUAL_269 />
+            <ID_FMP_RITUAL_250 />
+            <ID_FMP_RITUAL_251 />
+            <ID_FMP_RITUAL_252 />
+            <ID_FMP_RITUAL_253 />
+            <ID_FMP_FEAT_1630 />
+            <ID_FMP_POWER_7407 />
+            <ID_FMP_POWER_684 />
+            <ID_FMP_POWER_358 />
+            <ID_FMP_POWER_1288 />
+            <ID_FMP_POWER_1255 />
+            <ID_FMP_POWER_2259 />
+            <ID_FMP_POWER_1243 />
+            <ID_FMP_POWER_1267 />
+            <ID_FMP_POWER_1252 />
+            <ID_FMP_POWER_356 />
+            <ID_FMP_POWER_7382 />
+            <ID_FMP_POWER_10100 />
+            <ID_FMP_POWER_1269 />
+            <ID_FMP_POWER_7265 />
+            <ID_FMP_POWER_1260 />
+            <ID_FMP_POWER_1253 />
+            <ID_FMP_POWER_1276 />
+            <ID_FMP_POWER_7277 />
+            <ID_FMP_POWER_1247 />
+            <ID_FMP_POWER_1262 />
+            <ID_FMP_POWER_7281 />
+            <ID_FMP_POWER_7283 />
+            <ID_FMP_POWER_7285 />
+            <ID_FMP_POWER_7291 />
+            <ID_FMP_POWER_1272 />
+            <ID_FMP_POWER_7297 />
+            <ID_FMP_POWER_7298 />
+            <ID_FMP_POWER_7300 />
+            <ID_FMP_FEAT_290 />
+            <ID_FMP_POWER_7410 />
+            <ID_FMP_POWER_563 />
+            <ID_FMP_POWER_4933 />
+            <ID_FMP_POWER_4874 />
+            <ID_FMP_POWER_4926 />
+            <ID_FMP_POWER_376 />
+            <ID_FMP_POWER_4938 />
+            <ID_FMP_POWER_4827 />
+            <ID_FMP_POWER_4830 />
+            <ID_FMP_POWER_4940 />
+            <ID_FMP_POWER_4939 />
+            <ID_FMP_POWER_4944 />
+            <ID_FMP_POWER_5501 />
+            <ID_FMP_POWER_4948 />
+            <ID_FMP_POWER_4836 />
+            <ID_FMP_POWER_7392 />
+            <ID_FMP_POWER_9578 />
+            <ID_FMP_POWER_4889 />
+            <ID_FMP_POWER_9585 />
+            <ID_FMP_POWER_9587 />
+            <ID_FMP_POWER_4843 />
+            <ID_FMP_POWER_5502 />
+            <ID_FMP_PARAGON_PATH_214 />
+            <ID_FMP_POWER_7397 />
+            <ID_FMP_POWER_2602 />
+            <ID_FMP_POWER_4377 />
+            <ID_FMP_POWER_4379 />
+            <ID_FMP_POWER_2603 />
+            <ID_FMP_POWER_2389 />
+            <ID_FMP_POWER_1394 />
+            <ID_FMP_POWER_1387 />
+            <ID_FMP_POWER_209 />
+            <ID_FMP_POWER_2284 />
+            <ID_FMP_POWER_4481 />
+            <ID_FMP_POWER_4483 />
+            <ID_FMP_POWER_365 />
+            <ID_FMP_POWER_4486 />
+            <ID_FMP_POWER_671 />
+            <ID_FMP_POWER_982 />
+            <ID_FMP_POWER_4489 />
+            <ID_FMP_POWER_2399 />
+            <ID_FMP_POWER_163 />
+            <ID_FMP_POWER_2908 />
+            <ID_FMP_POWER_4494 />
+            <ID_FMP_POWER_1515 />
+            <ID_FMP_POWER_1509 />
+            <ID_FMP_POWER_2297 />
+            <ID_FMP_POWER_2510 />
+            <ID_FMP_POWER_4501 />
+            <ID_FMP_POWER_4503 />
+            <ID_FMP_POWER_2298 />
+            <ID_FMP_POWER_286 />
+            <ID_FMP_POWER_4508 />
+            <ID_FMP_POWER_2302 />
+            <ID_FMP_POWER_2528 />
+            <ID_FMP_POWER_4506 />
+            <ID_FMP_POWER_1512 />
+            <ID_FMP_POWER_2305 />
+            <ID_FMP_POWER_2285 />
+            <ID_FMP_POWER_4513 />
+            <ID_FMP_POWER_4516 />
+            <ID_FMP_POWER_4519 />
+            <ID_FMP_POWER_4521 />
+            <ID_FMP_POWER_269 />
+            <ID_FMP_POWER_2311 />
+            <ID_FMP_POWER_2496 />
+            <ID_FMP_BUILD_58 />
+            <ID_FMP_CLASS_FEATURE_1031 />
+            <ID_FMP_POWER_9414 />
+            <ID_FMP_POWER_9415 />
+            <ID_FMP_POWER_9424 />
+            <ID_FMP_POWER_9430 />
+            <ID_FMP_POWER_9428 />
+            <ID_FMP_POWER_9439 />
+            <ID_FMP_POWER_9448 />
+            <ID_FMP_POWER_9469 />
+            <ID_FMP_POWER_9480 />
+            <ID_FMP_POWER_6982 />
+            <ID_FMP_POWER_6983 />
+            <ID_FMP_POWER_5335 />
+            <ID_FMP_POWER_6984 />
+            <ID_FMP_POWER_6986 />
+            <ID_FMP_POWER_6985 />
+            <ID_FMP_POWER_6990 />
+            <ID_FMP_POWER_2915 />
+            <ID_FMP_POWER_5336 />
+            <ID_FMP_POWER_5339 />
+            <ID_FMP_POWER_2904 />
+            <ID_FMP_POWER_3599 />
+            <ID_FMP_POWER_7001 />
+            <ID_FMP_POWER_2920 />
+            <ID_FMP_POWER_7007 />
+            <ID_FMP_POWER_5341 />
+            <ID_FMP_POWER_7011 />
+            <ID_FMP_POWER_7014 />
+            <ID_FMP_POWER_3636 />
+            <ID_FMP_POWER_5343 />
+            <ID_FMP_POWER_7017 />
+            <ID_FMP_POWER_5342 />
+            <ID_FMP_POWER_3658 />
+            <ID_FMP_POWER_7700 />
+            <ID_FMP_POWER_3525 />
+            <ID_FMP_POWER_5347 />
+            <ID_FMP_POWER_7035 />
+            <ID_FMP_POWER_3529 />
+            <ID_FMP_POWER_7040 />
+            <ID_FMP_POWER_3533 />
+            <ID_FMP_POWER_3644 />
+            <ID_FMP_POWER_7405 />
+            <ID_FMP_POWER_3171 />
+            <ID_FMP_POWER_3716 />
+            <ID_FMP_POWER_5268 />
+            <ID_FMP_POWER_5271 />
+            <ID_FMP_POWER_3174 />
+            <ID_FMP_POWER_3012 />
+            <ID_FMP_POWER_554 />
+            <ID_FMP_POWER_3759 />
+            <ID_FMP_POWER_3056 />
+            <ID_FMP_POWER_2383 />
+            <ID_FMP_POWER_5281 />
+            <ID_FMP_POWER_3782 />
+            <ID_FMP_POWER_3177 />
+            <ID_FMP_POWER_5285 />
+            <ID_FMP_POWER_5288 />
+            <ID_FMP_POWER_5869 />
+            <ID_FMP_POWER_5295 />
+            <ID_FMP_POWER_4063 />
+            <ID_FMP_POWER_5908 />
+            <ID_FMP_POWER_729 />
+            <ID_FMP_POWER_380 />
+            <ID_FMP_POWER_1471 />
+            <ID_FMP_POWER_1400 />
+            <ID_FMP_POWER_1886 />
+            <ID_FMP_POWER_1320 />
+            <ID_FMP_POWER_1472 />
+            <ID_FMP_POWER_5918 />
+            <ID_FMP_POWER_1368 />
+            <ID_FMP_POWER_4085 />
+            <ID_FMP_POWER_5919 />
+            <ID_FMP_POWER_1872 />
+            <ID_FMP_POWER_6860 />
+            <ID_FMP_POWER_1408 />
+            <ID_FMP_POWER_95 />
+            <ID_FMP_POWER_1296 />
+            <ID_FMP_POWER_662 />
+            <ID_FMP_FEAT_1112 />
+            <ID_FMP_PARAGON_PATH_38 />
+            <ID_FMP_PARAGON_PATH_328 />
+            <ID_FMP_POWER_1463 />
+            <ID_FMP_POWER_5924 />
+            <ID_FMP_POWER_1369 />
+            <ID_FMP_POWER_4289 />
+            <ID_FMP_POWER_6957 />
+            <ID_FMP_POWER_6863 />
+            <ID_FMP_POWER_6862 />
+            <ID_FMP_FEAT_1991 />
+            </Restricted>
+         </D20CampaignSetting>
+
+
+   <!--
+      Level tags are an internal tree of rules elements, see RulesElementTally
+      above for the final list of rules elements,  taking into account
+      retraining, etc.
+   -->
+   <Level>
+      <RulesElement name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" charelem="12932c50" legality="rules-legal" >
+         <RulesElement name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" charelem="128fc698" legality="rules-legal" >
+            <RulesElement name="SkillRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_SKILLRULES" charelem="12955530" legality="rules-legal" >
+               <RulesElement name="Acrobatics" type="Skill" internal-id="ID_FMP_SKILL_1" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=1" charelem="128887a0" legality="rules-legal" />
+               <RulesElement name="Arcana" type="Skill" internal-id="ID_FMP_SKILL_2" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=2" charelem="129615f0" legality="rules-legal" />
+               <RulesElement name="Bluff" type="Skill" internal-id="ID_FMP_SKILL_3" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=3" charelem="128e6ef0" legality="rules-legal" />
+               <RulesElement name="Diplomacy" type="Skill" internal-id="ID_FMP_SKILL_6" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=6" charelem="1294ce40" legality="rules-legal" />
+               <RulesElement name="Dungeoneering" type="Skill" internal-id="ID_FMP_SKILL_7" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=7" charelem="1297a438" legality="rules-legal" />
+               <RulesElement name="Endurance" type="Skill" internal-id="ID_FMP_SKILL_8" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=8" charelem="1292e110" legality="rules-legal" />
+               <RulesElement name="Heal" type="Skill" internal-id="ID_FMP_SKILL_9" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=9" charelem="12875518" legality="rules-legal" />
+               <RulesElement name="History" type="Skill" internal-id="ID_FMP_SKILL_11" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=11" charelem="1295d368" legality="rules-legal" />
+               <RulesElement name="Insight" type="Skill" internal-id="ID_FMP_SKILL_13" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=13" charelem="12912fa0" legality="rules-legal" />
+               <RulesElement name="Intimidate" type="Skill" internal-id="ID_FMP_SKILL_14" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=14" charelem="1293f718" legality="rules-legal" />
+               <RulesElement name="Nature" type="Skill" internal-id="ID_FMP_SKILL_16" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=16" charelem="1294fe78" legality="rules-legal" />
+               <RulesElement name="Perception" type="Skill" internal-id="ID_FMP_SKILL_17" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=17" charelem="12957190" legality="rules-legal" />
+               <RulesElement name="Religion" type="Skill" internal-id="ID_FMP_SKILL_18" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=18" charelem="127f25b8" legality="rules-legal" />
+               <RulesElement name="Stealth" type="Skill" internal-id="ID_FMP_SKILL_20" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=20" charelem="127c8540" legality="rules-legal" />
+               <RulesElement name="Streetwise" type="Skill" internal-id="ID_FMP_SKILL_21" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=21" charelem="12823268" legality="rules-legal" />
+               <RulesElement name="Thievery" type="Skill" internal-id="ID_FMP_SKILL_23" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=23" charelem="12913988" legality="rules-legal" />
+               <RulesElement name="Athletics" type="Skill" internal-id="ID_FMP_SKILL_27" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=27" charelem="12919930" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Heroic" type="Tier" internal-id="ID_INTERNAL_TIER_HEROIC" charelem="12939580" legality="rules-legal" />
+            <RulesElement name="Melee Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" charelem="12639e20" legality="rules-legal" />
+            <RulesElement name="Ranged Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK" charelem="1294bb28" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" charelem="1295f3f0" legality="rules-legal" >
+            <RulesElement name="Male" type="Gender" internal-id="ID_INTERNAL_GENDER_MALE" charelem="12951db0" legality="rules-legal" />
+            <RulesElement name="Unaligned" type="Alignment" internal-id="ID_FMP_ALIGNMENT_1" charelem="1293fd20" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="Expansion1" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION1" charelem="12931408" legality="rules-legal" >
+            <RulesElement name="Refused Admittance" type="Background" internal-id="ID_FMP_BACKGROUND_175" charelem="129630c8" legality="rules-legal" >
+               <RulesElement name="Perception" type="Background Association" internal-id="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" charelem="12963140" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Background Benefit" type="Internal" internal-id="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" charelem="129815d8" legality="rules-legal" >
+               <RulesElement name="+2 to Perception" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_PERCEPTION" charelem="1289db78" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="" type="" charelem="1295a4f8" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="12954ad0" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="1293b118" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="1294f220" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="129795f8" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="Expansion2" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION2" charelem="12951928" legality="rules-legal" />
+         <RulesElement name="Expansion3" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION3" charelem="12981058" legality="rules-legal" />
+         <RulesElement name="Expansion4" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION4" charelem="12916d48" legality="rules-legal" />
+         <RulesElement name="Expansion5" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION5" charelem="1294c768" legality="rules-legal" />
+         <RulesElement name="Dwarf" type="Race" internal-id="ID_FMP_RACE_2" url="http://www.wizards.com/dndinsider/compendium/race.aspx?id=2" charelem="1288d248" legality="rules-legal" >
+            <RulesElement name="Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_DWARF" charelem="12931e88" legality="rules-legal" >
+               <RulesElement name="Medium" type="Size" internal-id="ID_INTERNAL_SIZE_MEDIUM" charelem="129921a0" legality="rules-legal" />
+               <RulesElement name="Low-light" type="Vision" internal-id="ID_INTERNAL_VISION_LOW-LIGHT" charelem="12968100" legality="rules-legal" />
+               <RulesElement name="Dwarven Weapon Proficiency" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_9" charelem="12934580" legality="rules-legal" >
+                  <RulesElement name="Weapon Proficiency (Throwing hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)" charelem="12968380" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Warhammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)" charelem="128b6fe8" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Cast-Iron Stomach" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_10" charelem="12933ec0" legality="rules-legal" />
+               <RulesElement name="Encumbered Speed" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_11" charelem="1296a168" legality="rules-legal" />
+               <RulesElement name="Dwarven Resilience" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_12" charelem="127d6500" legality="rules-legal" />
+               <RulesElement name="Stand Your Ground" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_632" charelem="1296a2a0" legality="rules-legal" />
+               <RulesElement name="Constitution" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" charelem="12992218" legality="rules-legal" />
+               <RulesElement name="Wisdom" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" charelem="128e85d0" legality="rules-legal" />
+               <RulesElement name="Common" type="Language" internal-id="ID_FMP_LANGUAGE_1" charelem="1292be00" legality="rules-legal" />
+               <RulesElement name="Dwarven" type="Language" internal-id="ID_FMP_LANGUAGE_3" charelem="12968060" legality="rules-legal" />
+               <RulesElement name="Dungeoneering Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" charelem="12968958" legality="rules-legal" />
+               <RulesElement name="Endurance Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" charelem="128e3e30" legality="rules-legal" />
+            </RulesElement>
+         </RulesElement>
+         <RulesElement name="Artificer" type="Class" internal-id="ID_FMP_CLASS_125" url="http://www.wizards.com/dndinsider/compendium/class.aspx?id=125" charelem="128f2b48" legality="rules-legal" >
+            <RulesElement name="Artificer" type="Grants" internal-id="ID_INTERNAL_GRANTS_ARTIFICER" charelem="128aa610" legality="rules-legal" >
+               <RulesElement name="Leader" type="Role" internal-id="ID_FMP_ROLE_2" charelem="128bf770" legality="rules-legal" />
+               <RulesElement name="Arcane" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_2" charelem="1292e438" legality="rules-legal" />
+               <RulesElement name="Armor Proficiency (Cloth)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" charelem="1289ae00" legality="rules-legal" />
+               <RulesElement name="Armor Proficiency (Leather)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" charelem="128bda20" legality="rules-legal" />
+               <RulesElement name="Simple Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" charelem="129299f8" legality="rules-legal" >
+                  <RulesElement name="Weapon Proficiency (Club)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)" charelem="12942d28" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Dagger)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" charelem="12881f98" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Javelin)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)" charelem="12998478" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)" charelem="128eff50" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Sickle)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)" charelem="128e1440" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Spear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" charelem="128eacb8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Greatclub)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)" charelem="127d82a0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Morningstar)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)" charelem="129349f8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Quarterstaff)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" charelem="1297aed8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Scythe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" charelem="1263bd18" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Spiked gauntlet)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)" charelem="12920b28" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Claw Fighter Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)" charelem="127ff9a8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Climbing Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)" charelem="12976d30" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Rod of Seven Parts (Weapon))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))" charelem="128ab748" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Simple Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" charelem="1292dd18" legality="rules-legal" >
+                  <RulesElement name="Weapon Proficiency (Hand Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)" charelem="12893608" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Sling)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)" charelem="1297f258" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)" charelem="12917c98" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Repeating crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)" charelem="12881350" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Arcane Empowerment" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1573" charelem="129752f8" legality="rules-legal" >
+                  <RulesElement name="Impart Energy" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1574" charelem="128f7348" legality="rules-legal" />
+                  <RulesElement name="Augment Energy" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1575" charelem="128e8450" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Arcane Rejuvenation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1576" charelem="12834110" legality="rules-legal" />
+               <RulesElement name="Healing Infusion" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_862" charelem="12968658" legality="rules-legal" >
+                  <RulesElement name="Healing Infusion: Curative Admixture" type="Power" internal-id="ID_FMP_POWER_4128" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4128" charelem="128b8a30" legality="rules-legal" />
+                  <RulesElement name="Healing Infusion: Resistive Formula" type="Power" internal-id="ID_FMP_POWER_7635" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=7635" charelem="128eac58" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Ritual Casting" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_683" charelem="1291f288" legality="rules-legal" >
+                  <RulesElement name="Ritual Caster" type="Feat" internal-id="ID_FMP_FEAT_159" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=159" charelem="12884ca0" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Arcana" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ARCANA" charelem="12944a58" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Aggravating Force" type="Power" internal-id="ID_FMP_POWER_4131" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4131" charelem="12917790" legality="rules-legal" />
+            <RulesElement name="Magic Weapon" type="Power" internal-id="ID_FMP_POWER_5207" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=5207" charelem="1295c280" legality="rules-legal" />
+            <RulesElement name="Battlesmith Artificer" type="Build" internal-id="ID_FMP_BUILD_53" charelem="12957990" legality="rules-legal" >
+               <RulesElement name="Battlesmith Artificer" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_BATTLESMITH_ARTIFICER" charelem="128ea980" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Perception" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_PERCEPTION" charelem="1294ca90" legality="rules-legal" />
+            <RulesElement name="History" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HISTORY" charelem="128a7b50" legality="rules-legal" />
+            <RulesElement name="Dungeoneering" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING" charelem="12980c18" legality="rules-legal" />
+            <RulesElement name="Diplomacy" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DIPLOMACY" charelem="126349e8" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="Dwarven Weapon Training" type="Feat" internal-id="ID_FMP_FEAT_69" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=69" charelem="12953ec8" legality="rules-legal" >
+            <RulesElement name="Weapon Group (Axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)" charelem="128b1ae0" legality="rules-legal" >
+               <RulesElement name="Weapon Proficiency (Battleaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)" charelem="129440c0" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Handaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)" charelem="1294e098" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Greataxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)" charelem="128cff10" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Halberd)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)" charelem="128cffb0" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Khopesh)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)" charelem="128d0050" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Waraxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARAXE)" charelem="1292b788" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Execution axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(EXECUTION_AXE)" charelem="12915a78" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Double axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_AXE)" charelem="1293cb78" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Urgrosh)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(URGROSH)" charelem="12857350" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Weapon Group (Hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HAMMER)" charelem="128573c8" legality="rules-legal" >
+               <RulesElement name="Weapon Proficiency (Throwing hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)" charelem="12981788" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Warhammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)" charelem="129176b0" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Maul)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)" charelem="12969f18" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Craghammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CRAGHAMMER)" charelem="12968518" legality="rules-legal" />
+               <RulesElement name="Weapon Proficiency (Mordenkrad)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORDENKRAD)" charelem="129396b8" legality="rules-legal" />
+            </RulesElement>
+         </RulesElement>
+         <RulesElement name="Burning Weapons" type="Power" internal-id="ID_FMP_POWER_7637" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=7637" charelem="12641e08" legality="rules-legal" />
+         <RulesElement name="Life-Tapping Darts" type="Power" internal-id="ID_FMP_POWER_4134" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4134" charelem="12938cd8" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="129684c0" legality="rules-legal" />
+      </RulesElement>
+      <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <RulesElement name="Warhammer" type="Weapon" internal-id="ID_FMP_WEAPON_16" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=16&amp;ftype=3" charelem="1299dfa8" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="1" ShowPowerCard="1" >
+         <RulesElement name="Leather Armor" type="Armor" internal-id="ID_FMP_ARMOR_2" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=2&amp;ftype=2" charelem="1295ab20" legality="rules-legal" />
+      </loot>
+      <loot count="1" equip-count="0" ShowPowerCard="1" >
+         <RulesElement name="Implement, Wand" type="Gear" internal-id="ID_FMP_GEAR_14" url="http://www.wizards.com/dndinsider/compendium/item.aspx?fid=14&amp;ftype=4" charelem="12943eb0" legality="rules-legal" />
+      </loot>
+   </Level>
+
+
+   <!--
+      Textstrings are builder 'variables' and contain entered text data, such
+      as character names, as well as internal data
+   -->
+   <textstring name="_PER_LEVEL_1_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_1_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_1_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_2_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_2_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_2_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_3_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_3_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_3_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_4_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_4_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_4_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_5_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_5_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_5_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_6_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_6_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_6_Residuum">
+      0
+   </textstring>
+   <textstring name="Experience Points">
+      999
+   </textstring>
+   <textstring name="ID_FMP_GEAR_31">
+      Given
+   </textstring>
+   <textstring name="ID_FMP_RITUAL_1">
+      Given
+   </textstring>
+   <textstring name="ID_FMP_RITUAL_7">
+      Given
+   </textstring>
+   <textstring name="ID_FMP_RITUAL_9">
+      Given
+   </textstring>
+   <textstring name="ID_FMP_RITUAL_51">
+      Given
+   </textstring>
+   <textstring name="_INTERNAL_VersatileUsedTwoHanded">
+      0
+   </textstring>
+   <textstring name="_INTERNAL_MainHandWeapon">
+      Implement, Wand
+   </textstring>
+   <textstring name="Name">
+      Thoradin
+   </textstring>
+   <textstring name="Character Save File">
+      c:\documents and settings\owner\my documents\ddi\saved characters\pickup premade\dwarf art.dnd4e
+   </textstring>
+   <textstring name="CUR_HitPoints">
+      
+   </textstring>
+   <textstring name="CUR_Surges">
+      
+   </textstring>
+   <textstring name="CUR_SecWind">
+      false
+   </textstring>
+   <textstring name="CUR_DeathSave1">
+      false
+   </textstring>
+   <textstring name="CUR_DeathSave2">
+      false
+   </textstring>
+   <textstring name="CUR_DeathSave3">
+      false
+   </textstring>
+   <textstring name="CUR_TempHP">
+      
+   </textstring>
+   <textstring name="CUR_Action Points">
+      
+   </textstring>
+   <textstring name="LAYOUT_DATA">
+      MobilePanelsLocked=True|CurrentOrientationStyle=Vertical|NewPageLayoutAffinity=Portrait|NewPowerLayoutAffinity=Portrait|ShowJournalPages=False|ShowNotesPage=False|ShowPowerCardPages=True|ShowBasicAttackPowerCards=False|ShowOptionalCards=True|ShowNormalItemCards=False|ShowItemSetInfoCards=True|ShowAllWeaponsForCards=False|ShowBlankPowerCardPage=False|ShowPageNumbers=True|ShowFlavorText=False|ReplacesAdditionalEffects=True|ZoomLevel=100|PersonalizedData=True&amp;BaseStyle=PortraitPage1/LayoutStyle=Portrait|*/HEADER|*/INITIATIVE/ABILITY_SCORES/HIT_POINTS/SKILLS|*/DEFENSES/ACTION_POINTS/RACE_FEATURES;Height=151/CLASS_FEATURES;Height=270/LANGUAGES;Height=52|*/MOVEMENT/SENSES/ATTACK_WORKSPACE;Melee Basic Attack - Warhammer:Melee Basic Attack - Unarmed/DAMAGE_WORKSPACE;Melee Basic Attack - Warhammer:Melee Basic Attack - Unarmed/BASIC_ATTACKS/FEATS;Height=338&amp;BaseStyle=PortraitPage2/LayoutStyle=Portrait|*|*/POWERS_PANEL/OTHER_EQUIPMENT;Height=221/COINS_AND_WEALTH|*/MAGIC_ITEMS_PANEL/RITUALS;Height=221|*/PORTRAIT/NOTES_PERSONALITY;Height=110/NOTES_APPEARANCE;Height=110/NOTES_BACKGROUND;Height=110/NOTES_ALLIES;Height=110/NOTES_SESSION;Height=110
+   </textstring>
+   <textstring name="LAYOUT_DATAPowerCard">
+      &lt;PowerCards&gt;
+  &lt;CharSummaryCard Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; /&gt;
+  &lt;ActionPointCard Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; /&gt;
+  &lt;SecondWindCard Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;true&quot;&gt;
+    &lt;RuleID&gt;&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/SecondWindCard&gt;
+  &lt;PowerCardBasic Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_INTERNAL_POWER_MELEE_BASIC_ATTACK&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_INTERNAL_POWER_RANGED_BASIC_ATTACK&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_4131&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_5207&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_4128&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_7635&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_7637&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_7648&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_4134&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardBasic Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_7649&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardBasic&gt;
+  &lt;PowerCardUtility Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_7644&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardUtility&gt;
+  &lt;PowerCardUtility Visibility=&quot;Visible&quot; IsInSpellbook=&quot;False&quot; Blank=&quot;false&quot;&gt;
+    &lt;RuleID&gt;ID_FMP_POWER_4142&lt;/RuleID&gt;
+    &lt;WeaponSelections /&gt;
+  &lt;/PowerCardUtility&gt;
+  &lt;PowerCardNormalWeapon Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_WEAPON_16&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalWeapon&gt;
+  &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_GEAR_31&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalItem&gt;
+  &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_RITUAL_1&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalItem&gt;
+  &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_RITUAL_7&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalItem&gt;
+  &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_RITUAL_9&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalItem&gt;
+  &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_RITUAL_51&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalItem&gt;
+  &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_GEAR_14&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalItem&gt;
+  &lt;PowerCardNormalItem Visibility=&quot;Hidden&quot; IsInSpellbook=&quot;False&quot;&gt;
+    &lt;CharLootID xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+      &lt;baseID&gt;ID_FMP_ARMOR_2&lt;/baseID&gt;
+    &lt;/CharLootID&gt;
+  &lt;/PowerCardNormalItem&gt;
+&lt;/PowerCards&gt;
+   </textstring>
+   <textstring name="USAGE_Healing Infusion: Curative Admixture">
+      false
+   </textstring>
+   <textstring name="USAGE_Healing Infusion: Resistive Formula">
+      false
+   </textstring>
+   <textstring name="USAGE_Burning Weapons">
+      false
+   </textstring>
+   <textstring name="USAGE_Life-Tapping Darts">
+      false
+   </textstring>
+   <textstring name="USAGE_Swift Mender">
+      false
+   </textstring>
+   <textstring name="USAGE_Repulsion Strike">
+      false
+   </textstring>
+   <textstring name="USAGE_Corrosive Sigil">
+      false
+   </textstring>
+   <textstring name="USAGE_Regeneration Infusion">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Heroic Use Box 1">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Paragon Use Box 1">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Paragon Use Box 2">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Epic Use Box 1">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Epic Use Box 2">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Epic Use Box 3">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Heroic Milestone Box 1">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Heroic Milestone Box 2">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Heroic Milestone Box 3">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Heroic Milestone Box 4">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Paragon Milestone Box 1">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Paragon Milestone Box 2">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Paragon Milestone Box 3">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Paragon Milestone Box 4">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Epic Milestone Box 1">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Epic Milestone Box 2">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Epic Milestone Box 3">
+      false
+   </textstring>
+   <textstring name="USAGE_Magic Item Epic Milestone Box 4">
+      false
+   </textstring>
+   <textstring name="USAGE_Implement, Wand">
+      false
+   </textstring>
+   <textstring name="PortraitZoomScale">
+      0.732183908045977
+   </textstring>
+   <textstring name="PortraitLeftMargin">
+      0
+   </textstring>
+   <textstring name="PortraitTopMargin">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_7_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_7_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_7_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_8_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_8_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_8_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_9_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_9_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_9_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_10_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_10_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_10_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_11_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_11_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_11_Residuum">
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_12_Carried Money">
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_12_Stored Money">
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_12_Residuum">
+      0
+   </textstring>
+
+
+</D20Character>
