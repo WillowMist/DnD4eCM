@@ -322,3 +322,26 @@ C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3
 C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.exe
 C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.xml
 C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.pdb
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\DnD4e Combat Manager.exe.config
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.exe
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.xml
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.pdb
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\DnD4e Combat Manager.exe
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\DnD4e Combat Manager.pdb
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\DnD4e Combat Manager.xml
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\4eShared.dll
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\4eMonster.pdb
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\4eMonster.xml
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\4eShared.pdb
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\4eShared.xml
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.vbprojResolveAssemblyReference.cache
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.Config.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.AboutBox1.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.PowerRechargeWin.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.SavingThrowWin.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.frmTracker.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.EffectView.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.Resources.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.StatblockView.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e_Combat_Manager.StatLibraryView.resources
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.vbproj.GenerateResource.Cache

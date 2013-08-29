@@ -1249,4 +1249,8 @@ Public Class frmTracker
             My.Computer.Clipboard.SetText(cmHTMLInitList.Text)
         End If
     End Sub
+
+    Private Sub dfPowerBlockHTML_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles dfPowerBlockHTML.DocumentCompleted
+
+    End Sub
 End Class

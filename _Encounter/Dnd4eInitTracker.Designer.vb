@@ -22,190 +22,190 @@ Partial Class frmTracker
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Dim ListViewGroup7 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Rounds", System.Windows.Forms.HorizontalAlignment.Left)
-        Dim ListViewGroup8 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Delaying", System.Windows.Forms.HorizontalAlignment.Left)
-        Dim ListViewGroup9 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Readied", System.Windows.Forms.HorizontalAlignment.Left)
-        Dim ListViewGroup10 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Inactive", System.Windows.Forms.HorizontalAlignment.Left)
-        Dim ListViewGroup11 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("In Flux", System.Windows.Forms.HorizontalAlignment.Left)
-        Dim ListViewGroup12 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Reserve", System.Windows.Forms.HorizontalAlignment.Left)
+        Me.components = New System.ComponentModel.Container()
+        Dim ListViewGroup1 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Rounds", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup2 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Delaying", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup3 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Readied", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup4 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Inactive", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup5 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("In Flux", System.Windows.Forms.HorizontalAlignment.Left)
+        Dim ListViewGroup6 As System.Windows.Forms.ListViewGroup = New System.Windows.Forms.ListViewGroup("Reserve", System.Windows.Forms.HorizontalAlignment.Left)
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTracker))
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator
-        Me.menuImportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator
-        Me.menuLoadEncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuSaveEncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator
-        Me.menuExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuSelectCurrentCombatantToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator
-        Me.menuRollAllInit = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuResetAllInit = New System.Windows.Forms.ToolStripMenuItem
-        Me.CopyInitiativeListToClipboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator
-        Me.menuClearNPCsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.StatLibraryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuTakeShortRestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuTakeShortRestWMilestoneToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuTakeExtendedRestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator
-        Me.menuResetPCHealthToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator
-        Me.menuClearPCsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menucbGroupSimilar = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuAutomaticRollsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuRollSavesAutomaticallyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuRollForPowerRechargeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuPopupForOngoingDamageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuSurpriseRound = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuAutoCompendium = New System.Windows.Forms.ToolStripMenuItem
-        Me.ConfigurationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RosterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuStatLibraryOpenMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.WebServerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuStartWebServerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.menuStopWebServer = New System.Windows.Forms.ToolStripMenuItem
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AboutDnD4eCMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SplitLeft = New System.Windows.Forms.SplitContainer
-        Me.SplitLeftUpDown = New System.Windows.Forms.SplitContainer
-        Me.ToolStripListbox = New System.Windows.Forms.ToolStripContainer
-        Me.lbFightList = New System.Windows.Forms.ListView
-        Me.colName = New System.Windows.Forms.ColumnHeader
-        Me.colStatus = New System.Windows.Forms.ColumnHeader
-        Me.colRound = New System.Windows.Forms.ColumnHeader
-        Me.colDef = New System.Windows.Forms.ColumnHeader
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menuImportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menuLoadEncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuSaveEncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menuExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuSelectCurrentCombatantToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menuRollAllInit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuResetAllInit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopyInitiativeListToClipboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menuClearNPCsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatLibraryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuTakeShortRestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuTakeShortRestWMilestoneToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuTakeExtendedRestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menuResetPCHealthToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menuClearPCsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menucbGroupSimilar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuAutomaticRollsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuRollSavesAutomaticallyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuRollForPowerRechargeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuPopupForOngoingDamageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuSurpriseRound = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuAutoCompendium = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConfigurationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RosterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuStatLibraryOpenMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WebServerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuStartWebServerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuStopWebServer = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutDnD4eCMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SplitLeft = New System.Windows.Forms.SplitContainer()
+        Me.SplitLeftUpDown = New System.Windows.Forms.SplitContainer()
+        Me.ToolStripListbox = New System.Windows.Forms.ToolStripContainer()
+        Me.lbFightList = New System.Windows.Forms.ListView()
+        Me.colName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colStatus = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colRound = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colDef = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ctxtmenuInitList = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ctxtMoveToTopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator18 = New System.Windows.Forms.ToolStripSeparator
-        Me.ctxtReadyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ctxtDelayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator
-        Me.ctxtRemoveFighterFromCombatToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.MarksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ctxtMarkedEncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ctxtMarkedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
-        Me.ctxtDisplayName = New System.Windows.Forms.ToolStripTextBox
-        Me.ctxtHideCombatant = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripEncXP = New System.Windows.Forms.ToolStrip
-        Me.toolPCCount = New System.Windows.Forms.ToolStripLabel
-        Me.dfPartySize = New System.Windows.Forms.ToolStripTextBox
-        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator
-        Me.toolEncLevel = New System.Windows.Forms.ToolStripLabel
-        Me.dfEncounterLevel = New System.Windows.Forms.ToolStripTextBox
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator
-        Me.toolTotalXP = New System.Windows.Forms.ToolStripLabel
-        Me.dfXPTotal = New System.Windows.Forms.ToolStripTextBox
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox
-        Me.dfGlobalNotes = New System.Windows.Forms.TextBox
-        Me.SplitMiddleRight = New System.Windows.Forms.SplitContainer
-        Me.SplitMiddleUpDown = New System.Windows.Forms.SplitContainer
-        Me.SplitMiddleTop = New System.Windows.Forms.SplitContainer
-        Me.ToolStripMiddleTop = New System.Windows.Forms.ToolStripContainer
-        Me.TabControlStats = New System.Windows.Forms.TabControl
-        Me.tabInitiative = New System.Windows.Forms.TabPage
-        Me.dfStatInitRoll = New System.Windows.Forms.NumericUpDown
-        Me.pbDeleteFighter = New System.Windows.Forms.Button
-        Me.pbReserve = New System.Windows.Forms.Button
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.pbDelay = New System.Windows.Forms.Button
-        Me.pbMoveToTop = New System.Windows.Forms.Button
-        Me.pbReady = New System.Windows.Forms.Button
-        Me.pbRollInit = New System.Windows.Forms.Button
-        Me.tabDamageHeal = New System.Windows.Forms.TabPage
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.btnSubMax = New System.Windows.Forms.Button
-        Me.btnAddMax = New System.Windows.Forms.Button
-        Me.pbAllSurge = New System.Windows.Forms.Button
-        Me.pbAddSurge = New System.Windows.Forms.Button
-        Me.pbSubSurge = New System.Windows.Forms.Button
-        Me.dfSurgesLeft = New System.Windows.Forms.TextBox
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.pbHPplus5 = New System.Windows.Forms.Button
-        Me.pbSurge = New System.Windows.Forms.Button
-        Me.pbHP5 = New System.Windows.Forms.Button
-        Me.dfDamHealAmt = New System.Windows.Forms.NumericUpDown
-        Me.pbDealDamage = New System.Windows.Forms.Button
-        Me.pbUnfailDeath = New System.Windows.Forms.Button
-        Me.pbMaxHP = New System.Windows.Forms.Button
-        Me.pbHealDamage = New System.Windows.Forms.Button
-        Me.pbAddTemp = New System.Windows.Forms.Button
-        Me.pbFailDeath = New System.Windows.Forms.Button
-        Me.tabFighterStats = New System.Windows.Forms.TabPage
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.dfStatCurrHP = New System.Windows.Forms.TextBox
-        Me.dfStatMaxHP = New System.Windows.Forms.TextBox
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.dfStatLevel = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.dfStatDefWill = New System.Windows.Forms.TextBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.dfStatDefReflex = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.dfStatDefFort = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.dfStatDefAC = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.dfRoleMod = New System.Windows.Forms.ComboBox
-        Me.labRoleMod = New System.Windows.Forms.Label
-        Me.dfXPValue = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.ToolStripName = New System.Windows.Forms.ToolStrip
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel
-        Me.dfStatName = New System.Windows.Forms.ToolStripTextBox
-        Me.dfFighterNum = New System.Windows.Forms.ToolStripTextBox
-        Me.pbNextInit = New System.Windows.Forms.Button
-        Me.pbBackRound = New System.Windows.Forms.Button
-        Me.SplitMiddleBottom = New System.Windows.Forms.SplitContainer
-        Me.ToolStripContainerEffects = New System.Windows.Forms.ToolStripContainer
-        Me.ToolStripEffects = New System.Windows.Forms.ToolStrip
-        Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel
-        Me.ToolStripSeparator16 = New System.Windows.Forms.ToolStripSeparator
-        Me.pbEffectAdd = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator
-        Me.pbEffectChange = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator
-        Me.pbEffectRemove = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator
-        Me.lbEffects = New System.Windows.Forms.ListView
-        Me.colEffectName = New System.Windows.Forms.ColumnHeader
-        Me.colSource = New System.Windows.Forms.ColumnHeader
-        Me.colEffectDuration = New System.Windows.Forms.ColumnHeader
-        Me.TabMiddleBottom = New System.Windows.Forms.TabControl
-        Me.tabPowers = New System.Windows.Forms.TabPage
-        Me.ToolContainerPowerUsage = New System.Windows.Forms.ToolStripContainer
-        Me.ToolStripPowerUsage = New System.Windows.Forms.ToolStrip
-        Me.pbPowerExpended = New System.Windows.Forms.ToolStripButton
-        Me.pbPowerRefresh = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator
-        Me.ToolStripSeparator14 = New System.Windows.Forms.ToolStripSeparator
-        Me.lbPowerUsage = New System.Windows.Forms.ListView
-        Me.colPowerName = New System.Windows.Forms.ColumnHeader
-        Me.colPowerAction = New System.Windows.Forms.ColumnHeader
+        Me.ctxtMoveToTopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator18 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ctxtReadyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ctxtDelayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ctxtRemoveFighterFromCombatToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MarksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ctxtMarkedEncounterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ctxtMarkedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ctxtDisplayName = New System.Windows.Forms.ToolStripTextBox()
+        Me.ctxtHideCombatant = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripEncXP = New System.Windows.Forms.ToolStrip()
+        Me.toolPCCount = New System.Windows.Forms.ToolStripLabel()
+        Me.dfPartySize = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
+        Me.toolEncLevel = New System.Windows.Forms.ToolStripLabel()
+        Me.dfEncounterLevel = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.toolTotalXP = New System.Windows.Forms.ToolStripLabel()
+        Me.dfXPTotal = New System.Windows.Forms.ToolStripTextBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.dfGlobalNotes = New System.Windows.Forms.TextBox()
+        Me.SplitMiddleRight = New System.Windows.Forms.SplitContainer()
+        Me.SplitMiddleUpDown = New System.Windows.Forms.SplitContainer()
+        Me.SplitMiddleTop = New System.Windows.Forms.SplitContainer()
+        Me.ToolStripMiddleTop = New System.Windows.Forms.ToolStripContainer()
+        Me.TabControlStats = New System.Windows.Forms.TabControl()
+        Me.tabInitiative = New System.Windows.Forms.TabPage()
+        Me.dfStatInitRoll = New System.Windows.Forms.NumericUpDown()
+        Me.pbDeleteFighter = New System.Windows.Forms.Button()
+        Me.pbReserve = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.pbDelay = New System.Windows.Forms.Button()
+        Me.pbMoveToTop = New System.Windows.Forms.Button()
+        Me.pbReady = New System.Windows.Forms.Button()
+        Me.pbRollInit = New System.Windows.Forms.Button()
+        Me.tabDamageHeal = New System.Windows.Forms.TabPage()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnSubMax = New System.Windows.Forms.Button()
+        Me.btnAddMax = New System.Windows.Forms.Button()
+        Me.pbAllSurge = New System.Windows.Forms.Button()
+        Me.pbAddSurge = New System.Windows.Forms.Button()
+        Me.pbSubSurge = New System.Windows.Forms.Button()
+        Me.dfSurgesLeft = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.pbHPplus5 = New System.Windows.Forms.Button()
+        Me.pbSurge = New System.Windows.Forms.Button()
+        Me.pbHP5 = New System.Windows.Forms.Button()
+        Me.dfDamHealAmt = New System.Windows.Forms.NumericUpDown()
+        Me.pbDealDamage = New System.Windows.Forms.Button()
+        Me.pbUnfailDeath = New System.Windows.Forms.Button()
+        Me.pbMaxHP = New System.Windows.Forms.Button()
+        Me.pbHealDamage = New System.Windows.Forms.Button()
+        Me.pbAddTemp = New System.Windows.Forms.Button()
+        Me.pbFailDeath = New System.Windows.Forms.Button()
+        Me.tabFighterStats = New System.Windows.Forms.TabPage()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.dfStatCurrHP = New System.Windows.Forms.TextBox()
+        Me.dfStatMaxHP = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.dfStatLevel = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.dfStatDefWill = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.dfStatDefReflex = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.dfStatDefFort = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.dfStatDefAC = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.dfRoleMod = New System.Windows.Forms.ComboBox()
+        Me.labRoleMod = New System.Windows.Forms.Label()
+        Me.dfXPValue = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ToolStripName = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.dfStatName = New System.Windows.Forms.ToolStripTextBox()
+        Me.dfFighterNum = New System.Windows.Forms.ToolStripTextBox()
+        Me.pbNextInit = New System.Windows.Forms.Button()
+        Me.pbBackRound = New System.Windows.Forms.Button()
+        Me.SplitMiddleBottom = New System.Windows.Forms.SplitContainer()
+        Me.ToolStripContainerEffects = New System.Windows.Forms.ToolStripContainer()
+        Me.ToolStripEffects = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator16 = New System.Windows.Forms.ToolStripSeparator()
+        Me.pbEffectAdd = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator()
+        Me.pbEffectChange = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator()
+        Me.pbEffectRemove = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
+        Me.lbEffects = New System.Windows.Forms.ListView()
+        Me.colEffectName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colSource = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colEffectDuration = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TabMiddleBottom = New System.Windows.Forms.TabControl()
+        Me.tabPowers = New System.Windows.Forms.TabPage()
+        Me.ToolContainerPowerUsage = New System.Windows.Forms.ToolStripContainer()
+        Me.ToolStripPowerUsage = New System.Windows.Forms.ToolStrip()
+        Me.pbPowerExpended = New System.Windows.Forms.ToolStripButton()
+        Me.pbPowerRefresh = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator14 = New System.Windows.Forms.ToolStripSeparator()
+        Me.lbPowerUsage = New System.Windows.Forms.ListView()
+        Me.colPowerName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colPowerAction = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.CctxtmenuPowerList = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.UseDisableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RechargeEnableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ViewCompendiumEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SetAsActiveStance = New System.Windows.Forms.ToolStripMenuItem
-        Me.tabNotes = New System.Windows.Forms.TabPage
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.dfFighterNotes = New System.Windows.Forms.TextBox
-        Me.RightPanelSplit = New System.Windows.Forms.SplitContainer
-        Me.dfHTMLStatBlock = New System.Windows.Forms.WebBrowser
-        Me.dfPowerBlockHTML = New System.Windows.Forms.WebBrowser
-        Me.pbDoNothing = New System.Windows.Forms.Button
-        Me.BottomToolStripPanel = New System.Windows.Forms.ToolStripPanel
-        Me.TopToolStripPanel = New System.Windows.Forms.ToolStripPanel
-        Me.RightToolStripPanel = New System.Windows.Forms.ToolStripPanel
-        Me.LeftToolStripPanel = New System.Windows.Forms.ToolStripPanel
-        Me.ContentPanel = New System.Windows.Forms.ToolStripContentPanel
-        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.UseDisableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RechargeEnableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewCompendiumEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SetAsActiveStance = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tabNotes = New System.Windows.Forms.TabPage()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.dfFighterNotes = New System.Windows.Forms.TextBox()
+        Me.RightPanelSplit = New System.Windows.Forms.SplitContainer()
+        Me.dfHTMLStatBlock = New System.Windows.Forms.WebBrowser()
+        Me.dfPowerBlockHTML = New System.Windows.Forms.WebBrowser()
+        Me.pbDoNothing = New System.Windows.Forms.Button()
+        Me.BottomToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.TopToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.RightToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.LeftToolStripPanel = New System.Windows.Forms.ToolStripPanel()
+        Me.ContentPanel = New System.Windows.Forms.ToolStripContentPanel()
         Me.MenuStrip1.SuspendLayout()
         Me.SplitLeft.Panel1.SuspendLayout()
         Me.SplitLeft.Panel2.SuspendLayout()
@@ -275,40 +275,40 @@ Partial Class frmTracker
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuNewToolStripMenuItem, Me.ToolStripSeparator2, Me.menuImportToolStripMenuItem, Me.ToolStripSeparator3, Me.menuLoadEncounterToolStripMenuItem, Me.menuSaveEncounterToolStripMenuItem, Me.ToolStripSeparator8, Me.menuExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'menuNewToolStripMenuItem
         '
         Me.menuNewToolStripMenuItem.Name = "menuNewToolStripMenuItem"
         Me.menuNewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.menuNewToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
+        Me.menuNewToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.menuNewToolStripMenuItem.Text = "&New"
         Me.menuNewToolStripMenuItem.ToolTipText = "Clear current encounter Roster" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(new combatants must be added from Library)"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(196, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(194, 6)
         '
         'menuImportToolStripMenuItem
         '
         Me.menuImportToolStripMenuItem.Name = "menuImportToolStripMenuItem"
         Me.menuImportToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5
-        Me.menuImportToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
+        Me.menuImportToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.menuImportToolStripMenuItem.Text = "Import Encounter"
         Me.menuImportToolStripMenuItem.ToolTipText = "Load Roster from file into current encounter" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(does not clear current Roster)"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(196, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(194, 6)
         '
         'menuLoadEncounterToolStripMenuItem
         '
         Me.menuLoadEncounterToolStripMenuItem.Name = "menuLoadEncounterToolStripMenuItem"
         Me.menuLoadEncounterToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
-        Me.menuLoadEncounterToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
+        Me.menuLoadEncounterToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.menuLoadEncounterToolStripMenuItem.Text = "&Load Encounter"
         Me.menuLoadEncounterToolStripMenuItem.ToolTipText = "Load new Roster from file " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(clears current Roster)"
         '
@@ -316,20 +316,20 @@ Partial Class frmTracker
         '
         Me.menuSaveEncounterToolStripMenuItem.Name = "menuSaveEncounterToolStripMenuItem"
         Me.menuSaveEncounterToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.menuSaveEncounterToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
+        Me.menuSaveEncounterToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.menuSaveEncounterToolStripMenuItem.Text = "&Save Encounter"
         Me.menuSaveEncounterToolStripMenuItem.ToolTipText = "Save current encounter roster to file"
         '
         'ToolStripSeparator8
         '
         Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(196, 6)
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(194, 6)
         '
         'menuExitToolStripMenuItem
         '
         Me.menuExitToolStripMenuItem.Name = "menuExitToolStripMenuItem"
         Me.menuExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.menuExitToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
+        Me.menuExitToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.menuExitToolStripMenuItem.Text = "E&xit"
         Me.menuExitToolStripMenuItem.ToolTipText = "Exit Combat Tracker"
         '
@@ -337,55 +337,61 @@ Partial Class frmTracker
         '
         Me.EncounterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuSelectCurrentCombatantToolStripMenuItem, Me.ToolStripSeparator9, Me.menuRollAllInit, Me.menuResetAllInit, Me.CopyInitiativeListToClipboardToolStripMenuItem, Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem, Me.ToolStripSeparator10, Me.menuClearNPCsToolStripMenuItem})
         Me.EncounterToolStripMenuItem.Name = "EncounterToolStripMenuItem"
-        Me.EncounterToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
+        Me.EncounterToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.EncounterToolStripMenuItem.Text = "Encounter"
         '
         'menuSelectCurrentCombatantToolStripMenuItem
         '
         Me.menuSelectCurrentCombatantToolStripMenuItem.Name = "menuSelectCurrentCombatantToolStripMenuItem"
         Me.menuSelectCurrentCombatantToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.menuSelectCurrentCombatantToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.menuSelectCurrentCombatantToolStripMenuItem.Size = New System.Drawing.Size(284, 22)
         Me.menuSelectCurrentCombatantToolStripMenuItem.Text = "Select Current"
         Me.menuSelectCurrentCombatantToolStripMenuItem.ToolTipText = "Select the currently acting combatant."
         '
         'ToolStripSeparator9
         '
         Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
-        Me.ToolStripSeparator9.Size = New System.Drawing.Size(273, 6)
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(281, 6)
         '
         'menuRollAllInit
         '
         Me.menuRollAllInit.Name = "menuRollAllInit"
         Me.menuRollAllInit.ShortcutKeys = System.Windows.Forms.Keys.F6
-        Me.menuRollAllInit.Size = New System.Drawing.Size(276, 22)
+        Me.menuRollAllInit.Size = New System.Drawing.Size(284, 22)
         Me.menuRollAllInit.Text = "Roll Initiative"
         Me.menuRollAllInit.ToolTipText = "This will roll Initiative for all currently unrolled combatants." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Pre-existing in" & _
-            "itiative rolls will not be affected."
+    "itiative rolls will not be affected."
         '
         'menuResetAllInit
         '
         Me.menuResetAllInit.Name = "menuResetAllInit"
         Me.menuResetAllInit.ShortcutKeys = CType((System.Windows.Forms.Keys.Shift Or System.Windows.Forms.Keys.F6), System.Windows.Forms.Keys)
-        Me.menuResetAllInit.Size = New System.Drawing.Size(276, 22)
+        Me.menuResetAllInit.Size = New System.Drawing.Size(284, 22)
         Me.menuResetAllInit.Text = "End Encounter"
         Me.menuResetAllInit.ToolTipText = "End the Current Encounter" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This will remove all ongoing effects and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "reset monste" & _
-            "r health."
+    "r health."
         '
         'CopyInitiativeListToClipboardToolStripMenuItem
         '
         Me.CopyInitiativeListToClipboardToolStripMenuItem.Name = "CopyInitiativeListToClipboardToolStripMenuItem"
-        Me.CopyInitiativeListToClipboardToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.CopyInitiativeListToClipboardToolStripMenuItem.Size = New System.Drawing.Size(284, 22)
         Me.CopyInitiativeListToClipboardToolStripMenuItem.Text = "Copy Initiative List to Clipboard"
+        '
+        'CopyInitiativeListToClipboardHTMLToolStripMenuItem
+        '
+        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem.Name = "CopyInitiativeListToClipboardHTMLToolStripMenuItem"
+        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem.Size = New System.Drawing.Size(284, 22)
+        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem.Text = "Copy Initiative List to Clipboard (HTML)"
         '
         'ToolStripSeparator10
         '
         Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
-        Me.ToolStripSeparator10.Size = New System.Drawing.Size(273, 6)
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(281, 6)
         '
         'menuClearNPCsToolStripMenuItem
         '
         Me.menuClearNPCsToolStripMenuItem.Name = "menuClearNPCsToolStripMenuItem"
-        Me.menuClearNPCsToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.menuClearNPCsToolStripMenuItem.Size = New System.Drawing.Size(284, 22)
         Me.menuClearNPCsToolStripMenuItem.Text = "Remove All Monsters"
         Me.menuClearNPCsToolStripMenuItem.ToolTipText = "Clear all NPCs from roster" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(combat must be reset first)"
         '
@@ -393,48 +399,48 @@ Partial Class frmTracker
         '
         Me.StatLibraryToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuTakeShortRestToolStripMenuItem, Me.menuTakeShortRestWMilestoneToolStripMenuItem, Me.menuTakeExtendedRestToolStripMenuItem, Me.ToolStripSeparator6, Me.menuResetPCHealthToolStripMenuItem, Me.ToolStripSeparator4, Me.menuClearPCsToolStripMenuItem})
         Me.StatLibraryToolStripMenuItem.Name = "StatLibraryToolStripMenuItem"
-        Me.StatLibraryToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
+        Me.StatLibraryToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
         Me.StatLibraryToolStripMenuItem.Text = "Party"
         '
         'menuTakeShortRestToolStripMenuItem
         '
         Me.menuTakeShortRestToolStripMenuItem.Name = "menuTakeShortRestToolStripMenuItem"
-        Me.menuTakeShortRestToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
+        Me.menuTakeShortRestToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.menuTakeShortRestToolStripMenuItem.Text = "Take Short Rest"
         '
         'menuTakeShortRestWMilestoneToolStripMenuItem
         '
         Me.menuTakeShortRestWMilestoneToolStripMenuItem.Name = "menuTakeShortRestWMilestoneToolStripMenuItem"
-        Me.menuTakeShortRestWMilestoneToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
+        Me.menuTakeShortRestWMilestoneToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.menuTakeShortRestWMilestoneToolStripMenuItem.Text = "Take Short Rest w/ Milestone"
         '
         'menuTakeExtendedRestToolStripMenuItem
         '
         Me.menuTakeExtendedRestToolStripMenuItem.Name = "menuTakeExtendedRestToolStripMenuItem"
-        Me.menuTakeExtendedRestToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
+        Me.menuTakeExtendedRestToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.menuTakeExtendedRestToolStripMenuItem.Text = "Take Extended Rest"
         '
         'ToolStripSeparator6
         '
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(222, 6)
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(224, 6)
         '
         'menuResetPCHealthToolStripMenuItem
         '
         Me.menuResetPCHealthToolStripMenuItem.Name = "menuResetPCHealthToolStripMenuItem"
         Me.menuResetPCHealthToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F7
-        Me.menuResetPCHealthToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
+        Me.menuResetPCHealthToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.menuResetPCHealthToolStripMenuItem.Text = "Reset PC Health"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(222, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(224, 6)
         '
         'menuClearPCsToolStripMenuItem
         '
         Me.menuClearPCsToolStripMenuItem.Name = "menuClearPCsToolStripMenuItem"
-        Me.menuClearPCsToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
+        Me.menuClearPCsToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.menuClearPCsToolStripMenuItem.Text = "Remove Party from Roster"
         Me.menuClearPCsToolStripMenuItem.ToolTipText = "Clear all PCs from roster" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(combat must be reset first)"
         '
@@ -442,7 +448,7 @@ Partial Class frmTracker
         '
         Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menucbGroupSimilar, Me.menuAutomaticRollsToolStripMenuItem, Me.menuPopupForOngoingDamageToolStripMenuItem, Me.menuSurpriseRound, Me.menuAutoCompendium, Me.ConfigurationToolStripMenuItem})
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(56, 20)
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.OptionsToolStripMenuItem.Text = "Options"
         '
         'menucbGroupSimilar
@@ -451,7 +457,7 @@ Partial Class frmTracker
         Me.menucbGroupSimilar.CheckOnClick = True
         Me.menucbGroupSimilar.CheckState = System.Windows.Forms.CheckState.Checked
         Me.menucbGroupSimilar.Name = "menucbGroupSimilar"
-        Me.menucbGroupSimilar.Size = New System.Drawing.Size(276, 22)
+        Me.menucbGroupSimilar.Size = New System.Drawing.Size(295, 22)
         Me.menucbGroupSimilar.Text = "Group Similar when Rolling"
         Me.menucbGroupSimilar.ToolTipText = "Use the same initiative roll for all similar combatants"
         '
@@ -459,21 +465,21 @@ Partial Class frmTracker
         '
         Me.menuAutomaticRollsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuRollSavesAutomaticallyToolStripMenuItem, Me.menuRollForPowerRechargeToolStripMenuItem})
         Me.menuAutomaticRollsToolStripMenuItem.Name = "menuAutomaticRollsToolStripMenuItem"
-        Me.menuAutomaticRollsToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.menuAutomaticRollsToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.menuAutomaticRollsToolStripMenuItem.Text = "Automatic Rolls"
         '
         'menuRollSavesAutomaticallyToolStripMenuItem
         '
         Me.menuRollSavesAutomaticallyToolStripMenuItem.CheckOnClick = True
         Me.menuRollSavesAutomaticallyToolStripMenuItem.Name = "menuRollSavesAutomaticallyToolStripMenuItem"
-        Me.menuRollSavesAutomaticallyToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.menuRollSavesAutomaticallyToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.menuRollSavesAutomaticallyToolStripMenuItem.Text = "Roll for Saving Throws"
         '
         'menuRollForPowerRechargeToolStripMenuItem
         '
         Me.menuRollForPowerRechargeToolStripMenuItem.CheckOnClick = True
         Me.menuRollForPowerRechargeToolStripMenuItem.Name = "menuRollForPowerRechargeToolStripMenuItem"
-        Me.menuRollForPowerRechargeToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.menuRollForPowerRechargeToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.menuRollForPowerRechargeToolStripMenuItem.Text = "Roll for Power Recharge"
         '
         'menuPopupForOngoingDamageToolStripMenuItem
@@ -482,34 +488,34 @@ Partial Class frmTracker
         Me.menuPopupForOngoingDamageToolStripMenuItem.CheckOnClick = True
         Me.menuPopupForOngoingDamageToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.menuPopupForOngoingDamageToolStripMenuItem.Name = "menuPopupForOngoingDamageToolStripMenuItem"
-        Me.menuPopupForOngoingDamageToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.menuPopupForOngoingDamageToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.menuPopupForOngoingDamageToolStripMenuItem.Text = "Popup for Ongoing Damage"
         '
         'menuSurpriseRound
         '
         Me.menuSurpriseRound.CheckOnClick = True
         Me.menuSurpriseRound.Name = "menuSurpriseRound"
-        Me.menuSurpriseRound.Size = New System.Drawing.Size(276, 22)
+        Me.menuSurpriseRound.Size = New System.Drawing.Size(295, 22)
         Me.menuSurpriseRound.Text = "Include Surprise Round"
         '
         'menuAutoCompendium
         '
         Me.menuAutoCompendium.CheckOnClick = True
         Me.menuAutoCompendium.Name = "menuAutoCompendium"
-        Me.menuAutoCompendium.Size = New System.Drawing.Size(276, 22)
+        Me.menuAutoCompendium.Size = New System.Drawing.Size(295, 22)
         Me.menuAutoCompendium.Text = "Auto-Load Compendium Powers on Click"
         '
         'ConfigurationToolStripMenuItem
         '
         Me.ConfigurationToolStripMenuItem.Name = "ConfigurationToolStripMenuItem"
-        Me.ConfigurationToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.ConfigurationToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.ConfigurationToolStripMenuItem.Text = "Configuration"
         '
         'RosterToolStripMenuItem
         '
         Me.RosterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuStatLibraryOpenMenuItem})
         Me.RosterToolStripMenuItem.Name = "RosterToolStripMenuItem"
-        Me.RosterToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.RosterToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
         Me.RosterToolStripMenuItem.Text = "Library"
         '
         'menuStatLibraryOpenMenuItem
@@ -519,33 +525,33 @@ Partial Class frmTracker
         Me.menuStatLibraryOpenMenuItem.Size = New System.Drawing.Size(213, 22)
         Me.menuStatLibraryOpenMenuItem.Text = "Open Statblock Library"
         Me.menuStatLibraryOpenMenuItem.ToolTipText = "Open the Library" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(it is used for creation, update, deletion, copy-pasting, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and" & _
-            " adding-to-battle of stat blocks)"
+    " adding-to-battle of stat blocks)"
         '
         'WebServerToolStripMenuItem
         '
         Me.WebServerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuStartWebServerToolStripMenuItem, Me.menuStopWebServer})
         Me.WebServerToolStripMenuItem.Name = "WebServerToolStripMenuItem"
-        Me.WebServerToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
+        Me.WebServerToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
         Me.WebServerToolStripMenuItem.Text = "WebServer"
         '
         'menuStartWebServerToolStripMenuItem
         '
         Me.menuStartWebServerToolStripMenuItem.Name = "menuStartWebServerToolStripMenuItem"
-        Me.menuStartWebServerToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.menuStartWebServerToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.menuStartWebServerToolStripMenuItem.Text = "Start WebServer"
         '
         'menuStopWebServer
         '
         Me.menuStopWebServer.Enabled = False
         Me.menuStopWebServer.Name = "menuStopWebServer"
-        Me.menuStopWebServer.Size = New System.Drawing.Size(166, 22)
+        Me.menuStopWebServer.Size = New System.Drawing.Size(157, 22)
         Me.menuStopWebServer.Text = "Stop WebServer"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutDnD4eCMToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutDnD4eCMToolStripMenuItem
@@ -597,7 +603,7 @@ Partial Class frmTracker
         'ToolStripListbox.ContentPanel
         '
         Me.ToolStripListbox.ContentPanel.Controls.Add(Me.lbFightList)
-        Me.ToolStripListbox.ContentPanel.Size = New System.Drawing.Size(274, 300)
+        Me.ToolStripListbox.ContentPanel.Size = New System.Drawing.Size(274, 298)
         Me.ToolStripListbox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripListbox.LeftToolStripPanelVisible = False
         Me.ToolStripListbox.Location = New System.Drawing.Point(0, 0)
@@ -618,25 +624,25 @@ Partial Class frmTracker
         Me.lbFightList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbFightList.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbFightList.FullRowSelect = True
-        ListViewGroup7.Header = "Rounds"
-        ListViewGroup7.Name = "grpCurrentRnd"
-        ListViewGroup8.Header = "Delaying"
-        ListViewGroup8.Name = "grpDelay"
-        ListViewGroup9.Header = "Readied"
-        ListViewGroup9.Name = "grpReady"
-        ListViewGroup10.Header = "Inactive"
-        ListViewGroup10.Name = "grpInactive"
-        ListViewGroup11.Header = "In Flux"
-        ListViewGroup11.Name = "grpRolling"
-        ListViewGroup12.Header = "Reserve"
-        ListViewGroup12.Name = "grpReserve"
-        Me.lbFightList.Groups.AddRange(New System.Windows.Forms.ListViewGroup() {ListViewGroup7, ListViewGroup8, ListViewGroup9, ListViewGroup10, ListViewGroup11, ListViewGroup12})
+        ListViewGroup1.Header = "Rounds"
+        ListViewGroup1.Name = "grpCurrentRnd"
+        ListViewGroup2.Header = "Delaying"
+        ListViewGroup2.Name = "grpDelay"
+        ListViewGroup3.Header = "Readied"
+        ListViewGroup3.Name = "grpReady"
+        ListViewGroup4.Header = "Inactive"
+        ListViewGroup4.Name = "grpInactive"
+        ListViewGroup5.Header = "In Flux"
+        ListViewGroup5.Name = "grpRolling"
+        ListViewGroup6.Header = "Reserve"
+        ListViewGroup6.Name = "grpReserve"
+        Me.lbFightList.Groups.AddRange(New System.Windows.Forms.ListViewGroup() {ListViewGroup1, ListViewGroup2, ListViewGroup3, ListViewGroup4, ListViewGroup5, ListViewGroup6})
         Me.lbFightList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
         Me.lbFightList.HideSelection = False
         Me.lbFightList.Location = New System.Drawing.Point(0, 0)
         Me.lbFightList.MultiSelect = False
         Me.lbFightList.Name = "lbFightList"
-        Me.lbFightList.Size = New System.Drawing.Size(274, 300)
+        Me.lbFightList.Size = New System.Drawing.Size(274, 298)
         Me.lbFightList.TabIndex = 0
         Me.lbFightList.UseCompatibleStateImageBehavior = False
         Me.lbFightList.View = System.Windows.Forms.View.Details
@@ -671,66 +677,66 @@ Partial Class frmTracker
         Me.ctxtmenuInitList.Name = "ctxtmenuInitList"
         Me.ctxtmenuInitList.ShowCheckMargin = True
         Me.ctxtmenuInitList.ShowImageMargin = False
-        Me.ctxtmenuInitList.Size = New System.Drawing.Size(228, 177)
+        Me.ctxtmenuInitList.Size = New System.Drawing.Size(233, 177)
         Me.ctxtmenuInitList.Text = "Combat Options"
         '
         'ctxtMoveToTopToolStripMenuItem
         '
         Me.ctxtMoveToTopToolStripMenuItem.Name = "ctxtMoveToTopToolStripMenuItem"
-        Me.ctxtMoveToTopToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.ctxtMoveToTopToolStripMenuItem.Size = New System.Drawing.Size(232, 22)
         Me.ctxtMoveToTopToolStripMenuItem.Text = "Move to Top"
         '
         'ToolStripSeparator18
         '
         Me.ToolStripSeparator18.Name = "ToolStripSeparator18"
-        Me.ToolStripSeparator18.Size = New System.Drawing.Size(224, 6)
+        Me.ToolStripSeparator18.Size = New System.Drawing.Size(229, 6)
         '
         'ctxtReadyToolStripMenuItem
         '
         Me.ctxtReadyToolStripMenuItem.Name = "ctxtReadyToolStripMenuItem"
-        Me.ctxtReadyToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.ctxtReadyToolStripMenuItem.Size = New System.Drawing.Size(232, 22)
         Me.ctxtReadyToolStripMenuItem.Text = "Ready Action"
         '
         'ctxtDelayToolStripMenuItem
         '
         Me.ctxtDelayToolStripMenuItem.Name = "ctxtDelayToolStripMenuItem"
-        Me.ctxtDelayToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.ctxtDelayToolStripMenuItem.Size = New System.Drawing.Size(232, 22)
         Me.ctxtDelayToolStripMenuItem.Text = "Delay Initiative"
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(224, 6)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(229, 6)
         '
         'ctxtRemoveFighterFromCombatToolStripMenuItem
         '
         Me.ctxtRemoveFighterFromCombatToolStripMenuItem.Name = "ctxtRemoveFighterFromCombatToolStripMenuItem"
-        Me.ctxtRemoveFighterFromCombatToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.ctxtRemoveFighterFromCombatToolStripMenuItem.Size = New System.Drawing.Size(232, 22)
         Me.ctxtRemoveFighterFromCombatToolStripMenuItem.Text = "Remove Fighter from Combat"
         '
         'MarksToolStripMenuItem
         '
         Me.MarksToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ctxtMarkedEncounterToolStripMenuItem, Me.ctxtMarkedToolStripMenuItem})
         Me.MarksToolStripMenuItem.Name = "MarksToolStripMenuItem"
-        Me.MarksToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.MarksToolStripMenuItem.Size = New System.Drawing.Size(232, 22)
         Me.MarksToolStripMenuItem.Text = "Marks"
         '
         'ctxtMarkedEncounterToolStripMenuItem
         '
         Me.ctxtMarkedEncounterToolStripMenuItem.Name = "ctxtMarkedEncounterToolStripMenuItem"
-        Me.ctxtMarkedEncounterToolStripMenuItem.Size = New System.Drawing.Size(238, 22)
+        Me.ctxtMarkedEncounterToolStripMenuItem.Size = New System.Drawing.Size(244, 22)
         Me.ctxtMarkedEncounterToolStripMenuItem.Text = "Marked Until End of Encounter"
         '
         'ctxtMarkedToolStripMenuItem
         '
         Me.ctxtMarkedToolStripMenuItem.Name = "ctxtMarkedToolStripMenuItem"
-        Me.ctxtMarkedToolStripMenuItem.Size = New System.Drawing.Size(238, 22)
+        Me.ctxtMarkedToolStripMenuItem.Size = New System.Drawing.Size(244, 22)
         Me.ctxtMarkedToolStripMenuItem.Text = "Marked Until Source's Next Turn"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(224, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(229, 6)
         '
         'ctxtDisplayName
         '
@@ -744,7 +750,7 @@ Partial Class frmTracker
         '
         Me.ctxtHideCombatant.CheckOnClick = True
         Me.ctxtHideCombatant.Name = "ctxtHideCombatant"
-        Me.ctxtHideCombatant.Size = New System.Drawing.Size(227, 22)
+        Me.ctxtHideCombatant.Size = New System.Drawing.Size(232, 22)
         Me.ctxtHideCombatant.Text = "Hide from Secondary Displays"
         '
         'ToolStripEncXP
@@ -756,14 +762,14 @@ Partial Class frmTracker
         Me.ToolStripEncXP.Name = "ToolStripEncXP"
         Me.ToolStripEncXP.Padding = New System.Windows.Forms.Padding(0, 0, 1, 4)
         Me.ToolStripEncXP.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStripEncXP.Size = New System.Drawing.Size(274, 27)
+        Me.ToolStripEncXP.Size = New System.Drawing.Size(274, 29)
         Me.ToolStripEncXP.Stretch = True
         Me.ToolStripEncXP.TabIndex = 0
         '
         'toolPCCount
         '
         Me.toolPCCount.Name = "toolPCCount"
-        Me.toolPCCount.Size = New System.Drawing.Size(29, 20)
+        Me.toolPCCount.Size = New System.Drawing.Size(30, 22)
         Me.toolPCCount.Text = "PCs:"
         Me.toolPCCount.ToolTipText = "Number of PCs currently in Encounter"
         '
@@ -771,18 +777,18 @@ Partial Class frmTracker
         '
         Me.dfPartySize.Enabled = False
         Me.dfPartySize.Name = "dfPartySize"
-        Me.dfPartySize.Size = New System.Drawing.Size(30, 23)
+        Me.dfPartySize.Size = New System.Drawing.Size(30, 25)
         Me.dfPartySize.ToolTipText = "Number of PCs currently in Encounter"
         '
         'ToolStripSeparator7
         '
         Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 23)
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 25)
         '
         'toolEncLevel
         '
         Me.toolEncLevel.Name = "toolEncLevel"
-        Me.toolEncLevel.Size = New System.Drawing.Size(56, 20)
+        Me.toolEncLevel.Size = New System.Drawing.Size(59, 22)
         Me.toolEncLevel.Text = "Enc Level:"
         Me.toolEncLevel.ToolTipText = "Current encounter level for current PCs" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(if no PCs, is based on a party of 5)"
         '
@@ -790,18 +796,18 @@ Partial Class frmTracker
         '
         Me.dfEncounterLevel.Enabled = False
         Me.dfEncounterLevel.Name = "dfEncounterLevel"
-        Me.dfEncounterLevel.Size = New System.Drawing.Size(30, 23)
+        Me.dfEncounterLevel.Size = New System.Drawing.Size(30, 25)
         Me.dfEncounterLevel.ToolTipText = "Current encounter level for current PCs" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(if no PCs, is based on a party of 5)"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 23)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'toolTotalXP
         '
         Me.toolTotalXP.Name = "toolTotalXP"
-        Me.toolTotalXP.Size = New System.Drawing.Size(50, 20)
+        Me.toolTotalXP.Size = New System.Drawing.Size(54, 22)
         Me.toolTotalXP.Text = "Total XP:"
         Me.toolTotalXP.ToolTipText = "Total XP available from combatants"
         '
@@ -1464,7 +1470,7 @@ Partial Class frmTracker
         'ToolStripLabel1
         '
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(34, 23)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(39, 23)
         Me.ToolStripLabel1.Text = "Name"
         '
         'dfStatName
@@ -1763,30 +1769,30 @@ Partial Class frmTracker
         '
         Me.CctxtmenuPowerList.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UseDisableToolStripMenuItem, Me.RechargeEnableToolStripMenuItem, Me.ViewCompendiumEntryToolStripMenuItem, Me.SetAsActiveStance})
         Me.CctxtmenuPowerList.Name = "ContextMenuStrip1"
-        Me.CctxtmenuPowerList.Size = New System.Drawing.Size(201, 92)
+        Me.CctxtmenuPowerList.Size = New System.Drawing.Size(207, 92)
         '
         'UseDisableToolStripMenuItem
         '
         Me.UseDisableToolStripMenuItem.Name = "UseDisableToolStripMenuItem"
-        Me.UseDisableToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
+        Me.UseDisableToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
         Me.UseDisableToolStripMenuItem.Text = "Use/Disable"
         '
         'RechargeEnableToolStripMenuItem
         '
         Me.RechargeEnableToolStripMenuItem.Name = "RechargeEnableToolStripMenuItem"
-        Me.RechargeEnableToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
+        Me.RechargeEnableToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
         Me.RechargeEnableToolStripMenuItem.Text = "Recharge/Enable"
         '
         'ViewCompendiumEntryToolStripMenuItem
         '
         Me.ViewCompendiumEntryToolStripMenuItem.Name = "ViewCompendiumEntryToolStripMenuItem"
-        Me.ViewCompendiumEntryToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
+        Me.ViewCompendiumEntryToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
         Me.ViewCompendiumEntryToolStripMenuItem.Text = "View Compendium Entry"
         '
         'SetAsActiveStance
         '
         Me.SetAsActiveStance.Name = "SetAsActiveStance"
-        Me.SetAsActiveStance.Size = New System.Drawing.Size(200, 22)
+        Me.SetAsActiveStance.Size = New System.Drawing.Size(206, 22)
         Me.SetAsActiveStance.Text = "Set As Active Stance"
         '
         'tabNotes
@@ -1907,12 +1913,6 @@ Partial Class frmTracker
         'ContentPanel
         '
         Me.ContentPanel.Size = New System.Drawing.Size(150, 150)
-        '
-        'CopyInitiativeListToClipboardHTMLToolStripMenuItem
-        '
-        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem.Name = "CopyInitiativeListToClipboardHTMLToolStripMenuItem"
-        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem.Size = New System.Drawing.Size(272, 22)
-        Me.CopyInitiativeListToClipboardHTMLToolStripMenuItem.Text = "Copy Initiative List to Clipboard (HTML)"
         '
         'frmTracker
         '

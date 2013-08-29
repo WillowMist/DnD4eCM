@@ -1498,19 +1498,20 @@ Public Class Statblock
                         nCount = Val(attlist("count"))
                     ElseIf elementName = "RulesElement" And attlist.ContainsKey("name") _
                                             And attlist.ContainsKey("type") Then
+                        'If this is a magic item type, get the RulesElement name and look up the proper URL for the magic item
+                        If attlist("type") = "Magic Item" And sItemURL = "" Then
+                            ' For magic items only, get the proper URL before adding it
+                            'Do this BEFORE adjusting the name, since we need "Shadowdance Armor +2", not "Shadowdance Leather Armor +2"
+                            sItemURL = ImportCharFromCBXML_ItemURLs(attlist("name"))
+                        End If
                         If sItemName <> "" Then
                             sItemName = attlist("name").ToString.Replace(sItemType, sItemName)
                         End If
                         If sItemName = "" Then sItemName &= attlist("name")
                         sItemType &= attlist("type")
-                        sItemURL = attlist("url")
-                        If sItemURL = Nothing Then
-                            sItemURL = ""
-                        End If
-                        If sItemURL <> "" Then sItemURL = sItemURL.Replace("&amp;", "&")
-                        If sItemURL.Contains("item.aspx") Then sItemURL = sItemURL.Replace("item.aspx?", "display.aspx?page=item&")
 
-                    End If
+
+                        End If
                 ElseIf reader.NodeType = Xml.XmlNodeType.EndElement Then
                     If reader.Name = "LootTally" Then
                         ' Finished with LootTally
@@ -1534,6 +1535,60 @@ Public Class Statblock
             Loop
         End If
     End Sub
+
+    Private Function ImportCharFromCBXML_ItemURLs(sItemName As String)
+        ' The URLs character builder includes for items are wrong. They made changes to the compendium URLs but never updated character builder.
+        ' So we have to search the compendium for the item, get the correct ID, and build an item URL from it
+        Dim client As New System.Net.WebClient
+        Dim sSearchURL As String = ""
+        Dim sID As String = ""
+        Dim sSearchResultsXML As String = ""
+        Dim sItemURL As String = ""
+
+
+        ' The search doesn't require a login, so we don't have to worry about cookies or displaying a login screen
+        ' Need to remove extra parts of the name, like +1 or Heroic Tier
+        sItemName = sItemName.Replace(" (heroic tier)", "")
+        sItemName = sItemName.Replace(" (paragon tier)", "")
+        sItemName = sItemName.Replace(" (epic tier)", "")
+        Dim parts As String() = sItemName.Split("+")
+        sItemName = parts(0)
+
+        ' The compendium search returns XML which will have the proper ID number we want
+        sSearchURL = "http://www.wizards.com/dndinsider/compendium/CompendiumSearch.asmx/KeywordSearch?Keywords=" & System.Web.HttpUtility.UrlEncode(sItemName) & "&Tab=item&NameOnly=true"
+
+        Try
+            ' Get the search results
+            sSearchResultsXML = client.DownloadString(sSearchURL)
+            ' Parse the XML for an ID number
+            Dim r As System.Xml.XmlReader = System.Xml.XmlReader.Create(New System.IO.StringReader(sSearchResultsXML))
+
+            Do While r.Read
+                If r.NodeType = Xml.XmlNodeType.Element Then
+                    If r.Name = "ID" Then
+                        r.Read()
+                        sID = r.Value
+                        Exit Do
+                    End If
+                End If
+            Loop
+            If sID <> "" Then
+                sItemURL = "http://www.wizards.com/dndinsider/compendium/item.aspx?id=" & sID
+            Else
+                sItemURL = ""
+            End If
+        Catch
+            ' Do nothing if it fails (if you have no internet, or any other error)
+        End Try
+
+
+
+
+        Return sItemURL
+    End Function
+
+
+
     Private Sub ImportCharFromCBXML_PowerStats(ByRef p_reader As Object)
         Dim reader As System.Xml.XmlReader = p_reader
         Dim elementName As String = ""
