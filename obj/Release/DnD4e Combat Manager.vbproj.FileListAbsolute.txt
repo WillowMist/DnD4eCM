@@ -322,3 +322,7 @@ C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3
 C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.exe
 C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.xml
 C:\Documents and Settings\Jason\My Documents\Dropbox\Thumb\DnD4eCM Source v1.8.3\obj\Release\DnD4e Combat Manager.pdb
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\bin\Release\DnD4e Combat Manager.exe.config
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.exe
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.xml
+C:\Users\gemsley\Documents\GitHub\DnD4eCM\obj\Release\DnD4e Combat Manager.pdb
