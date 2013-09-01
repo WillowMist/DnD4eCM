@@ -75,30 +75,111 @@
 			td.effects {
 				font-size: large;
 			}
+			h3 {
+				color: white;
+			}
 		</style>
 		<script type="text/javascript">
 		//<![CDATA[
-			function Ajax() {
-				if (window.XMLHttpRequest) { // for IE7+, Firefox, Chrome, Opera, Safari
-					xmlhttp=new XMLHttpRequest();
-				}
-				else { // for IE6, IE5
-					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-				}
-				xmlhttp.onreadystatechange = function() {
-					if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-						document.getElementById('ReloadThis').innerHTML=xmlhttp.responseText;
-						setTimeout("Ajax();", 100); //Can be set to whatever timeout
-					}
-				}
-				// Send the request asynchronously.
-				xmlhttp.open("GET","content",true);
-				xmlhttp.send();
+			// Initialize global variables
+			var attempts = 0;
+			var timeout = 1000;    // In miliseconds
+			var max_attempts = 5;  // Six from 0
+			var t = '';
+
+		// Cross-Browser XMLHttpRequest()
+		function createXHR()
+		{
+			try { return new XMLHttpRequest(); } catch(e) {}
+			try { return new ActiveXObject("Msxml2.XMLHTTP.7.0"); } catch (e) {}
+			try { return new ActiveXObject("Msxml2.XMLHTTP.6.0"); } catch (e) {}
+			try { return new ActiveXObject("Msxml2.XMLHTTP.5.0"); } catch (e) {}
+			try { return new ActiveXObject("Msxml2.XMLHTTP.4.0"); } catch (e) {}
+			try { return new ActiveXObject("Msxml2.XMLHTTP.3.0"); } catch (e) {}
+			try { return new ActiveXObject("Msxml2.XMLHTTP"); } catch (e) {}
+			try { return new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) {}
+			alert("Please enable ActiveX or update your browser.");
+			return null;
+		}
+
+		// User calls this function, i.e. onclick event handler
+		function trigger()
+		{	
+			// Re-set the time-out in case the user interrupts the cycle
+			clearTimeout(t);
+			attempts = 0;
+			timeout = 1000;
+		
+			driver();
+		}
+
+		// Handle the state changes of the XHR
+		function callback()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				// Success! Re-set the time-out for the next round.
+				clearTimeout(t);
+				attempts = 0;
+				timeout = 1000;
+
+				// Perform whatever action we need to do on success.
+				document.getElementById('ReloadThis').innerHTML=xmlhttp.responseText;
+				setTimeout("trigger();", 100);
+
+
 			}
+			else
+			{
+				// Error handling/Request status indication
+			}
+		}
+
+		// The guts of the request
+		function driver()
+		{
+			xmlhttp = createXHR();
+
+			xmlhttp.open("GET","content",true);
+
+			t = setTimeout(function(){timedout();}, timeout);
+			xmlhttp.onreadystatechange=function(){callback();}
+
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xmlhttp.send();
+		}
+
+		// Run this if we time out
+		function timedout()
+		{
+			if(typeof(xmlhttp) == 'object')
+				xmlhttp.abort();
+
+			if(attempts < max_attempts)
+			{
+				// We timed out. Back off the time-out a bit.
+				attempts++;
+				timeout = timeout + 200;
+				// We're adding 200ms to the timeout each iteration, YMMV.
+				// Maybe if attempts == max_attempts make the timeout really huge.
+
+				// Play it again, Sam!
+				driver();
+			}
+			else
+			{
+				// We failed. Set the timeout back to default for the next round.
+				timeout = 1000;
+				attempts = 0;
+				// Keep trying anyways
+				document.getElementById('ReloadThis').innerHTML="<h3>Error loading data, retrying...</h3>"
+				driver();
+			}
+		}
 		//]]>
 		</script>
 	</head>
-	<body onload="Ajax();">
+	<body onload="trigger();">
 		<div class="initwindow" id="ReloadThis">Please wait.  Loading Initiative List...</div>
 	</body>
 </html>
