@@ -898,6 +898,7 @@ Public Class frmTracker
             If effectreturn = Windows.Forms.DialogResult.OK Then
                 fight.EffectAdd(effectwin.modeffect)
                 EffectLoad()
+                UpdateFromClass()
             End If
 
             effectwin.Dispose()
@@ -913,6 +914,7 @@ Public Class frmTracker
                 If effectreturn = Windows.Forms.DialogResult.OK Then
                     fight.EffectChange(effectwin.modeffect)
                     EffectLoad()
+                    UpdateFromClass()
                 End If
 
                 effectwin.Dispose()
@@ -925,6 +927,7 @@ Public Class frmTracker
             If lbEffects.SelectedItems.Count > 0 Then
                 fight.EffectRemove(lbEffects.SelectedItems(0).Tag)
                 EffectLoad()
+                UpdateFromClass()
             End If
         End If
     End Sub
