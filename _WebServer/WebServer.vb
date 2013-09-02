@@ -99,7 +99,7 @@ Public Class WebServer
     End Function
 
 
-    Public Sub StartWebServer()
+    Public Function StartWebServer()
         Try
             LocalPort = My.Settings.htmlPort
             activeListen = True
@@ -110,8 +110,12 @@ Public Class WebServer
             WebThread.Start()
         Catch ex As Exception
             Console.WriteLine(ex.Message)
+            MessageBox.Show("Error starting web server - port already in use?")
+            Return False
         End Try
-    End Sub
+        Return True
+
+    End Function
     Public Sub Firewall(ByVal cmd As String, ByVal port As Integer)
         Dim firewall As New ProcessStartInfo
         firewall.UseShellExecute = False
