@@ -1122,10 +1122,11 @@ Public Class frmTracker
     End Sub
 
     Private Sub menuStartWebServerToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles menuStartWebServerToolStripMenuItem.Click
-        cmWebServer.StartWebServer()
-        ExportHTMLInitList()
-        menuStartWebServerToolStripMenuItem.Enabled = False
-        menuStopWebServer.Enabled = True
+        If cmWebServer.StartWebServer() Then
+            ExportHTMLInitList()
+            menuStartWebServerToolStripMenuItem.Enabled = False
+            menuStopWebServer.Enabled = True
+        End If
     End Sub
     Private Sub shutdown() Handles Me.FormClosing
         cmWebServer.StopWebServer()
