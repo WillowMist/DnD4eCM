@@ -24,6 +24,8 @@ Partial Class Config
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabGeneral = New System.Windows.Forms.TabPage()
+        Me.cfgAutoSurge = New System.Windows.Forms.CheckBox()
+        Me.cfgSurgePlusPrompt = New System.Windows.Forms.CheckBox()
         Me.cfgWhiteMonsterBGs = New System.Windows.Forms.CheckBox()
         Me.cfgRollEffectSaves = New System.Windows.Forms.CheckBox()
         Me.cfgRollPowerRecharge = New System.Windows.Forms.CheckBox()
@@ -41,7 +43,6 @@ Partial Class Config
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnOk = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
-        Me.cfgSurgePlusPrompt = New System.Windows.Forms.CheckBox()
         Me.TabControl1.SuspendLayout()
         Me.tabGeneral.SuspendLayout()
         Me.tabSecondaryDisplay.SuspendLayout()
@@ -56,11 +57,12 @@ Partial Class Config
         Me.TabControl1.Multiline = True
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(385, 220)
+        Me.TabControl1.Size = New System.Drawing.Size(385, 251)
         Me.TabControl1.TabIndex = 0
         '
         'tabGeneral
         '
+        Me.tabGeneral.Controls.Add(Me.cfgAutoSurge)
         Me.tabGeneral.Controls.Add(Me.cfgSurgePlusPrompt)
         Me.tabGeneral.Controls.Add(Me.cfgWhiteMonsterBGs)
         Me.tabGeneral.Controls.Add(Me.cfgRollEffectSaves)
@@ -72,10 +74,30 @@ Partial Class Config
         Me.tabGeneral.Location = New System.Drawing.Point(4, 22)
         Me.tabGeneral.Name = "tabGeneral"
         Me.tabGeneral.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabGeneral.Size = New System.Drawing.Size(377, 194)
+        Me.tabGeneral.Size = New System.Drawing.Size(377, 225)
         Me.tabGeneral.TabIndex = 0
         Me.tabGeneral.Text = "General"
         Me.tabGeneral.UseVisualStyleBackColor = True
+        '
+        'cfgAutoSurge
+        '
+        Me.cfgAutoSurge.AutoSize = True
+        Me.cfgAutoSurge.Location = New System.Drawing.Point(6, 190)
+        Me.cfgAutoSurge.Name = "cfgAutoSurge"
+        Me.cfgAutoSurge.Size = New System.Drawing.Size(331, 17)
+        Me.cfgAutoSurge.TabIndex = 8
+        Me.cfgAutoSurge.Text = "Automatically apply healing and remove surge using surge button"
+        Me.cfgAutoSurge.UseVisualStyleBackColor = True
+        '
+        'cfgSurgePlusPrompt
+        '
+        Me.cfgSurgePlusPrompt.AutoSize = True
+        Me.cfgSurgePlusPrompt.Location = New System.Drawing.Point(6, 167)
+        Me.cfgSurgePlusPrompt.Name = "cfgSurgePlusPrompt"
+        Me.cfgSurgePlusPrompt.Size = New System.Drawing.Size(259, 17)
+        Me.cfgSurgePlusPrompt.TabIndex = 7
+        Me.cfgSurgePlusPrompt.Text = "Prompt for value to add when using healing surge"
+        Me.cfgSurgePlusPrompt.UseVisualStyleBackColor = True
         '
         'cfgWhiteMonsterBGs
         '
@@ -155,7 +177,7 @@ Partial Class Config
         Me.tabSecondaryDisplay.Location = New System.Drawing.Point(4, 22)
         Me.tabSecondaryDisplay.Name = "tabSecondaryDisplay"
         Me.tabSecondaryDisplay.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabSecondaryDisplay.Size = New System.Drawing.Size(377, 165)
+        Me.tabSecondaryDisplay.Size = New System.Drawing.Size(377, 225)
         Me.tabSecondaryDisplay.TabIndex = 1
         Me.tabSecondaryDisplay.Text = "Secondary Display"
         Me.tabSecondaryDisplay.UseVisualStyleBackColor = True
@@ -231,7 +253,7 @@ Partial Class Config
         '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(237, 234)
+        Me.btnOk.Location = New System.Drawing.Point(237, 269)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(75, 23)
         Me.btnOk.TabIndex = 1
@@ -240,22 +262,12 @@ Partial Class Config
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(318, 234)
+        Me.btnCancel.Location = New System.Drawing.Point(318, 269)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 2
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
-        '
-        'cfgSurgePlusPrompt
-        '
-        Me.cfgSurgePlusPrompt.AutoSize = True
-        Me.cfgSurgePlusPrompt.Location = New System.Drawing.Point(6, 167)
-        Me.cfgSurgePlusPrompt.Name = "cfgSurgePlusPrompt"
-        Me.cfgSurgePlusPrompt.Size = New System.Drawing.Size(259, 17)
-        Me.cfgSurgePlusPrompt.TabIndex = 7
-        Me.cfgSurgePlusPrompt.Text = "Prompt for value to add when using healing surge"
-        Me.cfgSurgePlusPrompt.UseVisualStyleBackColor = True
         '
         'Config
         '
@@ -298,4 +310,5 @@ Partial Class Config
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cfgWhiteMonsterBGs As System.Windows.Forms.CheckBox
     Friend WithEvents cfgSurgePlusPrompt As System.Windows.Forms.CheckBox
+    Friend WithEvents cfgAutoSurge As System.Windows.Forms.CheckBox
 End Class
