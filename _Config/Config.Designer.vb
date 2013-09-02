@@ -22,25 +22,26 @@ Partial Class Config
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TabControl1 = New System.Windows.Forms.TabControl
-        Me.tabGeneral = New System.Windows.Forms.TabPage
-        Me.cfgRollEffectSaves = New System.Windows.Forms.CheckBox
-        Me.cfgRollPowerRecharge = New System.Windows.Forms.CheckBox
-        Me.cfgSurpriseRound = New System.Windows.Forms.CheckBox
-        Me.cfgOngoingPopup = New System.Windows.Forms.CheckBox
-        Me.cfgGroupSimilar = New System.Windows.Forms.CheckBox
-        Me.cfgAutoCompendium = New System.Windows.Forms.CheckBox
-        Me.tabSecondaryDisplay = New System.Windows.Forms.TabPage
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.cfgDisplayOtherHP = New System.Windows.Forms.CheckBox
-        Me.cfgDisplayHeroHP = New System.Windows.Forms.CheckBox
-        Me.cfgDisplayInit = New System.Windows.Forms.CheckBox
-        Me.cfgDisplayRound = New System.Windows.Forms.CheckBox
-        Me.cfgHttpPort = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.btnOk = New System.Windows.Forms.Button
-        Me.btnCancel = New System.Windows.Forms.Button
-        Me.cfgWhiteMonsterBGs = New System.Windows.Forms.CheckBox
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.tabGeneral = New System.Windows.Forms.TabPage()
+        Me.cfgWhiteMonsterBGs = New System.Windows.Forms.CheckBox()
+        Me.cfgRollEffectSaves = New System.Windows.Forms.CheckBox()
+        Me.cfgRollPowerRecharge = New System.Windows.Forms.CheckBox()
+        Me.cfgSurpriseRound = New System.Windows.Forms.CheckBox()
+        Me.cfgOngoingPopup = New System.Windows.Forms.CheckBox()
+        Me.cfgGroupSimilar = New System.Windows.Forms.CheckBox()
+        Me.cfgAutoCompendium = New System.Windows.Forms.CheckBox()
+        Me.tabSecondaryDisplay = New System.Windows.Forms.TabPage()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cfgDisplayOtherHP = New System.Windows.Forms.CheckBox()
+        Me.cfgDisplayHeroHP = New System.Windows.Forms.CheckBox()
+        Me.cfgDisplayInit = New System.Windows.Forms.CheckBox()
+        Me.cfgDisplayRound = New System.Windows.Forms.CheckBox()
+        Me.cfgHttpPort = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnOk = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.cfgSurgePlusPrompt = New System.Windows.Forms.CheckBox()
         Me.TabControl1.SuspendLayout()
         Me.tabGeneral.SuspendLayout()
         Me.tabSecondaryDisplay.SuspendLayout()
@@ -55,11 +56,12 @@ Partial Class Config
         Me.TabControl1.Multiline = True
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(385, 191)
+        Me.TabControl1.Size = New System.Drawing.Size(385, 220)
         Me.TabControl1.TabIndex = 0
         '
         'tabGeneral
         '
+        Me.tabGeneral.Controls.Add(Me.cfgSurgePlusPrompt)
         Me.tabGeneral.Controls.Add(Me.cfgWhiteMonsterBGs)
         Me.tabGeneral.Controls.Add(Me.cfgRollEffectSaves)
         Me.tabGeneral.Controls.Add(Me.cfgRollPowerRecharge)
@@ -70,10 +72,20 @@ Partial Class Config
         Me.tabGeneral.Location = New System.Drawing.Point(4, 22)
         Me.tabGeneral.Name = "tabGeneral"
         Me.tabGeneral.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabGeneral.Size = New System.Drawing.Size(377, 165)
+        Me.tabGeneral.Size = New System.Drawing.Size(377, 194)
         Me.tabGeneral.TabIndex = 0
         Me.tabGeneral.Text = "General"
         Me.tabGeneral.UseVisualStyleBackColor = True
+        '
+        'cfgWhiteMonsterBGs
+        '
+        Me.cfgWhiteMonsterBGs.AutoSize = True
+        Me.cfgWhiteMonsterBGs.Location = New System.Drawing.Point(6, 144)
+        Me.cfgWhiteMonsterBGs.Name = "cfgWhiteMonsterBGs"
+        Me.cfgWhiteMonsterBGs.Size = New System.Drawing.Size(347, 17)
+        Me.cfgWhiteMonsterBGs.TabIndex = 6
+        Me.cfgWhiteMonsterBGs.Text = "Use White Backgrounds for NPCs and Monsters (Red when Bloody)"
+        Me.cfgWhiteMonsterBGs.UseVisualStyleBackColor = True
         '
         'cfgRollEffectSaves
         '
@@ -219,7 +231,7 @@ Partial Class Config
         '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(237, 209)
+        Me.btnOk.Location = New System.Drawing.Point(237, 234)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(75, 23)
         Me.btnOk.TabIndex = 1
@@ -228,28 +240,28 @@ Partial Class Config
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(318, 209)
+        Me.btnCancel.Location = New System.Drawing.Point(318, 234)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 2
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
-        'cfgWhiteMonsterBGs
+        'cfgSurgePlusPrompt
         '
-        Me.cfgWhiteMonsterBGs.AutoSize = True
-        Me.cfgWhiteMonsterBGs.Location = New System.Drawing.Point(6, 144)
-        Me.cfgWhiteMonsterBGs.Name = "cfgWhiteMonsterBGs"
-        Me.cfgWhiteMonsterBGs.Size = New System.Drawing.Size(347, 17)
-        Me.cfgWhiteMonsterBGs.TabIndex = 6
-        Me.cfgWhiteMonsterBGs.Text = "Use White Backgrounds for NPCs and Monsters (Red when Bloody)"
-        Me.cfgWhiteMonsterBGs.UseVisualStyleBackColor = True
+        Me.cfgSurgePlusPrompt.AutoSize = True
+        Me.cfgSurgePlusPrompt.Location = New System.Drawing.Point(6, 167)
+        Me.cfgSurgePlusPrompt.Name = "cfgSurgePlusPrompt"
+        Me.cfgSurgePlusPrompt.Size = New System.Drawing.Size(259, 17)
+        Me.cfgSurgePlusPrompt.TabIndex = 7
+        Me.cfgSurgePlusPrompt.Text = "Prompt for value to add when using healing surge"
+        Me.cfgSurgePlusPrompt.UseVisualStyleBackColor = True
         '
         'Config
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(409, 244)
+        Me.ClientSize = New System.Drawing.Size(409, 323)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnOk)
         Me.Controls.Add(Me.TabControl1)
@@ -285,4 +297,5 @@ Partial Class Config
     Friend WithEvents cfgHttpPort As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cfgWhiteMonsterBGs As System.Windows.Forms.CheckBox
+    Friend WithEvents cfgSurgePlusPrompt As System.Windows.Forms.CheckBox
 End Class

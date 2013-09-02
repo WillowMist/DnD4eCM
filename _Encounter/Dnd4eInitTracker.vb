@@ -312,8 +312,15 @@ Public Class frmTracker
         Dim fighter As Combatant = ListSelectedFighter
 
         If Not fighter Is Nothing Then
-            dfDamHealAmt.Value = fighter.nSurgeValue
-            dfDamHealAmt.Focus()
+            If My.Settings.bSurgePlusPrompt Then
+                Dim nAdditionalHealing As Integer
+                nAdditionalHealing = Val(InputBox("Base healing surge is " & fighter.nSurgeValue & ". Additional healing:", "Healing Surge"))
+                dfDamHealAmt.Value = fighter.nSurgeValue + nAdditionalHealing
+                dfDamHealAmt.Focus()
+            Else
+                dfDamHealAmt.Value = fighter.nSurgeValue
+                dfDamHealAmt.Focus()
+            End If
         End If
     End Sub
     Private Sub pbMaxHP_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMaxHP.Click
