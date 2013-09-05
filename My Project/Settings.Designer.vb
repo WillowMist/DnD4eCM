@@ -218,6 +218,30 @@ Namespace My
                 Me("bWhiteMonsterBGs") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property bSurgePlusPrompt() As Boolean
+            Get
+                Return CType(Me("bSurgePlusPrompt"),Boolean)
+            End Get
+            Set
+                Me("bSurgePlusPrompt") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(), _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")> _
+        Public Property bAutoSurge() As Boolean
+            Get
+                Return CType(Me("bAutoSurge"), Boolean)
+            End Get
+            Set(value As Boolean)
+                Me("bAutoSurge") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

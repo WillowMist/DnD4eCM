@@ -312,8 +312,40 @@ Public Class frmTracker
         Dim fighter As Combatant = ListSelectedFighter
 
         If Not fighter Is Nothing Then
-            dfDamHealAmt.Value = fighter.nSurgeValue
+            If My.Settings.bSurgePlusPrompt Then
+                Dim nAdditionalHealing As Integer
+
+                nAdditionalHealing = Val(InputBox("Base healing surge is " & fighter.nSurgeValue & Environment.NewLine _
+                                                  & fighter.sName & " has " & fighter.nSurgesLeft & " healing surges left." & Environment.NewLine & Environment.NewLine _
+                                                  & "Additional healing:", "Healing Surge", "0"))
+                dfDamHealAmt.Value = fighter.nSurgeValue + nAdditionalHealing
+            Else
+                dfDamHealAmt.Value = fighter.nSurgeValue
+            End If
             dfDamHealAmt.Focus()
+
+            If My.Settings.bAutoSurge Then
+                ' Make sure they have surges remaining
+                If (fighter.nSurgesLeft <= 0) Then
+                    Dim reply As DialogResult = MessageBox.Show(fighter.sName & " is out of healing surges.  Proceed anyways?", "Out of healing surges", _
+                                                                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1)
+                    If reply = Windows.Forms.DialogResult.No Then
+                        Return
+                    End If
+                End If
+                Dim usesurge As DialogResult = MessageBox.Show("Heal " & fighter.sName & " for " & dfDamHealAmt.Value & "?", "Healing surge", _
+                                                               MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
+                If usesurge = Windows.Forms.DialogResult.No Then
+                    Return
+                End If
+
+                ' Heal them
+                fighter.Heal(dfDamHealAmt.Value)
+                UpdateFromClass()
+                ' Use a surge
+                fighter.ModSurges(-1)
+                dfSurgesLeft.Text = fighter.sSurgeView
+            End If
         End If
     End Sub
     Private Sub pbMaxHP_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMaxHP.Click
