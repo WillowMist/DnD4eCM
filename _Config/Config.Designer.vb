@@ -43,6 +43,7 @@ Partial Class Config
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnOk = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
+        Me.cfgAutoSave = New System.Windows.Forms.CheckBox()
         Me.TabControl1.SuspendLayout()
         Me.tabGeneral.SuspendLayout()
         Me.tabSecondaryDisplay.SuspendLayout()
@@ -57,11 +58,12 @@ Partial Class Config
         Me.TabControl1.Multiline = True
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(385, 251)
+        Me.TabControl1.Size = New System.Drawing.Size(385, 281)
         Me.TabControl1.TabIndex = 0
         '
         'tabGeneral
         '
+        Me.tabGeneral.Controls.Add(Me.cfgAutoSave)
         Me.tabGeneral.Controls.Add(Me.cfgAutoSurge)
         Me.tabGeneral.Controls.Add(Me.cfgSurgePlusPrompt)
         Me.tabGeneral.Controls.Add(Me.cfgWhiteMonsterBGs)
@@ -74,7 +76,7 @@ Partial Class Config
         Me.tabGeneral.Location = New System.Drawing.Point(4, 22)
         Me.tabGeneral.Name = "tabGeneral"
         Me.tabGeneral.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabGeneral.Size = New System.Drawing.Size(377, 225)
+        Me.tabGeneral.Size = New System.Drawing.Size(377, 255)
         Me.tabGeneral.TabIndex = 0
         Me.tabGeneral.Text = "General"
         Me.tabGeneral.UseVisualStyleBackColor = True
@@ -253,7 +255,7 @@ Partial Class Config
         '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(237, 269)
+        Me.btnOk.Location = New System.Drawing.Point(237, 315)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(75, 23)
         Me.btnOk.TabIndex = 1
@@ -262,18 +264,28 @@ Partial Class Config
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(318, 269)
+        Me.btnCancel.Location = New System.Drawing.Point(318, 315)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 2
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
+        'cfgAutoSave
+        '
+        Me.cfgAutoSave.AutoSize = True
+        Me.cfgAutoSave.Location = New System.Drawing.Point(6, 213)
+        Me.cfgAutoSave.Name = "cfgAutoSave"
+        Me.cfgAutoSave.Size = New System.Drawing.Size(252, 17)
+        Me.cfgAutoSave.TabIndex = 9
+        Me.cfgAutoSave.Text = "Save encounter to Autosave.xml after each turn"
+        Me.cfgAutoSave.UseVisualStyleBackColor = True
+        '
         'Config
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(409, 323)
+        Me.ClientSize = New System.Drawing.Size(409, 348)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnOk)
         Me.Controls.Add(Me.TabControl1)
@@ -311,4 +323,5 @@ Partial Class Config
     Friend WithEvents cfgWhiteMonsterBGs As System.Windows.Forms.CheckBox
     Friend WithEvents cfgSurgePlusPrompt As System.Windows.Forms.CheckBox
     Friend WithEvents cfgAutoSurge As System.Windows.Forms.CheckBox
+    Friend WithEvents cfgAutoSave As System.Windows.Forms.CheckBox
 End Class
