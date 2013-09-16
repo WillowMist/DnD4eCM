@@ -1,4 +1,4 @@
-﻿Imports _4eMonster
+﻿
 
 Public Class StatLibraryView
 

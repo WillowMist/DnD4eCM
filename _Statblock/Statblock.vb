@@ -1,5 +1,4 @@
-﻿Imports _4eMonster
-
+﻿
 Public Class Statblock
 
     ' Main Data Elements

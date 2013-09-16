@@ -59,10 +59,6 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="4eMonster, Version=0.8.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\4eMonster Class\4eMonster\4eMonster\bin\Release\4eMonster.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
@@ -109,6 +105,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Settings.vb" />
+    <Compile Include="_4eMonster\Monster Components.vb" />
+    <Compile Include="_4eMonster\Monster.vb" />
+    <Compile Include="_4eMonster\Power Components.vb" />
+    <Compile Include="_4eShared\DnDLibrary.vb" />
     <Compile Include="_Config\Config.Designer.vb">
       <DependentUpon>Config.vb</DependentUpon>
     </Compile>
@@ -227,6 +227,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="4etools_symbols.ttf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
