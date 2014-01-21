@@ -17,6 +17,7 @@
         cfgWhiteMonsterBGs.Checked = My.Settings.bWhiteMonsterBGs
         cfgSurgePlusPrompt.Checked = My.Settings.bSurgePlusPrompt
         cfgAutoSurge.Checked = My.Settings.bAutoSurge
+        cfgAutoSave.Checked = My.Settings.bAutoSave
         changed = False
     End Sub
     Private Sub ValuesChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cfgAutoCompendium.CheckedChanged, cfgDisplayHeroHP.CheckedChanged, cfgDisplayInit.CheckedChanged, cfgDisplayOtherHP.CheckedChanged, cfgDisplayRound.CheckedChanged, cfgGroupSimilar.CheckedChanged, cfgOngoingPopup.CheckedChanged, cfgRollEffectSaves.CheckedChanged, cfgRollPowerRecharge.CheckedChanged, cfgSurpriseRound.CheckedChanged, cfgWhiteMonsterBGs.CheckedChanged
@@ -58,6 +59,7 @@
         My.Settings.bWhiteMonsterBGs = cfgWhiteMonsterBGs.Checked
         My.Settings.bSurgePlusPrompt = cfgSurgePlusPrompt.Checked
         My.Settings.bAutoSurge = cfgAutoSurge.Checked
+        My.Settings.bAutoSave = cfgAutoSave.Checked
         changed = False
     End Sub
 

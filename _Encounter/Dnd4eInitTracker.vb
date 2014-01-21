@@ -406,6 +406,9 @@ Public Class frmTracker
 
     Private Sub pbNextInit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbNextInit.Click
         fight.FinishCurrentTurn()
+        If My.Settings.bAutoSave Then
+            fight.SaveToFile(My.Application.Info.DirectoryPath & "\Autosave.xml")
+        End If
         UpdateFromClass()
     End Sub
 
