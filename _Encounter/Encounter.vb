@@ -395,12 +395,14 @@
         SelectCurrentFighter()
         FighterStartTurn(sSelectedFighter)
     End Sub
-    Private Sub FighterStartTurn(ByVal p_sCombatHandle As String)
+    Private Sub FighterStartTurn(ByVal p_sCombatHandle As String, Optional ByVal bBackup As Boolean = False)
         Dim fighter As Combatant = Roster(p_sCombatHandle)
-        EffectRemoveStart(fighter)
-        fighter.bReady = False
-        If My.Settings.bRollPowerRecharge = True Then PowerCheckRecharge(fighter)
-        If My.Settings.bOngoingPopup = True Then OngoingDamageCheck(fighter)
+        If Not bBackup Then
+            EffectRemoveStart(fighter)
+            fighter.bReady = False
+            If My.Settings.bRollPowerRecharge = True Then PowerCheckRecharge(fighter)
+            If My.Settings.bOngoingPopup = True Then OngoingDamageCheck(fighter)
+        End If
     End Sub
     Private Sub FighterEndTurn(ByVal p_sCombatHandle As String)
         Dim fighter As Combatant = Roster(p_sCombatHandle)
@@ -445,7 +447,7 @@
 
             FighterInitUpdate(fighter.sCombatHandle, newround, fighter.nInitRoll, fighter.nRandom3, True)
             sSelectedFighter = sCurrentFighterHandle
-            FighterStartTurn(sCurrentFighterHandle)
+            FighterStartTurn(sCurrentFighterHandle, True)
         End If
     End Sub
 
