@@ -107,10 +107,10 @@
         Get
             If nFighterNumber > 0 Then
                 '                Return sName & " - " & CStr(nFighterNumber).PadLeft(2, "0")
-                Return stats.sName & " - " & CStr(nFighterNumber).PadLeft(2, "0")
+				Return sName & " - " & CStr(nFighterNumber)
             Else
                 '                Return sName
-                Return stats.sName
+				Return sName
             End If
         End Get
     End Property
