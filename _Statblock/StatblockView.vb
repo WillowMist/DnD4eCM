@@ -324,59 +324,66 @@
     Sub ResetPowerListFromArray()
         Dim newpower As System.Windows.Forms.ListViewItem
 
-        lbPowerList.Items.Clear()
-        For Each pow As StatPower In statpowers
-            newpower = lbPowerList.Items.Add(pow.sName)
+		Dim selection As Integer
+		If lbPowerList.SelectedIndices.Count > 0 Then
+			selection = lbPowerList.SelectedIndices(0)
+		Else
+			selection = -1
+		End If
+		lbPowerList.Items.Clear()
+		For Each pow As StatPower In statpowers
+			newpower = lbPowerList.Items.Add(pow.sName)
 
-            If pow.bAura Then
-                If pow.sKeywords <> "" Then
-                    newpower.SubItems.Add("   " & pow.Type & " (" & pow.sKeywords & ")")
-                Else
-                    newpower.SubItems.Add("   " & pow.Type)
-                End If
-            Else
-                If pow.sType <> "" And pow.sAction <> "" Then
-                    newpower.SubItems.Add("   " & pow.Type & " (" & pow.sAction & ")")
-                ElseIf pow.sAction <> "" Then
-                    newpower.SubItems.Add("   (" & pow.sAction & ")")
-                ElseIf pow.sType <> "" Then
-                    newpower.SubItems.Add("   " & pow.Type)
-                Else
-                    newpower.SubItems.Add("   (constant)")
-                End If
-            End If
-        Next
-        bPowerChanged = False
-    End Sub
-    Private Sub lbPowerList_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbPowerList.SelectedIndexChanged
-        Dim powindex As Integer
-        If lbPowerList.SelectedIndices.Count > 0 Then
-            powindex = lbPowerList.SelectedIndices(0)
-            PowDataEnable()
-            PowDataLoad(powindex)
-            pbPowDelete.Enabled = True
+			If pow.bAura Then
+				If pow.sKeywords <> "" Then
+					newpower.SubItems.Add("   " & pow.Type & " (" & pow.sKeywords & ")")
+				Else
+					newpower.SubItems.Add("   " & pow.Type)
+				End If
+			Else
+				If pow.sType <> "" And pow.sAction <> "" Then
+					newpower.SubItems.Add("   " & pow.Type & " (" & pow.sAction & ")")
+				ElseIf pow.sAction <> "" Then
+					newpower.SubItems.Add("   (" & pow.sAction & ")")
+				ElseIf pow.sType <> "" Then
+					newpower.SubItems.Add("   " & pow.Type)
+				Else
+					newpower.SubItems.Add("   (constant)")
+				End If
+			End If
+		Next
+		If Not selection = -1 Then
+			lbPowerList.Items(selection).Selected = True
+		End If
+		bPowerChanged = False
+	End Sub
+	Private Sub lbPowerList_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As ListViewItemSelectionChangedEventArgs) Handles lbPowerList.ItemSelectionChanged
+		If e.IsSelected Then
+			PowDataEnable()
+			PowDataLoad(e.ItemIndex)
+			pbPowDelete.Enabled = True
 
-            If lbPowerList.Items.Count > 1 And lbPowerList.SelectedIndices(0) > 0 Then
-                pbPowUp.Enabled = True
-            Else
-                pbPowUp.Enabled = False
-            End If
-            If lbPowerList.Items.Count > 1 And lbPowerList.SelectedIndices(0) < lbPowerList.Items.Count - 1 Then
-                pbPowDown.Enabled = True
-            Else
-                pbPowDown.Enabled = False
-            End If
-        Else
-            PowDataDisable()
-            PowDataClear()
-            pbPowDelete.Enabled = False
-            pbPowUp.Enabled = False
-            pbPowDown.Enabled = False
-            If bPowerChanged Then
-                ResetPowerListFromArray()
-            End If
-        End If
-    End Sub
+			If lbPowerList.Items.Count > 1 And e.ItemIndex > 0 Then
+				pbPowUp.Enabled = True
+			Else
+				pbPowUp.Enabled = False
+			End If
+			If lbPowerList.Items.Count > 1 And e.ItemIndex < lbPowerList.Items.Count - 1 Then
+				pbPowDown.Enabled = True
+			Else
+				pbPowDown.Enabled = False
+			End If
+		Else
+			PowDataDisable()
+			PowDataClear()
+			pbPowDelete.Enabled = False
+			pbPowUp.Enabled = False
+			pbPowDown.Enabled = False
+			If bPowerChanged Then
+				ResetPowerListFromArray()
+			End If
+		End If
+	End Sub
 
     ' Power Data handling
     Private Sub PowDataEnable()
@@ -473,17 +480,17 @@
     End Sub
     Public ReadOnly Property PowerDataValid() As Boolean
         Get
-            If lbPowerList.SelectedIndices.Count < 1 Then
-                PowDataDisable()
-                PowDataClear()
-                Return False
-            Else
-                If lbPowerList.SelectedIndices(0) >= statpowers.Count Then
-                    PowDataDisable()
-                    PowDataClear()
-                    Return False
-                End If
-            End If
+			If lbPowerList.SelectedIndices.Count < 1 Then
+				PowDataDisable()
+				PowDataClear()
+				Return False
+			Else
+				If lbPowerList.SelectedIndices(0) >= statpowers.Count Then
+					PowDataDisable()
+					PowDataClear()
+					Return False
+				End If
+			End If
 
             Return True
         End Get
@@ -548,15 +555,15 @@
         Dim power As New StatPower()
         Dim index As Integer = statpowers.Add(power)
         ResetPowerListFromArray()
-        lbPowerList.SelectedIndices.Clear()
-        lbPowerList.SelectedIndices.Add(index)
+		lbPowerList.SelectedIndices.Clear()
+		lbPowerList.SelectedIndices.Add(index)
         lbPowerList.Items(index).EnsureVisible()
     End Sub
     Private Sub pbPowDelete_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pbPowDelete.Click
         If PowerDataValid Then
             statpowers.RemoveAt(lbPowerList.SelectedIndices(0))
             ResetPowerListFromArray()
-            lbPowerList_SelectedIndexChanged(sender, e)
+			'lbPowerList_SelectedIndexChanged(sender, e)
         End If
     End Sub
     Private Sub pbPowUp_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles pbPowUp.Click
@@ -568,10 +575,10 @@
                 index = index - 1
                 statpowers(index) = temppow
                 ResetPowerListFromArray()
-                lbPowerList.SelectedIndices.Clear()
-                lbPowerList.SelectedIndices.Add(index)
+				lbPowerList.SelectedIndices.Clear()
+				lbPowerList.SelectedIndices.Add(index)
                 lbPowerList.Items(index).EnsureVisible()
-                lbPowerList_SelectedIndexChanged(sender, e)
+				'lbPowerList_SelectedIndexChanged(sender, e)
             End If
         End If
     End Sub
@@ -584,10 +591,10 @@
                 index = index + 1
                 statpowers(index) = temppow
                 ResetPowerListFromArray()
-                lbPowerList.SelectedIndices.Clear()
-                lbPowerList.SelectedIndices.Add(index)
+				lbPowerList.SelectedIndices.Clear()
+				lbPowerList.SelectedIndices.Add(index)
                 lbPowerList.Items(index).EnsureVisible()
-                lbPowerList_SelectedIndexChanged(sender, e)
+				'lbPowerList_SelectedIndexChanged(sender, e)
             End If
         End If
     End Sub
