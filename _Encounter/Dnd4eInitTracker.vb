@@ -197,22 +197,22 @@ Public Class frmTracker
             End If
         End If
     End Sub
-    Private Sub dfStatName_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles dfStatName.Validated
-        dfStatName.Text = dfStatName.Text.Trim
-        If dfStatName.Text <> "" Then
-            Dim fighter As Combatant = ListSelectedFighter
+	Private Sub dfStatName_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles dfStatName.Validated
+		dfStatName.Text = dfStatName.Text.Trim
+		If dfStatName.Text <> "" Then
+			Dim fighter As Combatant = ListSelectedFighter
 
-            If Not fighter Is Nothing Then
-                If dfStatName.Text <> fighter.sName Then
-                    fight.Roster.Remove(fighter.sCombatHandle)
-                    fighter.sName = dfStatName.Text
-                    fight.Add(fighter, False, True)
-                    fight.oSelectedFighter = fighter
-                    UpdateFromClass()
-                End If
-            End If
-        End If
-    End Sub
+			If Not fighter Is Nothing Then
+				If dfStatName.Text <> fighter.sName Then
+					fight.Roster.Remove(fighter.sCombatHandle)
+					fighter.sName = dfStatName.Text
+					fight.Add(fighter, False, True)
+					fight.oSelectedFighter = fighter
+					UpdateFromClass()
+				End If
+			End If
+		End If
+	End Sub
 
     Private Sub dfStatInitRoll_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles dfStatInitRoll.KeyDown
         If e.KeyCode = Keys.Enter Then
@@ -693,7 +693,7 @@ Public Class frmTracker
         dfHTMLStatBlock.DocumentText = ""
         dfFighterNotes.Clear()
         tabNotes.Text = "Notes"
-        lbPowerUsage.Items.Clear()
+		lbPowerUsage.Items.Clear()
         lbEffects.Items.Clear()
         dfStatName.Text = ""
         dfFighterNum.Text = ""
@@ -1189,7 +1189,7 @@ Public Class frmTracker
                     Else
                         tempstring.Append("<td class='name'><font color='#000000'>")
                     End If
-                    tempstring.Append(thisfighter.sName)
+                    tempstring.Append(thisfighter.sCombatHandle)
                     If ((thisfighter.bPC Or thisfighter.bCompanion) And My.Settings.htmlDisplayHeroHP) Or (Not (thisfighter.bPC Or thisfighter.bCompanion) And My.Settings.htmlDisplayOtherHP) Then tempstring.Append(" - " & thisfighter.sStatusLine)
                     tempstring.Append("</font></td><td class='effects'><table class='effecttable'>")
                     For Each eff As Effect In fight.EffectsByTarget(thisfighter.sCombatHandle)
@@ -1245,15 +1245,7 @@ Public Class frmTracker
     Private Sub ctxtmenuInitList_Opening(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles ctxtmenuInitList.Opening
         Dim fighter As Combatant = ListSelectedFighter
         If Not fighter Is Nothing Then
-            ctxtDisplayName.Text = fighter.sName
             ctxtHideCombatant.Checked = fighter.bHidden
-        End If
-    End Sub
-
-    Private Sub ctxtDisplayName_Changed(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ctxtDisplayName.Leave
-        Dim fighter As Combatant = ListSelectedFighter
-        If Not fighter Is Nothing Then
-            fighter.sName = ctxtDisplayName.Text
         End If
     End Sub
 

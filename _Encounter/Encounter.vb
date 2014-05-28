@@ -185,24 +185,33 @@
         Add(newcombatant, bLibUpdate, True)
     End Sub
     Public Sub Add(ByRef p_combatant As Combatant, ByVal bLibUpdate As Boolean, ByVal bConfigEntry As Boolean)
-        If bConfigEntry Then
-            If Not p_combatant.bPC And p_combatant.nFighterNumber = 0 Then
-                p_combatant.nFighterNumber = 1
-            End If
-        End If
-        Do While Roster.Contains(p_combatant.sCombatHandle)
-            Dim fighter As Combatant = Roster(p_combatant.sCombatHandle)
-            p_combatant.nFighterNumber = fighter.nFighterNumber + 1
-            If p_combatant.nFighterNumber < 2 Then
-                p_combatant.nFighterNumber += 1
-            End If
-        Loop
-        Roster.Add(p_combatant.sCombatHandle, p_combatant)
-        If bLibUpdate Then p_combatant.UpdateLibrary(StatLib, bConfigEntry)
-        If Not bUseRollMod Then
-            p_combatant.sRoleMod = ""
-        End If
-    End Sub
+		'If bConfigEntry Then
+		'    If Not p_combatant.bPC And p_combatant.nFighterNumber = 0 Then
+		'        p_combatant.nFighterNumber = 1
+		'    End If
+		'End If
+		p_combatant.nFighterNumber = 1
+		If Not Roster.Contains(p_combatant.sCombatHandle) Then
+			p_combatant.nFighterNumber = 0
+		End If
+		Do While Roster.Contains(p_combatant.sCombatHandle)
+			Dim fighter As Combatant = Roster(p_combatant.sCombatHandle)
+			If fighter.nFighterNumber = 0 Then
+				Roster.Remove(fighter.sCombatHandle)
+				fighter.nFighterNumber += 1
+				Roster.Add(fighter.sCombatHandle, fighter)
+			End If
+			p_combatant.nFighterNumber = fighter.nFighterNumber + 1
+			'If p_combatant.nFighterNumber < 2 Then
+			'    p_combatant.nFighterNumber += 1
+			'End If
+		Loop
+		Roster.Add(p_combatant.sCombatHandle, p_combatant)
+		If bLibUpdate Then p_combatant.UpdateLibrary(StatLib, bConfigEntry)
+		If Not bUseRollMod Then
+			p_combatant.sRoleMod = ""
+		End If
+	End Sub
 
     Public Sub ResetEncounter(ByVal bPCReset As Boolean)
         Dim tempEffects As New Hashtable
